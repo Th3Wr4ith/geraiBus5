@@ -1,4 +1,11 @@
-:root{
-    --primary:
-    --
+:root {
+    --primaryMG: #014E56;
+    --primaryLC: #F67E7E;
+    --primaryW: #FFFFFF;
+
+    --secondaryRB: #79C8C7;
+    --secondaryPB: #2C6269;
+    --secondaryDJG: #004047;
+    --secondarySSG: #012F34;
+    --secondaryDG: #002529;
 }
