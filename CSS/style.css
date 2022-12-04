@@ -1,0 +1,177 @@
+@import url("/CSS/homeStyle.css");
+@import url("/CSS/aboutStyle.css");
+@import url("/CSS/contactStyle.css");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+:root {
+
+    /* Šriftas */
+    --primaryFont: 'Livvic', sans-serif;
+
+    /* Spalvos */
+    --primaryMG: #014E56;
+    --primaryLC: #F67E7E;
+    --primaryW: #FFFFFF;
+
+    --secondaryRB: #79C8C7;
+    --secondaryPB: #2C6269;
+    --secondaryDJG: #004047;
+    --secondarySSG: #012F34;
+    --secondaryDG: #002529;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Bendros Header, Banner ir Footer CSS savybės */
+header .container {
+    display: flex;
+    background-color: var(--primaryMG);
+}
+
+.banner {
+    display: flex;
+    background-color: var(--primaryLC)
+}
+
+footer .container {
+    display: flex;
+    background-color: var(--secondaryDG)
+}
+
+
+
+
+/* Bendros Home CSS savybės */
+
+.home_section1 {
+    display: flex;
+    background-color: var(--primaryMG);
+}
+
+.home_section2 {
+    display: flex;
+    background-color: var(--secondarySSG);
+}
+
+.home_section3 {
+    display: flex;
+    background-color: var(--secondaryDJG);
+}
+
+/*Bendros About CSS savybės */
+
+.about_section1 {
+    display: flex;
+    background-color: var(--primaryMG);
+}
+
+.about_section2 {
+    display: flex;
+    background-color: var(--secondaryDJG);
+}
+
+.about_section3 {
+    display: flex;
+    background-color: var(--secondarySSG);
+}
+
+/* Bendros Contact CSS savybės */
+
+.contact_section {
+    display: flex;
+    background-color: var(--primaryMG);
+}
