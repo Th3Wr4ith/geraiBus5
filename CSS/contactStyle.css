@@ -1,8 +1,29 @@
-/* for mobile */
-@media screen and (max-width: 375px) {}
+/* ================================================================ contact_header CSS  */
+
+/* for mobile (Default)*/
 
 /* for tablet */
 @media screen and (min-width: 376px) and (max-width: 768px) {}
 
 /* for desktop */
-@media screen and (min-width: 769px) and (min-width: 1440px) {}
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ contact_section CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ contact_footer CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
