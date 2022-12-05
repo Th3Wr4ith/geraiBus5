@@ -3,7 +3,9 @@
 @import url("/CSS/contactStyle.css");
 
 html,
-body,
+body {position: relative;
+    background-color: #014E56;
+}
 div,
 span,
 applet,
