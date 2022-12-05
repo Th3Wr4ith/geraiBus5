@@ -1,61 +1,64 @@
 /* for mobile */
 
-    .home_section1 {
-        width: 375px;
-        height: 567px;
-    }
+.home_section1 {
+    display: flex;
+    position: absolute;
+    width: 375px;
+    height: 567px;
+    background-color: var(--primaryMG);
+}
 
-    #title {
-        position: absolute;
-        top: 28%;
-        width: 327px;
-        height: 80px;
-        margin-left: 24px;
-        margin-right: 24px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+#title {
+    position: absolute;
+    top: 28%;
+    width: 327px;
+    height: 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-        font-family: var(--primaryFont);
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        color: var(--primaryW)
-    }
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--primaryW)
+}
 
-    #title span {
-        color: var(--primaryLC);
-    }
+#title span {
+    color: var(--primaryLC);
+}
 
-    #article {
-        position: absolute;
-        width: 327px;
-        height: 120px;
-        left: 0%;
-        right: 0%;
-        top: calc(50% - 112px/2 + 49px);
-        margin-left: 24px;
-        margin-right: 24px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        line-height: 28px;
+#article {
+    position: absolute;
+    width: 327px;
+    height: 120px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 112px/2 + 49px);
+    margin-left: 24px;
+    margin-right: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 28px;
 
 
-        font-family: var(--primaryFont);
-        font-weight: 600;
-        font-size: 15px;
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 15px;
 
-        color: var(--primaryW);
-    }
+    color: var(--primaryW);
+}
 
-    #figure {
-        position: absolute;
-        top: 82%;
-        height: auto;
-        width: 375px;
+#figure {
+    position: absolute;
+    top: 82%;
+    height: auto;
+    width: 375px;
 
-    }
+}
 
 
 /* for tablet */
