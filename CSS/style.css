@@ -139,6 +139,7 @@ footer .container {
 
 .home_section1 {
     display: flex;
+    position: absolute;
     background-color: var(--primaryMG);
 }
 
