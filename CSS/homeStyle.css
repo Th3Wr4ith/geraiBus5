@@ -122,17 +122,13 @@
 }
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 768px)  {
     .home_section3 h1 {
         margin-top: 0px;
         margin-left: 97px;
         margin-right: 98px;
     }
-
-    .home_section3 .newline {
-        display:block;
-    }
-  
+ 
     .home_section3__card {
         margin-left: 97px;
         margin-right: 98px;
@@ -145,7 +141,7 @@
 }
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .home_section3 h1 {
         margin-top: 40px;
         margin-left: 254px;
@@ -156,7 +152,32 @@
     
     .home_section3__cards {
         display: flex;
+        padding-left: 165px;
+        padding-right: 165px;
+        gap: 30px;
     }
+
+    .home_section3__card {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .home_section3__card .citation {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-bottom: 24px;
+    }
+
+    .home_section3__card .job_title {
+        margin-bottom: 43px;
+    }
+
+
+
+    .home_section3__svg2 {
+        padding-top: 40px; 
+    }
+    
 }
 
 /* ================================================================ home_banner CSS  */
