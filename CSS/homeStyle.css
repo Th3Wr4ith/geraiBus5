@@ -38,7 +38,7 @@
     color: var(--primaryW)
 }
 
-.home_section3--svg1 {
+.home_section3__svg1 {
     width: 147px;
     height: 100px;
 }
@@ -68,7 +68,7 @@
     position: relative;
 }
 
-.home_section3__card .citate {
+.home_section3__card .citation {
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
@@ -110,13 +110,13 @@
     border: 2px solid #C4FFFE;
 }
 
-.home_section3--svg2 {
+.home_section3__svg2 {
     display: flex;
     padding-top: 64px;
     justify-content: right;
 }
 
-.home_section3--svg2 img {
+.home_section3__svg2 img {
     width: 200px;
     height: 100px;
 }
@@ -138,9 +138,10 @@
         margin-right: 98px;
     }
 
-    .home_section3--svg2 {
+    .home_section3__svg2 {
         padding-top: 0px; 
     }
+    
 }
 
 /* for desktop */
