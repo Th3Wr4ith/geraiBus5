@@ -90,12 +90,12 @@ header .logo {
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (min-width: 768px) {}
 header .logo {margin-left: 35px;
     margin-top: 73px;
     }
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {}
+@media screen and (min-width: 1440px) {}
 
 /* ================================================================ home_section1 CSS  */
 
