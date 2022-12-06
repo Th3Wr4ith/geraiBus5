@@ -1,3 +1,30 @@
+/* ================================================================ Home_header CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+}
+
+/* ================================================================ home_section1 CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+}
+
+/* ================================================================ home_section2 CSS  */
+
+/* for mobile (Default)*/
 .home_section2 {
   padding-left: 24px;
   display: flex;
@@ -74,10 +101,6 @@
   display: none;
 }
 
-/* for mobile */
-@media screen and (max-width: 375px) {
-}
-
 /* for tablet */
 @media screen and (min-width: 768px) {
   .team-features .item {
@@ -120,4 +143,40 @@
     display: block;
     align-self: flex-end;
   }
+}
+
+/* ================================================================ home_section3 CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+}
+
+/* ================================================================ home_banner CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+}
+
+/* ================================================================ home_footer CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
 }
