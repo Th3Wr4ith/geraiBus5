@@ -1,67 +1,56 @@
-/* for mobile */
-@media screen and (max-width: 375px) {
-    [class*="col-"] {
-        width: 100%
-    }
+/* ================================================================ about_header CSS  */
 
-    .about_section1 {
-        width: 375px;
-        height: 567px;
-    }
+/* for mobile (Default)*/
 
-    #title {
-        position: absolute;
-        top: 28%;
-        width: 327px;
-        height: 80px;
-        margin-left: 24px;
-        margin-right: 24px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
 
-        font-family: var(--primaryFont);
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        color: var(--primaryW)
-    }
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
 
-    #title span {
-        color: var(--primaryLC);
-    }
+/* ================================================================ about_section1 CSS  */
 
-    #article {
-        display: flex;
-        position: absolute;
-        width: 327px;
-        height: 120px;
-        left: 0%;
-        right: 0%;
-        top: calc(50% - 112px/2 + 49px);
-        margin-left: 24px;
-        margin-right: 24px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        line-height: 28px;
+/* for mobile (Default)*/
 
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
 
-        font-family: var(--primaryFont);
-        font-weight: 600;
-        font-size: 15px;
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
 
-        color: var(--primaryW);}
+/* ================================================================ about_section2 CSS  */
 
-        #figure {
-            display: flex;
-            position: absolute;
-            top: 82%;
-            height: auto;
-            width: 375px;
+/* for mobile (Default)*/
 
-        }
-}
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ about_section3 CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ about_banner CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ about_footer CSS  */
+
+/* for mobile (Default)*/
 
 /* for tablet */
 @media screen and (min-width: 376px) and (max-width: 768px) {}

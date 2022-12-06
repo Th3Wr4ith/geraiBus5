@@ -1,138 +1,225 @@
-/* for mobile */
+/* ================================================================ Home_header CSS  */
 
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ Home_section1 CSS  */
+
+/* for mobile (Default)*/
 .home_section1 {
     display: flex;
     position: absolute;
     width: 375px;
     height: 567px;
+
     background-color: var(--primaryMG);
 }
 
-#title {
+#home-section1-title {
     position: absolute;
-    top: 28%;
     width: 327px;
     height: 80px;
+    top: 28%;
+
     margin-left: 24px;
     margin-right: 24px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 
     font-family: var(--primaryFont);
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+
+    text-align: center;
+
     color: var(--primaryW)
 }
 
-#title span {
+#home-section1-title span {
     color: var(--primaryLC);
 }
 
-#article {
+#home-section1-article {
     position: absolute;
     width: 327px;
     height: 120px;
+    top: calc(50% - 112px/2 + 49px);
     left: 0%;
     right: 0%;
-    top: calc(50% - 112px/2 + 49px);
+
     margin-left: 24px;
     margin-right: 24px;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    line-height: 28px;
-
 
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 15px;
+    line-height: 28px;
+
+    text-align: center;
 
     color: var(--primaryW);
 }
 
-#figure {
+.colorbar {
     position: absolute;
-    top: 82%;
-    height: auto;
-    width: 375px;
+    width: 50px;
+    height: 4px;
+    top: 250px;
 
+    margin-left: 830px;
+    margin-right: 560px;
+
+    background-color: var(--secondaryRB);
+
+    visibility: hidden;
 }
 
+#home-section1-figure-1 {
+    position: absolute;
+    top: 250px;
+
+    margin-left: -100px;
+    margin-right: 1340px;
+
+    visibility: hidden
+}
+
+#home-section1-figure-2 {
+    position: absolute;
+    width: 375px;
+    height: auto;
+    top: 82%;
+}
 
 /* for tablet */
 @media screen and (min-width: 376px) and (max-width: 768px) {
-
     .home_section1 {
         width: 768px;
         height: 700px;
     }
 
-    #title {
-        position: absolute;
-        top: 28%;
+    #home-section1-title {
         width: 683px;
         height: 112px;
-        margin-left: 24px;
-        margin-right: 24px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        top: 28%;
 
-        font-family: var(--primaryFont);
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        color: var(--primaryW)
+        font-size: 64px;
+        line-height: 56px;
     }
 
-    #title span {
-        color: var(--primaryLC);
-    }
-
-    #article {
-        position: absolute;
+    #home-section1-article {
         width: 457px;
         height: 84px;
+        top: calc(50% - 112px/2 + 49px);
         left: 0%;
         right: 0%;
-        top: calc(50% - 112px/2 + 49px);
+
         margin-left: 155px;
         margin-right: 155px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+
         line-height: 28px;
-
-
-        font-family: var(--primaryFont);
-        font-weight: 600;
-        font-size: 15px;
-
-        color: var(--primaryW);
     }
 
-    #figure {
-        position: absolute;
+    #home-section1-figure-2 {
+        top: 600px;
+
         margin-left: 200px;
         margin-right: auto;
-        top: 85%;
-        height: auto;
-        width: 375px;
-        align-items: center;
-        justify-content: center;
-
     }
-
-
 }
 
 /* for desktop */
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-
     .home_section1 {
         width: 1440px;
         height: 700px;
     }
+
+    #home-section1-title {
+        width: 635px;
+        height: 200px;
+        top: 250px;
+        left: 165px;
+
+        font-size: 100px;
+        line-height: 100px;
+
+        text-align: left;
+    }
+
+    #home-section1-article {
+        width: 445px;
+        height: 112px;
+        top: 333px;
+
+        margin-left: 830px;
+        margin-right: 165px;
+
+        font-size: 18px;
+        line-height: 28px;
+
+        text-align: left;
+    }
+
+    #home-section1-figure-1 {
+        visibility: visible;
+    }
+
+    .colorbar {
+        visibility: visible;
+    }
+
+    #home-section1-figure-2 {
+        top: 600px;
+
+        margin-left: 917px;
+        margin-right: 165px;
+    }
+
 }
+
+/* ================================================================ Home_section2 CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ Home_section3 CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ Home_banner CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
+
+/* ================================================================ Home_footer CSS  */
+
+/* for mobile (Default)*/
+
+/* for tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+/* for desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {}
