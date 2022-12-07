@@ -26,6 +26,8 @@
 
 /* for mobile (Default)*/
 .home_section2 {
+  background-color: var(--secondaryDJG);
+  font-family: var(--primaryFont);
   padding-left: 24px;
   display: flex;
   flex-direction: column;

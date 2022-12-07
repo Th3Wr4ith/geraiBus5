@@ -83,35 +83,34 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 :root {
+  /* Šriftas */
+  --primaryFont: "Livvic", sans-serif;
 
-    /* Šriftas */
-    --primaryFont: 'Livvic', sans-serif;
+  /* Spalvos */
+  --primaryMG: #014e56;
+  --primaryLC: #f67e7e;
+  --primaryW: #ffffff;
 
-    /* Spalvos */
-    --primaryMG: #014E56;
-    --primaryLC: #F67E7E;
-    --primaryW: #FFFFFF;
-
-    --secondaryRB: #79C8C7;
-    --secondaryPB: #2C6269;
-    --secondaryDJG: #004047;
-    --secondarySSG: #012F34;
-    --secondaryDG: #002529;
+  --secondaryRB: #79c8c7;
+  --secondaryPB: #2c6269;
+  --secondaryDJG: #004047;
+  --secondarySSG: #012f34;
+  --secondaryDG: #002529;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
