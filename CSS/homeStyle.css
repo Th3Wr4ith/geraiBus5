@@ -72,7 +72,7 @@
         font-size: 64px;
         line-height: 56px;
     }
-
+    
     #home-section1-article {
         margin-top: 24px;
         margin-left: 155px;
@@ -86,7 +86,7 @@
         margin-left: 200px;
     }
   }
-=======
+  
 /* for desktop */
 @media screen and (min-width: 1440px) {
     #home-section1-title {
@@ -142,18 +142,130 @@
         margin-left: 917px;
         margin-right: 165px;
     }
-
 }
 
 /* ================================================================ home_section2 CSS  */
 
 /* for mobile (Default)*/
+.home_section2 {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_section2 .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_section2 .separator {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 50px;
+  height: 4px;
+  background-color: var(--primaryLC);
+}
+
+.home_section2 .head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_section2 .head-info {
+  width: 66%;
+}
+
+.home_section2 .bg-holder {
+  width: 100px;
+  height: 220px;
+  background-image: url("/images/bg-pattern-home-3.svg");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+}
+
+.home_section2 h1 {
+  color: var(--primaryW);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.team-features {
+  margin: 24px 24px 24px 0;
+}
+
+.team-features .item {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.home_section2 img {
+  margin: 20px;
+}
+
+.home_section2 h4 {
+  color: var(--primaryLC);
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.home_section2 p {
+  color: var(--secondaryRB);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.items .bg-holder {
+  display: none;
+}
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  .team-features .item {
+    display: flex;
+  }
+
+  .team-features .item {
+    text-align: left;
+    width: 80%;
+  }
+
+  .home_section2 h4 {
+    margin-bottom: 15px;
+  }
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .head .bg-holder {
+    display: none;
+  }
+
+  .home_section2 .head {
+    width: auto;
+  }
+
+  .home_section2 .content {
+    flex-direction: row;
+  }
+
+  .home_section2 .items {
+    display: flex;
+  }
+
+  .home_section2 .team-features {
+    padding: 50px 0;
+  }
+
+  .items .bg-holder {
+    display: block;
+    align-self: flex-end;
+  }
+}
 
 /* ================================================================ home_section3 CSS  */
 
@@ -318,6 +430,7 @@
 /* ================================================================ home_footer CSS  */
 /* for mobile (Default)*/
 
+/* for tablet */
 @media screen and (min-width: 768px) {}
 
 /* for desktop */
