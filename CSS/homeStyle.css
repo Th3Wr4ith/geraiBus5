@@ -9,6 +9,7 @@
 /* for desktop */
 @media screen and (min-width: 1440px) {
 }
+
 /* ================================================================ home_section1 CSS  */
 
 /* for mobile (Default)*/
@@ -86,6 +87,12 @@
     margin-top: 156px;
     margin-left: 200px;
   }
+
+  #home-section1-figure-2 {
+    margin-top: 156px;
+    margin-left: 200px;
+  }
+
 }
 
 /* for desktop */
@@ -149,6 +156,8 @@
 
 /* for mobile (Default)*/
 .home_section2 {
+  background-color: var(--secondaryDJG);
+  font-family: var(--primaryFont);
   padding-left: 24px;
   display: flex;
   flex-direction: column;
@@ -218,7 +227,7 @@
 }
 
 .home_section2 p {
-  color: var(--secondaryRB);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
@@ -496,7 +505,6 @@
     .banner_bg-pattern-home-6 {
         top: 78px;
     }
-
 }
 
 /* for desktop */
@@ -512,7 +520,6 @@
     top: 76px;
     left: 71.32%;
 }
-
 }
 
 /* ================================================================ home_footer CSS  */
