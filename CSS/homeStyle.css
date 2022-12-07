@@ -3,145 +3,147 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ home_section1 CSS  */
 
 /* for mobile (Default)*/
 .home_section1 {
-    background-color: var(--primaryMG);
+  background-color: var(--primaryMG);
 }
 
 #home-section1-title {
-    padding-top: 160px;
+  padding-top: 160px;
 
-    margin-left: 24px;
-    margin-right: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 
-    font-family: var(--primaryFont);
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
+  font-family: var(--primaryFont);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
 
-    text-align: center;
+  text-align: center;
 
-    color: var(--primaryW)
+  color: var(--primaryW);
 }
 
 #home-section1-title span {
-    color: var(--primaryLC);
+  color: var(--primaryLC);
 }
 
 #home-section1-article {
-    margin-top: 18px;
-    margin-left: 24px;
-    margin-right: 24px;
+  margin-top: 18px;
+  margin-left: 24px;
+  margin-right: 24px;
 
-    font-family: var(--primaryFont);
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 28px;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
 
-    text-align: center;
+  text-align: center;
 
-    color: var(--primaryW);
+  color: var(--primaryW);
 }
 
 .colorbar {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #home-section1-figure-1 {
-    position: absolute;
+  position: absolute;
 
-    visibility: hidden
+  visibility: hidden;
 }
 
 #home-section1-figure-2 {
-    margin-top: 97px;
+  margin-top: 97px;
 }
 
 /* for tablet */
 @media screen and (min-width: 768px) {
-    #home-section1-title {
-        padding-top: 224px;
+  #home-section1-title {
+    padding-top: 224px;
 
-        font-size: 64px;
-        line-height: 56px;
-    }
-    
-    #home-section1-article {
-        margin-top: 24px;
-        margin-left: 155px;
-        margin-right: 155px;
-
-        line-height: 28px;
-    }
-
-    #home-section1-figure-2 {
-        margin-top: 156px;
-        margin-left: 200px;
-    }
+    font-size: 64px;
+    line-height: 56px;
   }
-  
+
+  #home-section1-article {
+    margin-top: 24px;
+    margin-left: 155px;
+    margin-right: 155px;
+
+    line-height: 28px;
+  }
+
+  #home-section1-figure-2 {
+    margin-top: 156px;
+    margin-left: 200px;
+  }
+}
+
 /* for desktop */
 @media screen and (min-width: 1440px) {
-    #home-section1-title {
-        padding-top: 250px;
+  #home-section1-title {
+    padding-top: 250px;
 
-        margin-left: 165px;
+    margin-left: 165px;
 
-        font-size: 100px;
-        line-height: 100px;
+    font-size: 100px;
+    line-height: 100px;
 
-        text-align: left;
-    }
+    text-align: left;
+  }
 
-    #home-section1-article {
-        position: absolute;
-        padding-top: 333px;
-        bottom: 255px;
+  #home-section1-article {
+    position: absolute;
+    padding-top: 333px;
+    bottom: 255px;
 
-        margin-left: 830px;
-        margin-right: 165px;
+    margin-left: 830px;
+    margin-right: 165px;
 
-        font-size: 18px;
-        line-height: 28px;
+    font-size: 18px;
+    line-height: 28px;
 
-        text-align: left;
-    }
+    text-align: left;
+  }
 
-    #home-section1-figure-1 {
-        top: 250px;
+  #home-section1-figure-1 {
+    top: 250px;
 
-        margin-left: -100px;
+    margin-left: -100px;
 
-        visibility: visible;
-    }
+    visibility: visible;
+  }
 
-    .colorbar {
-        position: absolute;
-        width: 50px;
-        height: 4px;
-        top: 250px;
+  .colorbar {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    top: 250px;
 
-        margin-left: 830px;
-        margin-right: 560px;
+    margin-left: 830px;
+    margin-right: 560px;
 
-        background-color: var(--secondaryRB);
+    background-color: var(--secondaryRB);
 
-        visibility: visible;
-    }
+    visibility: visible;
+  }
 
-    #home-section1-figure-2 {
-        top: 600px;
+  #home-section1-figure-2 {
+    top: 600px;
 
-        margin-left: 917px;
-        margin-right: 165px;
-    }
+    margin-left: 917px;
+    margin-right: 165px;
+  }
 }
 
 /* ================================================================ home_section2 CSS  */
@@ -215,7 +217,7 @@
 }
 
 .home_section2 p {
-  color: var(--secondaryRB);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
@@ -274,166 +276,167 @@
 /* for mobile (Default)*/
 
 .home_section3 {
-    background-color: var(--secondaryDJG);
-    font-family: var(--primaryFont);
-    color: var(--primaryW)
+  background-color: var(--secondaryDJG);
+  font-family: var(--primaryFont);
+  color: var(--primaryW);
 }
 
 .home_section3__svg1 {
-    width: 147px;
-    height: 100px;
+  width: 147px;
+  height: 100px;
 }
 
 .home_section3 h1 {
-    margin-top: 40px;
-    margin-left: 24px;
-    margin-right: 24px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+  margin-top: 40px;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .home_section3 .text_secondaryRB {
-    color: var(--secondaryRB);
+  color: var(--secondaryRB);
 }
 
 .home_section3__card {
-    margin-top: 84px;
-    margin-left: 24px;
-    margin-right: 24px;
-    text-align: center;
+  margin-top: 84px;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
 }
 
 .home_section3 .container {
-    position: relative;
+  position: relative;
 }
 
 .home_section3__card .citation {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    margin-bottom: 16px;
-    position: relative;
-    z-index: 2;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
 }
 
 .home_section3__card .img_quotes {
-    position: absolute;
-    width: 67px;
-    height: 56px;
-    top: -36px;
-    left: 0;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  width: 67px;
+  height: 56px;
+  top: -36px;
+  left: 0;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .home_section3__card .name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 2px;
 }
 
 .home_section3__card .job_title {
-    font-weight: 500;
-    font-style: italic;
-    font-size: 13px;
-    line-height: 18px;
-    margin-bottom: 16px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 16px;
 }
 
 .home_section3__card .avatar {
-    border-radius: 50%;
-    width: 62px;
-    height: 62px;
-    border: 2px solid #C4FFFE;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  border: 2px solid #c4fffe;
 }
 
 .home_section3__svg2 {
-    display: flex;
-    padding-top: 64px;
-    justify-content: right;
+  display: flex;
+  padding-top: 64px;
+  justify-content: right;
 }
 
 .home_section3__svg2 img {
-    width: 200px;
-    height: 100px;
+  width: 200px;
+  height: 100px;
 }
 
 /* for tablet */
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
+  .home_section3 h1 {
+    margin-top: 0px;
+    margin-left: 97px;
+    margin-right: 98px;
+  }
 
-    .home_section3 h1 {
-        margin-top: 0px;
-        margin-left: 97px;
-        margin-right: 98px;
-    }
- 
-    .home_section3__card {
-        margin-left: 97px;
-        margin-right: 98px;
-    }
+  .home_section3__card {
+    margin-left: 97px;
+    margin-right: 98px;
+  }
 
-    .home_section3__svg2 {
-        padding-top: 0px; 
-    }
+  .home_section3__svg2 {
+    padding-top: 0px;
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .home_section3 h1 {
+    margin-top: 40px;
+    margin-left: 254px;
+    margin-right: 254px;
+    font-size: 48px;
+    line-height: 48px;
+  }
 
-.home_section3 h1 {
-        margin-top: 40px;
-        margin-left: 254px;
-        margin-right: 254px;
-        font-size: 48px;
-        line-height: 48px;
-    }
-    
-    .home_section3__cards {
-        display: flex;
-        padding-left: 165px;
-        padding-right: 165px;
-        gap: 30px;
-    }
+  .home_section3__cards {
+    display: flex;
+    padding-left: 165px;
+    padding-right: 165px;
+    gap: 30px;
+  }
 
-    .home_section3__card {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+  .home_section3__card {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-    .home_section3__card .citation {
-        padding-right: 2px;
-        padding-left: 2px;
-        margin-bottom: 24px;
-    }
+  .home_section3__card .citation {
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-bottom: 24px;
+  }
 
-    .home_section3__card .job_title {
-        margin-bottom: 43px;
-    }
+  .home_section3__card .job_title {
+    margin-bottom: 43px;
+  }
 
-    .home_section3__svg2 {
-        padding-top: 40px; 
-    }
-    
+  .home_section3__svg2 {
+    padding-top: 40px;
+  }
 }
 
 /* ================================================================ home_banner CSS  */
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ home_footer CSS  */
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
