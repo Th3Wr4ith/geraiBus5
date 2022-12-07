@@ -1,6 +1,6 @@
-@import url("CSS/homeStyle.css");
-@import url("CSS/aboutStyle.css");
-@import url("CSS/contactStyle.css");
+@import url("homeStyle.css");
+@import url("aboutStyle.css");
+@import url("contactStyle.css");
 
 :root {
   /* Šriftas */
