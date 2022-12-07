@@ -7,7 +7,6 @@
 
 /* for desktop */
 @media screen and (min-width: 1440px) {}
-
 /* ================================================================ home_section1 CSS  */
 
 /* for mobile (Default)*/
@@ -272,7 +271,7 @@
     .items .bg-holder {
         display: block;
         align-self: flex-end;
-    }
+  }
 }
 
 /* ================================================================ home_section3 CSS  */
@@ -434,9 +433,154 @@
 
 /* ================================================================ home_footer CSS  */
 /* for mobile (Default)*/
+footer {
+  position: absolute;
+  height: 432px;
+  width: 100%;
+  background-color: #002529;
+}
+
+footer .footeriui {
+  padding: 66px 24px 64px 24px;
+}
+
+footer .logo {
+  width: 94.5px;
+  height: 24px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+footer .homeabout {
+  display: flex;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+  gap: 24px;
+}
+
+.middle {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right > .links {
+  display: flex;
+  gap: 16px;
+}
+
+.copyright {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  text-align: center;
+}
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 271px;
+  }
+
+  footer .footeriui {
+    position: relative;
+    padding: 56px 40px 56px 39px;
+  }
+
+  .left {
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 53px;
+  }
+
+  .middle {
+    padding: 0;
+    position: relative;
+    text-align: right;
+  }
+
+  .right {
+    padding-top: 34px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  footer .logo {
+    width: 160px;
+    height: 40.63px;
+  }
+
+  footer {
+    height: 196px;
+  }
+
+  footer .footeriui {
+    padding: 48px 165px 48px 165px;
+  }
+
+  footer .homeabout {
+    font-size: 18px;
+    line-height: 28px;
+    gap: 40px;
+  }
+
+  .left {
+    position: absolute;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .middle {
+    padding: 0;
+    position: absolute;
+    padding-left: 20%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right {
+    gap: 51px;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
+
+
