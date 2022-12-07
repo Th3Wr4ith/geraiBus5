@@ -3,28 +3,20 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (min-width: 768px) {}
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {}
+@media screen and (min-width: 1440px) {}
 
 /* ================================================================ Home_section1 CSS  */
 
 /* for mobile (Default)*/
 .home_section1 {
-    display: flex;
-    position: absolute;
-    width: 375px;
-    height: 567px;
-
     background-color: var(--primaryMG);
 }
 
 #home-section1-title {
-    position: absolute;
-    width: 327px;
-    height: 80px;
-    top: 28%;
+    padding-top: 160px;
 
     margin-left: 24px;
     margin-right: 24px;
@@ -44,17 +36,9 @@
 }
 
 #home-section1-article {
-    position: absolute;
-    width: 327px;
-    height: 120px;
-    top: calc(50% - 112px/2 + 49px);
-    left: 0%;
-    right: 0%;
-
+    margin-top: 18px;
     margin-left: 24px;
     margin-right: 24px;
-    align-items: center;
-    justify-content: center;
 
     font-family: var(--primaryFont);
     font-weight: 600;
@@ -67,59 +51,30 @@
 }
 
 .colorbar {
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    top: 250px;
-
-    margin-left: 830px;
-    margin-right: 560px;
-
-    background-color: var(--secondaryRB);
-
     visibility: hidden;
 }
 
 #home-section1-figure-1 {
     position: absolute;
-    top: 250px;
-
-    margin-left: -100px;
-    margin-right: 1340px;
 
     visibility: hidden
 }
 
 #home-section1-figure-2 {
-    position: absolute;
-    width: 375px;
-    height: auto;
-    top: 82%;
+    margin-top: 97px;
 }
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {
-    .home_section1 {
-        width: 768px;
-        height: 700px;
-    }
-
+@media screen and (min-width: 768px) {
     #home-section1-title {
-        width: 683px;
-        height: 112px;
-        top: 28%;
+        padding-top: 224px;
 
         font-size: 64px;
         line-height: 56px;
     }
 
     #home-section1-article {
-        width: 457px;
-        height: 84px;
-        top: calc(50% - 112px/2 + 49px);
-        left: 0%;
-        right: 0%;
-
+        margin-top: 24px;
         margin-left: 155px;
         margin-right: 155px;
 
@@ -127,25 +82,17 @@
     }
 
     #home-section1-figure-2 {
-        top: 600px;
-
+        margin-top: 156px;
         margin-left: 200px;
-        margin-right: auto;
     }
 }
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-    .home_section1 {
-        width: 1440px;
-        height: 700px;
-    }
-
+@media screen and (min-width: 1440px) {
     #home-section1-title {
-        width: 635px;
-        height: 200px;
-        top: 250px;
-        left: 165px;
+        padding-top: 250px;
+
+        margin-left: 165px;
 
         font-size: 100px;
         line-height: 100px;
@@ -154,9 +101,9 @@
     }
 
     #home-section1-article {
-        width: 445px;
-        height: 112px;
-        top: 333px;
+        position: absolute;
+        padding-top: 333px;
+        bottom: 255px;
 
         margin-left: 830px;
         margin-right: 165px;
@@ -168,10 +115,24 @@
     }
 
     #home-section1-figure-1 {
+        top: 250px;
+
+        margin-left: -100px;
+
         visibility: visible;
     }
 
     .colorbar {
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        top: 250px;
+
+        margin-left: 830px;
+        margin-right: 560px;
+
+        background-color: var(--secondaryRB);
+
         visibility: visible;
     }
 
@@ -189,37 +150,37 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (min-width: 768px) {}
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {}
+@media screen and (min-width: 1440px) {}
 
 /* ================================================================ Home_section3 CSS  */
 
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (min-width: 375px) {}
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {}
+@media screen and (min-width: 768px) {}
 
 /* ================================================================ Home_banner CSS  */
 
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (min-width: 375px) {}
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {}
+@media screen and (min-width: 768px) {}
 
 /* ================================================================ Home_footer CSS  */
 
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 376px) and (max-width: 768px) {}
+@media screen and (min-width: 375px) {}
 
 /* for desktop */
-@media screen and (min-width: 769px) and (max-width: 1440px) {}
+@media screen and (min-width: 768px) {}
