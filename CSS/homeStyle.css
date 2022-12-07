@@ -424,12 +424,95 @@
 
 /* ================================================================ home_banner CSS  */
 /* for mobile (Default)*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 302px;
+    background: #F67E7E;
+}
+.banner_firstLine {
+    position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 64px;
+    top: 83px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #012F34;
+}
+.banner_btn {
+    position: absolute;
+    color: black;
+    width: 153px;
+    height: 48px;
+    text-align: center;
+    padding: 7px 11px;
+    cursor: pointer;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    top: 174px;
+    left: 29.6%;
+}
+.banner_contactus {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+}
+.banner_bg-pattern-home-6 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 180px;
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .banner {
+        height: 200px;
+    }
+
+    .banner_firstLine {
+        height: 32px;
+        margin-left: 97px;
+        margin-right: 335px;
+    }
+
+    .banner_btn {
+        top: 76px;
+        left: 67.32%;
+    }
+
+    .banner_bg-pattern-home-6 {
+        top: 78px;
+    }
+
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+
+.banner_firstLine {
+    margin-left: 263px;
+    margin-right: 673px;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.banner_btn {
+    top: 76px;
+    left: 71.32%;
+}
+}
 
 /* ================================================================ home_footer CSS  */
 /* for mobile (Default)*/
