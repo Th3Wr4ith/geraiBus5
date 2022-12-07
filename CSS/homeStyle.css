@@ -184,7 +184,7 @@
 .home_section2 .bg-holder {
   width: 100px;
   height: 220px;
-  background-image: url("/images/bg-pattern-home-3.svg");
+  background-image: url("images/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
   background-size: 200% 100%;
 }
