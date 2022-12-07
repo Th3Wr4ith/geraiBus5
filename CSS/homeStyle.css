@@ -1,4 +1,4 @@
-/* ================================================================ Home_header CSS  */
+/* ================================================================ home_header CSS  */
 
 /* for mobile (Default)*/
 
@@ -8,7 +8,7 @@
 /* for desktop */
 @media screen and (min-width: 1440px) {}
 
-/* ================================================================ Home_section1 CSS  */
+/* ================================================================ home_section1 CSS  */
 
 /* for mobile (Default)*/
 .home_section1 {
@@ -85,8 +85,8 @@
         margin-top: 156px;
         margin-left: 200px;
     }
-}
-
+  }
+=======
 /* for desktop */
 @media screen and (min-width: 1440px) {
     #home-section1-title {
@@ -145,7 +145,7 @@
 
 }
 
-/* ================================================================ Home_section2 CSS  */
+/* ================================================================ home_section2 CSS  */
 
 /* for mobile (Default)*/
 
@@ -155,32 +155,170 @@
 /* for desktop */
 @media screen and (min-width: 1440px) {}
 
-/* ================================================================ Home_section3 CSS  */
+/* ================================================================ home_section3 CSS  */
 
 /* for mobile (Default)*/
 
+.home_section3 {
+    background-color: var(--secondaryDJG);
+    font-family: var(--primaryFont);
+    color: var(--primaryW)
+}
+
+.home_section3__svg1 {
+    width: 147px;
+    height: 100px;
+}
+
+.home_section3 h1 {
+    margin-top: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.home_section3 .text_secondaryRB {
+    color: var(--secondaryRB);
+}
+
+.home_section3__card {
+    margin-top: 84px;
+    margin-left: 24px;
+    margin-right: 24px;
+    text-align: center;
+}
+
+.home_section3 .container {
+    position: relative;
+}
+
+.home_section3__card .citation {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.home_section3__card .img_quotes {
+    position: absolute;
+    width: 67px;
+    height: 56px;
+    top: -36px;
+    left: 0;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home_section3__card .name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 2px;
+}
+
+.home_section3__card .job_title {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
+
+.home_section3__card .avatar {
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    border: 2px solid #C4FFFE;
+}
+
+.home_section3__svg2 {
+    display: flex;
+    padding-top: 64px;
+    justify-content: right;
+}
+
+.home_section3__svg2 img {
+    width: 200px;
+    height: 100px;
+}
+
 /* for tablet */
-@media screen and (min-width: 375px) {}
+@media screen and (min-width: 768px)  {
+
+    .home_section3 h1 {
+        margin-top: 0px;
+        margin-left: 97px;
+        margin-right: 98px;
+    }
+ 
+    .home_section3__card {
+        margin-left: 97px;
+        margin-right: 98px;
+    }
+
+    .home_section3__svg2 {
+        padding-top: 0px; 
+    }
+}
 
 /* for desktop */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1440px) {
 
-/* ================================================================ Home_banner CSS  */
+.home_section3 h1 {
+        margin-top: 40px;
+        margin-left: 254px;
+        margin-right: 254px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    .home_section3__cards {
+        display: flex;
+        padding-left: 165px;
+        padding-right: 165px;
+        gap: 30px;
+    }
 
+    .home_section3__card {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .home_section3__card .citation {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-bottom: 24px;
+    }
+
+    .home_section3__card .job_title {
+        margin-bottom: 43px;
+    }
+
+    .home_section3__svg2 {
+        padding-top: 40px; 
+    }
+    
+}
+
+/* ================================================================ home_banner CSS  */
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 375px) {}
-
-/* for desktop */
 @media screen and (min-width: 768px) {}
 
-/* ================================================================ Home_footer CSS  */
+/* for desktop */
+@media screen and (min-width: 1440px) {}
 
+/* ================================================================ home_footer CSS  */
 /* for mobile (Default)*/
 
-/* for tablet */
-@media screen and (min-width: 375px) {}
+@media screen and (min-width: 768px) {}
 
 /* for desktop */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1440px) {}
