@@ -253,7 +253,7 @@ header nav button {
   #home-section1-article {
     margin-top: 24px;
     margin-left: 155px;
-    margin-right: 155px;
+    margin-right: 156px;
 
     line-height: 28px;
   }
@@ -286,7 +286,7 @@ header nav button {
 
   #home-section1-article {
     position: absolute;
-    padding-top: 333px;
+    top: 216px;
     bottom: 255px;
 
     margin-left: 830px;
@@ -310,7 +310,7 @@ header nav button {
     position: absolute;
     width: 50px;
     height: 4px;
-    top: 250px;
+    top: 133px;
 
     margin-left: 830px;
     margin-right: 560px;
