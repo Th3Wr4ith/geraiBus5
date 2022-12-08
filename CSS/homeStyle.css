@@ -339,15 +339,11 @@ header nav button {
 
 /* for mobile (Default)*/
 .home_section2 {
-  background-color: var(--secondaryDJG);
+  background-color: var(--secondarySSG);
   font-family: var(--primaryFont);
   padding-left: 24px;
   display: flex;
   flex-direction: column;
-
-  font-family: var(--primaryFont);
-
-  background-color: var(--primaryMG);
 }
 
 .home_section2 .content {
@@ -356,8 +352,8 @@ header nav button {
 }
 
 .home_section2 .separator {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 64px;
+  margin-bottom: 32px;
   width: 50px;
   height: 4px;
   background-color: var(--primaryLC);
@@ -385,11 +381,11 @@ header nav button {
   color: var(--primaryW);
   font-size: 32px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 32px;
 }
 
 .team-features {
-  margin: 24px 24px 24px 0;
+  margin: 36px 24px 64px 0;
 }
 
 .team-features .item {
@@ -398,12 +394,14 @@ header nav button {
 }
 
 .home_section2 img {
-  margin: 20px;
+  height: 72px;
+  width: 65px;
+  margin: 36px 20px 16px 20px;
 }
 
 .home_section2 h4 {
   color: var(--primaryLC);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -452,6 +450,7 @@ header nav button {
 
   .home_section2 .content {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .home_section2 .items {
