@@ -235,7 +235,12 @@ header nav button {
 }
 
 #home-section1-figure-2 {
+  width: 200px;
+  height: 100px;
+
   margin-top: 97px;
+
+  align-items: center;
 }
 
 /* for tablet */
@@ -259,13 +264,14 @@ header nav button {
   }
 
   #home-section1-figure-2 {
-    margin-top: 156px;
-    margin-left: 200px;
-  }
+    width: 200px;
+    height: 100px;
 
-  #home-section1-figure-2 {
     margin-top: 156px;
-    margin-left: 200px;
+    margin-left: 206px;
+    margin-right: 204px;
+
+    align-items: center;
   }
 
 }
@@ -299,7 +305,9 @@ header nav button {
   }
 
   #home-section1-figure-1 {
-    top: 250px;
+    width: 200px;
+    height: 200px;
+    top: 133px;
 
     margin-left: -100px;
 
@@ -321,8 +329,7 @@ header nav button {
   }
 
   #home-section1-figure-2 {
-    top: 600px;
-
+    margin-top: 155px;
     margin-left: 917px;
     margin-right: 165px;
   }
