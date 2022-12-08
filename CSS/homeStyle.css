@@ -421,7 +421,6 @@ header nav button {
 /* for tablet */
 @media screen and (min-width: 768px) {
   .home_section2 {
-    background-color: var(--secondarySSG);
     padding-left: 98px;
   }
 
@@ -449,12 +448,29 @@ header nav button {
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .home_section2 {
+    padding-left: 165px;
+  }
+
+  .home_section2 .separator {
+    margin-top: 140px;
+  }
+
+  .home_section2 h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   .head .bg-holder {
     display: none;
   }
 
   .home_section2 .head {
-    width: auto;
+    width: 60%;
+  }
+
+  .home_section2 .head-info {
+    width: 90%;
   }
 
   .home_section2 .content {
@@ -467,7 +483,8 @@ header nav button {
   }
 
   .home_section2 .team-features {
-    padding: 50px 0;
+    margin-top: 145px;
+    margin-bottom: 140px;
   }
 
   .items .bg-holder {
