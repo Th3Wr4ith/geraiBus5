@@ -422,19 +422,28 @@ header nav button {
 @media screen and (min-width: 768px) {
   .home_section2 {
     background-color: var(--secondarySSG);
+    padding-left: 98px;
+  }
+
+  .home_section2 .separator {
+    margin-top: 100px;
   }
 
   .team-features .item {
     display: flex;
-  }
-
-  .team-features .item {
     text-align: left;
     width: 80%;
+    margin-top: 32px;
+  }
+
+  .home_section2 img {
+    height: 72px;
+    width: 65px;
+    margin: 0 20px 16px 0;
   }
 
   .home_section2 h4 {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
