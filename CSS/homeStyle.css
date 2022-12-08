@@ -228,19 +228,26 @@ header nav button {
   visibility: hidden;
 }
 
-#home-section1-figure-1 {
+#home-section1-figure-1 img {
   position: absolute;
+  width: 200px;
+  height: 200px;
 
   visibility: hidden;
 }
 
 #home-section1-figure-2 {
-  width: 200px;
-  height: 100px;
+  display: flex;
 
   margin-top: 97px;
 
-  align-items: center;
+  justify-content: center;
+}
+
+#home-section1-figure-2 img {
+  width: 358px;
+  height: 100px;
+
 }
 
 /* for tablet */
@@ -263,17 +270,12 @@ header nav button {
     line-height: 28px;
   }
 
-  #home-section1-figure-2 {
-    width: 200px;
+  .home-section1-figure-2 img {
+    width: 358px;
     height: 100px;
 
     margin-top: 156px;
-    margin-left: 206px;
-    margin-right: 204px;
-
-    align-items: center;
   }
-
 }
 
 /* for desktop */
@@ -304,7 +306,7 @@ header nav button {
     text-align: left;
   }
 
-  #home-section1-figure-1 {
+  #home-section1-figure-1 img {
     width: 200px;
     height: 200px;
     top: 133px;
@@ -328,7 +330,7 @@ header nav button {
     visibility: visible;
   }
 
-  #home-section1-figure-2 {
+  #home-section1-figure-2 img {
     margin-top: 155px;
     margin-left: 917px;
     margin-right: 165px;
