@@ -1,184 +1,157 @@
 /* ================================================================ Home_header CSS  */
 /* for mobile (Default)*/
-
-header {
+header{
+  background-color: var(--primaryMG);
   display: flex;
-  position: absolute;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
+  padding: 24px;
+  align-items:center;
 }
 
-header .logo {
-  position: absolute;
-  margin-left: 24px;
-  margin-top: 48px;
-  height: 32px;
-  width: 126px;
+.navbar{
+  --bs-navbar-toggler-focus-width: none;
+  position: relative;
 }
 
-.menu {
-  position: absolute;
-  margin-left: 331px;
-  margin-top: 80px;
-  height: 17px;
-  width: 20px;
-}
-
-#btn {
-  cursor: pointer;
-}
-
-header .container {
-  position: absolute;
-  left: 125px;
-  top: -8px;
-  width: 255px;
-  height: 667px;
+.nav{
   display: none;
-  background-color: #2c6269;
 }
 
-header .show-element {
-  display: block;
+.header-button{
+  display:none;
 }
 
-header nav {
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  padding-left: 45px;
-  padding-top: 100px;
-
+.navbar-toggler{
+  border: none;
 }
 
-header nav ul li {
-  list-style-type: none;
-  font-family: 'Livvic', sans-serif;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 28px;
-
+.offcanvas{
+  background-color: var(--secondaryPB);
+  max-width: 65%;
 }
 
-header nav button {
-  position: absolute;
-  background-color: #2C6269;
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-  height: 48px;
-  width: 159px;
-  padding: 3px;
-  text-align: center;
-  border-radius: 24px;
-  font-family: 'Livvic', sans-serif;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 18px;
+.offcanvas-header .btn-close{
+  margin-left: 200px;
+  margin-top: 30px;
 }
 
 .pattern {
   position: absolute;
   width: 200px;
-  height: auto;
-  left: 145px;
-  top: 467px;
+  height: 200px;
+  top:467px;
+  left: 180px;
 }
 
-.close {
-  position: absolute;
-  margin-left: 150px;
-  margin-top: -60px;
+.nav-item a{
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primaryW);
+  text-decoration: none;
+  margin-left: 48px;
 }
 
+.contact {
+  background-color: transparent;
+  border: 2px solid var(--primaryW);
+  height: 48px;
+  width: 159px;
+  padding: 3px;
+  border-radius: 24px;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 48px;
+  margin-top: 40px;
+}
+
+.contact:hover{
+  background-color: var(--primaryW);
+}
+
+.logo {
+  width: 126px;
+  height: 32px;
+  top: 48px;
+  left: 24px;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
-  header .logo {
-    position: absolute;
-    margin-left: 35px;
-    margin-top: 73px;
+  header{
+    padding: 64px 35px;
   }
 
-  .menu,
-  .pattern,
-  .close,
-  header .show-element {
-    display: none;
+  .navbar-toggler{
+    display:none;
   }
 
-  header .container {
+  .nav{
     display: flex;
-    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+  }
+
+  .navbar{
+    flex-grow: 2;
+    padding-left: 54px;
+  }
+
+  .nav a{
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primaryW);
+  }
+
+  .nav a:hover{
+    color: var(--primaryLC);
+  }
+ 
+.header-button{
+    display:inline;
     background-color: transparent;
-    padding: 30px;
-    width: 768px;
-    height: 700px;
-    left: -8px;
-    top: -8px;
-  }
-
-  header nav ul li {
-    display: inline;
-    padding-left: 215px;
-  }
-
-  header nav ul li:last-child {
-    padding-left: 70px;
-  }
-
-
-  header nav button {
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
+    border: 2px solid var(--primaryW);
     height: 48px;
     width: 153px;
     padding: 3px;
+    text-align: center;
     border-radius: 24px;
-    font-family: 'Livvic', sans-serif;
-    color: #FFFFFF;
+    margin-left: 48px;
+  }
+
+  .header-button:hover{
+    background-color: var(--primaryW);
+  }
+
+  .header-button a:hover{
+    color: var(--primaryMG);
+  }
+  
+  .header-button a{
+    font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
-    left: 575px;
+    color: var(--primaryW);
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-  header {
+  .logo {
+    width: 126px;
+    height: 34px;
+    top: 48px;
+    left: 24px;
+  }
+  
+  .nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1110px;
+    justify-content:flex-start;
+    width: 900px;
     height: 48px;
-    left: 165px;
-
-  }
-
-  header .container {
-    display: flex;
-    position: absolute;
-    background-color: transparent;
-    padding: 70px;
-    width: 768px;
-    height: 700px;
-  }
-
-  header nav button {
-    position: absolute;
-    font-weight: 600;
-    font-size: 18px;
-    left: 1000px;
-    top: 73px;
-
-  }
-
-  header .logo {
-    position: absolute;
-    margin-left: -1000px;
-    width: 17%;
-    height: 100vh;
   }
 }
 
