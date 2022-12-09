@@ -130,11 +130,14 @@ header{
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+
   .nav{
     display: flex;
-    width: 1110px;
+    justify-content:flex-start;
+    width: 900px;
     height: 48px;
   }
+
   
 }
 
