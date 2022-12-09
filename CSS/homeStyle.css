@@ -1,99 +1,107 @@
 /* ================================================================ Home_header CSS  */
 /* for mobile (Default)*/
 
-header{display: flex;
-    position: absolute;
-    flex-direction: row;
-    justify-content: space-between;
+header{
+  background-color: var(--primaryMG);
+  display: flex;
+    justify-content:space-between;
+    padding: 24px;
     align-items:center;
 }
+.container a{
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primaryW);
+}
 
-header .logo {
-    position: absolute;
-    margin-left: 24px;
-    margin-top: 48px;
-    height: 32px;
-    width: 126px;
-    }
+.nav{
+  display: none;
+}
+.container .header-button{
+    background-color: transparent;
+    border: 2px solid var(--primaryW);
+    height: 48px;
+    width: 159px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 24px;
+    margin-left: 48px;
+  }
 
-    .menu{
-        position: absolute;
-        margin-left: 331px;
-        margin-top: 80px;
-        height: 17px;
-        width: 20px;
-        }
+.navbar-toggler{
+  border: none;
+}
 
-        #btn{
-            cursor: pointer;
-        }
+.offcanvas{
+  background-color: var(--secondaryPB);
+  max-width: 65%;
+}
+.offcanvas-header .btn-close{
+  margin-left: 200px;
+  margin-top: 30px;
+}
 
-        header .container{
-            position:absolute;
-            left: 125px;
-            top: -8px;
-            width: 255px;
-            height: 667px;
-            display: none;
-            background-color: #2c6269;
-        }
-        
-        header .show-element{
-            display: block;
-        }
-        
-        header nav{
-            display: flex;
-            position: absolute;
-            flex-direction: row;
-            padding-left: 45px;
-            padding-top: 100px;
-            
-        }
-        
-        header nav ul li{
-            list-style-type: none;
-            font-family: 'Livvic', sans-serif;
-            color:#FFFFFF;
-            font-weight: 600;
-            font-size: 18px;
-            margin-bottom: 28px;
-            
-        }
-        
-        header nav button{
-            position: absolute;
-            background-color:#2C6269;
-            border: 2px solid #FFFFFF;
-            color: #FFFFFF;
-            height: 48px;
-            width: 159px;
-            padding: 3px;
-            text-align: center;
-            border-radius: 24px;
-            font-family: 'Livvic', sans-serif;
-            color:#FFFFFF;
-            font-weight: 600;
-            font-size: 18px;
-        }
-        
-        .pattern {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        left: 145px;
-        top: 467px;
-        }
-        
-        .close{
-        position: absolute;
-        margin-left: 150px;
-        margin-top: -60px;
-        }
+.pattern {
+  width: 200px;
+  height: 200px;
+  top:467px;
+  left: 155px;
+}
+
+.offcanvas-body a{
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primaryW);
+  text-decoration: none;
+  margin-left: 48px;
+}
+
+.offcanvas-body button{
+  background-color: transparent;
+  border: 2px solid var(--primaryW);
+  height: 48px;
+  width: 159px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 24px;
+  margin-left: 48px;
+}
+
+.logo {
+  width: 126px;
+  height: 32px;
+  top: 48px;
+  left: 24px;
+  cursor: pointer;
+}
+
+button span{
+  width: 20px;
+  height: 17px;
+  top: 56px;
+  left: 331px;
+}
     
 /* for tablet */
 @media screen and (min-width: 768px) {
-header .logo {position: absolute;
+  .navbar-toggler{
+    display:none;
+  }
+  .nav{
+    display: flex;
+
+  }
+  .nav{
+    width: 513px;
+    height: 48px;
+    align-items: inherit;
+    flex-grow: ;
+  }
+}
+/* header .logo {position: absolute;
     margin-left: 35px;
     margin-top: 73px;
     }
@@ -132,11 +140,11 @@ header nav button{
     font-weight: 600;
     font-size: 18px;
     left: 575px;
-}
+} */
 }
 /* for desktop */
 @media screen and (min-width: 1440px) {
-header {
+/* header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -165,7 +173,7 @@ header .logo {position: absolute;
     margin-left: -1000px;
     width: 17%;
     height: 100vh;
-    }
+    } */
 }
 
 /* ================================================================ home_section1 CSS  */
