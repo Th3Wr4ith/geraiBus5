@@ -68,8 +68,16 @@ header{
   margin-top: 40px;
 }
 
+.contact:hover{
+  background-color: var(--primaryW);
+}
+
 .contact a{
   color: var(--primaryW);
+}
+
+.contact a:hover{
+  color: var(--secondaryPB);
 }
 
 .logo {
@@ -107,29 +115,47 @@ header{
     font-size: 18px;
     color: var(--primaryW);
   }
+
+  .nav a:hover{
+    color: var(--primaryLC);
+  }
  
 .header-button{
     display:inline;
     background-color: transparent;
     border: 2px solid var(--primaryW);
     height: 48px;
-    width: 159px;
+    width: 153px;
     padding: 3px;
     text-align: center;
     border-radius: 24px;
     margin-left: 48px;
   }
+
+  .header-button:hover{
+    background-color: var(--primaryW);
+  }
+
+  .header-button a:hover{
+    color: var(--primaryMG);
+  }
+
   .header-button a{
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
     color: var(--primaryW);
   }
-  
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .logo {
+    width: 126px;
+    height: 34px;
+    top: 48px;
+    left: 24px;
+  }
 
   .nav{
     display: flex;
@@ -137,8 +163,6 @@ header{
     width: 900px;
     height: 48px;
   }
-
-  
 }
 
 /* ================================================================ home_section1 CSS  */
