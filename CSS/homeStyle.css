@@ -479,7 +479,7 @@ header nav button {
   color: var(--primaryW);
 }
 
-.home_section3__svg1 {
+.home_section3__svg1 img{
   width: 147px;
   height: 100px;
 }
@@ -600,6 +600,7 @@ header nav button {
   .home_section3__card {
     margin-left: 0px;
     margin-right: 0px;
+    margin-top:92px;
   }
 
   .home_section3__card .citation {
@@ -609,11 +610,11 @@ header nav button {
   }
 
   .home_section3__card .job_title {
-    margin-bottom: 43px;
+    margin-bottom: 32px;
   }
 
   .home_section3__svg2 {
-    padding-top: 40px;
+    padding-top: 51px;
   }
 }
 
