@@ -5,7 +5,7 @@ header{
   background-color: var(--primaryMG);
   display: flex;
   justify-content:space-between;
-  padding: 24px;
+  padding: 48px;
   align-items:center;
 }
 
@@ -33,13 +33,14 @@ header{
 }
 
 .pattern {
+  position: absolute;
   width: 200px;
   height: 200px;
   top:467px;
-  left: 155px;
+  left: 180px;
 }
 
-.offcanvas-body a{
+.nav-item a{
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 18px;
@@ -49,15 +50,22 @@ header{
   margin-left: 48px;
 }
 
-.offcanvas-body button{
+.contact {
   background-color: transparent;
   border: 2px solid var(--primaryW);
   height: 48px;
   width: 159px;
   padding: 3px;
-  text-align: center;
   border-radius: 24px;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
   margin-left: 48px;
+  margin-top: 40px;
+}
+
+.contact a{
+  color: var(--primaryW);
 }
 
 .logo {
@@ -72,11 +80,14 @@ header{
   header{
     padding: 64px 35px;
   }
+
   .navbar-toggler{
     display:none;
   }
+
   .nav{
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 48px;
   }
@@ -87,9 +98,7 @@ header{
     font-size: 18px;
     color: var(--primaryW);
   }
-  .nav li:last-child{
-    padding-left: auto;
-  }
+ 
   .nav .header-button{
     background-color: transparent;
     border: 2px solid var(--primaryW);
@@ -110,39 +119,7 @@ header{
     height: 48px;
     padding-left: ;
   }
-  .nav li:last-child{
-    padding-left: 740px;
-  }
-/* header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1110px;
-    height: 48px;
-    left: 165px;
-
-}
-header .container{
-    display:flex;
-    position:absolute;
-    background-color:transparent;
-    padding: 70px; 
-    width: 768px;
-    height: 700px;      
-}
-header nav button{
-    position: absolute;
-    font-weight: 600;
-    font-size: 18px;
-    left: 1000px;
-    top: 73px;
-
-}
-header .logo {position: absolute;
-    margin-left: -1000px;
-    width: 17%;
-    height: 100vh;
-    } */
+  
 }
 
 /* ================================================================ home_section1 CSS  */
