@@ -73,6 +73,10 @@ header{
   background-color: var(--primaryW);
 }
 
+.navbar{
+  --bs-navbar-padding-y: none;
+}
+
 .logo {
   width: 126px;
   height: 32px;
@@ -158,9 +162,6 @@ header{
     height: 48px;
   }
 
-  .navbar{
-    --bs-navbar-padding-y: none;
-  }
 }
 
 /* ================================================================ home_section1 CSS  */
