@@ -82,7 +82,9 @@ header{
 /* for tablet */
 @media screen and (min-width: 768px) {
   header{
-    padding: 64px 35px;
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-top: 64px;
   }
 
   .navbar-toggler{
@@ -98,7 +100,7 @@ header{
 
   .navbar{
     flex-grow: 2;
-    padding-left: 54px;
+    padding-left: 46px;
   }
 
   .nav a{
@@ -154,6 +156,10 @@ header{
     justify-content:flex-start;
     width: 900px;
     height: 48px;
+  }
+
+  .navbar{
+    --bs-navbar-padding-y: none;
   }
 }
 
