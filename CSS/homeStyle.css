@@ -1,6 +1,5 @@
 /* ================================================================ Home_header CSS  */
 /* for mobile (Default)*/
-
 header{
   background-color: var(--primaryMG);
   display: flex;
@@ -72,21 +71,12 @@ header{
   background-color: var(--primaryW);
 }
 
-.contact a{
-  color: var(--primaryW);
-}
-
-.contact a:hover{
-  color: var(--secondaryPB);
-}
-
 .logo {
   width: 126px;
   height: 32px;
   top: 48px;
   left: 24px;
 }
-
 /* for tablet */
 @media screen and (min-width: 768px) {
   header{
@@ -139,7 +129,7 @@ header{
   .header-button a:hover{
     color: var(--primaryMG);
   }
-
+  
   .header-button a{
     font-family: var(--primaryFont);
     font-weight: 600;
@@ -156,7 +146,7 @@ header{
     top: 48px;
     left: 24px;
   }
-
+  
   .nav{
     display: flex;
     justify-content:flex-start;
@@ -173,7 +163,7 @@ header{
 }
 
 #home-section1-title {
-  padding-top: 160px;
+  padding-top: 80.42px;
 
   margin-left: 24px;
   margin-right: 24px;
@@ -211,20 +201,35 @@ header{
   visibility: hidden;
 }
 
-#home-section1-figure-1 {
+#home-section1-figure-1 img {
   position: absolute;
+  width: 200px;
+  height: 200px;
 
   visibility: hidden;
 }
 
 #home-section1-figure-2 {
+  display: flex;
+
   margin-top: 97px;
+
+  justify-content: center;
+}
+
+#home-section1-figure-2 img {
+  width: 358px;
+  height: 100px;
+
 }
 
 /* for tablet */
 @media screen and (min-width: 768px) {
   #home-section1-title {
-    padding-top: 224px;
+    padding-top: 119px;
+
+    margin-left: 45px;
+    margin-right: 40px;
 
     font-size: 64px;
     line-height: 56px;
@@ -233,29 +238,26 @@ header{
   #home-section1-article {
     margin-top: 24px;
     margin-left: 155px;
-    margin-right: 155px;
+    margin-right: 156px;
 
     line-height: 28px;
   }
 
-  #home-section1-figure-2 {
-    margin-top: 156px;
-    margin-left: 200px;
-  }
+  .home-section1-figure-2 img {
+    width: 358px;
+    height: 100px;
 
-  #home-section1-figure-2 {
     margin-top: 156px;
-    margin-left: 200px;
   }
-
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
   #home-section1-title {
-    padding-top: 250px;
+    padding-top: 133px;
 
     margin-left: 165px;
+    margin-right: 640px;
 
     font-size: 100px;
     line-height: 100px;
@@ -265,7 +267,7 @@ header{
 
   #home-section1-article {
     position: absolute;
-    padding-top: 333px;
+    top: 216px;
     bottom: 255px;
 
     margin-left: 830px;
@@ -277,8 +279,10 @@ header{
     text-align: left;
   }
 
-  #home-section1-figure-1 {
-    top: 250px;
+  #home-section1-figure-1 img {
+    width: 200px;
+    height: 200px;
+    top: 133px;
 
     margin-left: -100px;
 
@@ -289,7 +293,7 @@ header{
     position: absolute;
     width: 50px;
     height: 4px;
-    top: 250px;
+    top: 133px;
 
     margin-left: 830px;
     margin-right: 560px;
@@ -299,9 +303,8 @@ header{
     visibility: visible;
   }
 
-  #home-section1-figure-2 {
-    top: 600px;
-
+  #home-section1-figure-2 img {
+    margin-top: 155px;
     margin-left: 917px;
     margin-right: 165px;
   }
@@ -311,15 +314,11 @@ header{
 
 /* for mobile (Default)*/
 .home_section2 {
-  background-color: var(--secondaryDJG);
+  background-color: var(--secondarySSG);
   font-family: var(--primaryFont);
   padding-left: 24px;
   display: flex;
   flex-direction: column;
-
-  font-family: var(--primaryFont);
-
-  background-color: var(--primaryMG);
 }
 
 .home_section2 .content {
@@ -328,8 +327,8 @@ header{
 }
 
 .home_section2 .separator {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 64px;
+  margin-bottom: 32px;
   width: 50px;
   height: 4px;
   background-color: var(--primaryLC);
@@ -348,7 +347,7 @@ header{
 .home_section2 .bg-holder {
   width: 100px;
   height: 220px;
-  background-image: url("images/bg-pattern-home-3.svg");
+  background-image: url("/images/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
   background-size: 200% 100%;
 }
@@ -357,11 +356,11 @@ header{
   color: var(--primaryW);
   font-size: 32px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 32px;
 }
 
 .team-features {
-  margin: 24px 24px 24px 0;
+  margin: 36px 24px 64px 0;
 }
 
 .team-features .item {
@@ -370,12 +369,14 @@ header{
 }
 
 .home_section2 img {
-  margin: 20px;
+  height: 72px;
+  width: 65px;
+  margin: 36px 20px 16px 20px;
 }
 
 .home_section2 h4 {
   color: var(--primaryLC);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -395,35 +396,61 @@ header{
 /* for tablet */
 @media screen and (min-width: 768px) {
   .home_section2 {
-    background-color: var(--secondarySSG);
+    padding-left: 98px;
+  }
+
+  .home_section2 .separator {
+    margin-top: 100px;
   }
 
   .team-features .item {
     display: flex;
-  }
-
-  .team-features .item {
     text-align: left;
     width: 80%;
+    margin-top: 32px;
+  }
+
+  .home_section2 img {
+    height: 72px;
+    width: 65px;
+    margin: 0 20px 16px 0;
   }
 
   .home_section2 h4 {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .home_section2 {
+    padding-left: 165px;
+  }
+
+  .home_section2 .separator {
+    margin-top: 140px;
+  }
+
+  .home_section2 h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   .head .bg-holder {
     display: none;
   }
 
   .home_section2 .head {
-    width: auto;
+    width: 60%;
+  }
+
+  .home_section2 .head-info {
+    width: 90%;
   }
 
   .home_section2 .content {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .home_section2 .items {
@@ -431,7 +458,8 @@ header{
   }
 
   .home_section2 .team-features {
-    padding: 50px 0;
+    margin-top: 145px;
+    margin-bottom: 140px;
   }
 
   .items .bg-holder {
@@ -449,7 +477,7 @@ header{
   color: var(--primaryW);
 }
 
-.home_section3__svg1 {
+.home_section3__svg1 img{
   width: 147px;
   height: 100px;
 }
@@ -570,6 +598,7 @@ header{
   .home_section3__card {
     margin-left: 0px;
     margin-right: 0px;
+    margin-top:92px;
   }
 
   .home_section3__card .citation {
@@ -579,102 +608,106 @@ header{
   }
 
   .home_section3__card .job_title {
-    margin-bottom: 43px;
+    margin-bottom: 32px;
   }
 
   .home_section3__svg2 {
-    padding-top: 40px;
+    padding-top: 51px;
   }
 }
 
 /* ================================================================ home_banner CSS  */
 /* for mobile (Default)*/
 .banner {
-    position: relative;
-    width: 100%;
-    height: 302px;
-    background: #F67E7E;
+  position: relative;
+  width: 100%;
+  height: 302px;
+  background: #F67E7E;
 }
+
 .banner_firstLine {
-    position: relative;
-    margin-left: 24px;
-    margin-right: 24px;
-    height: 64px;
-    top: 83px;
-    font-family: 'Livvic';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
-    text-align: center;
-    color: #012F34;
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 64px;
+  top: 83px;
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #012F34;
 }
+
 .banner_btn {
-    position: absolute;
-    color: black;
-    width: 153px;
-    height: 48px;
-    text-align: center;
-    padding: 7px 11px;
-    cursor: pointer;
-    border: 2px solid #012F34;
-    border-radius: 24px;
-    top: 174px;
-    left: 29.6%;
+  position: absolute;
+  color: black;
+  width: 153px;
+  height: 48px;
+  text-align: center;
+  padding: 7px 11px;
+  cursor: pointer;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  top: 174px;
+  left: 29.6%;
 }
+
 .banner_contactus {
-    font-family: 'Livvic';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    color: #012F34;
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
 }
+
 .banner_bg-pattern-home-6 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 180px;
-    mix-blend-mode: normal;
-    opacity: 1;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 180px;
+  mix-blend-mode: normal;
+  opacity: 1;
 }
 
 
 /* for tablet */
 @media screen and (min-width: 768px) {
-    .banner {
-        height: 200px;
-    }
+  .banner {
+    height: 200px;
+  }
 
-    .banner_firstLine {
-        height: 32px;
-        margin-left: 97px;
-        margin-right: 335px;
-    }
+  .banner_firstLine {
+    height: 32px;
+    margin-left: 97px;
+    margin-right: 335px;
+  }
 
-    .banner_btn {
-        top: 76px;
-        left: 67.32%;
-    }
+  .banner_btn {
+    top: 76px;
+    left: 67.32%;
+  }
 
-    .banner_bg-pattern-home-6 {
-        top: 78px;
-    }
+  .banner_bg-pattern-home-6 {
+    top: 78px;
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-.banner_firstLine {
+  .banner_firstLine {
     margin-left: 263px;
     margin-right: 673px;
     font-size: 48px;
     line-height: 48px;
-}
+  }
 
-.banner_btn {
+  .banner_btn {
     top: 76px;
     left: 71.32%;
-}
+  }
 }
 
 /* ================================================================ home_footer CSS  */
@@ -734,7 +767,7 @@ footer .homeabout {
   align-items: center;
 }
 
-.right > .links {
+.right>.links {
   display: flex;
   gap: 16px;
 }
