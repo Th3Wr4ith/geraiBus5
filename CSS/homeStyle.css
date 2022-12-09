@@ -372,7 +372,7 @@ header nav button {
 .home_section2 .bg-holder {
   width: 100px;
   height: 220px;
-  background-image: url("/images/bg-pattern-home-3.svg");
+  background-image: url("../images/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
   background-size: 200% 100%;
 }
@@ -394,7 +394,7 @@ header nav button {
 }
 
 .home_section2 img {
-  height: 72px;
+  height: 65px;
   width: 65px;
   margin: 36px 20px 16px 20px;
 }
@@ -433,6 +433,10 @@ header nav button {
     text-align: left;
     width: 80%;
     margin-top: 32px;
+  }
+
+  .team-features {
+    margin-bottom: 100px;
   }
 
   .home_section2 img {
