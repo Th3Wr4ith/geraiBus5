@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find the best talent</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="icon" type="image/icon" href="images/favicon.ico">
 
@@ -25,215 +27,228 @@
   
   <body>
    <!-- home_Header pradžia -->
-   
         <header>
-          <img class="logo" src="images/logo.svg" alt="logo">
-            <img class="menu" id="btn" src="images/icon-hamburger.svg" alt="menu">
-            <nav class="container">
-                <img class="close" src="images/icon-close.svg" alt="button to close">
-                <ul class="nav">
-                <li><a class="headerbtn">home</a></li>
-                <li><a class="headerbtn">about</a></li>
-            </ul>
-            <a class="btncontact" href="#"><button>contact us</button></a>
-            <img class="pattern" src="images/bg-pattern-about-1-mobile-nav-1.svg" alt="pattern circle">
-        </nav>
+          <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+          <nav class="navbar">
+            
+              <ul class="nav">
+                <li>
+                  <a class="nav-link" href="index.html">home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="about.html">about</a>
+                  </li>
+                </ul>
+                  <button class="header-button">
+                    <a class="nav-link" href="contact.html">contact us</a>
+                  </button>
+                  
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span><img src="images/icon-hamburger.svg" alt="menu"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="images/icon-close.svg" alt="close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li>
+                      <button class="contact">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pattern">
+                <img src="images/bg-pattern-about-1-mobile-nav-1.svg" alt="pattern">
+                </div>
+              </div>
+            
+          </nav>
+          
         </header>
         <!-- home_Header pabaiga -->
-        
-    <main>
-    
-      <!-- home_section1 pradžia -->
+      
+  <main>
 
-      <section>
-        <div class="home_section1">
-          <div id="home-section1-title">
-            Find the <br />
-            best <span>talent</span>
-          </div>
+    <!-- home_section1 pradžia -->
 
-          <div id="home-section1-figure-1">
-            <img src="images/bg-pattern-home-1.svg" alt="pattetn-home-1" />
-          </div>
-          
-          <div id="home-section1-article">
-            Finding the right people and building high performing teams can be
-            hard. Most companies aren't tapping into the abundance of global
-            talent. We're about to change that.
-          </div>
-          
-          <div class="colorbar"></div>
-          
-          <div id="home-section1-figure-2">
-            <img src="images/bg-pattern-home-2.svg" alt="pattern-home-2" />
-          </div>
-        </div>
-      </section>
-
-      <!-- home_section1 pabaiga -->
-      <!-- home_section2 pradžia -->
-
-      <section>
-        <div class="home_section2">
-          <div class="content">
-            <div class="head">
-              <div class="head-info">
-                <div class="separator"></div>
-                <h1>Build & manage distributed teams like no one else.</h1>
-              </div>
-              <div class="bg-holder"></div>
-            </div>
-            <div class="items">
-              <div class="team-features">
-                <div class="item">
-                  <img
-                    src="images/icon-person.svg"
-                    alt="experienced individuals"
-                  />
-                  <div>
-                    <h4>Experienced Individuals</h4>
-                    <p>
-                      Our network is made up of highly experienced professionals
-                      who are passionate about what they do.
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="images/icon-cog.svg" alt="easy to implement" />
-                  <div>
-                    <h4>Easy to Implement</h4>
-                    <p>
-                      Our processes have been refined over years of
-                      implementation meaning our teams always deliver.
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    src="images/icon-chart.svg"
-                    alt="enhanced productivity"
-                  />
-                  <div>
-                    <h4>Enhanced Productivity</h4>
-                    <p>
-                      Our customized platform with in-built analytics helps you
-                      manage your distributed teams.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-holder"></div>
-                
-            </section>
-            
-           <!-- home_section2 pabaiga -->
-           <!-- home_section3 pradžia -->
-
-      <section>
-        <div class="home_section3">
-          <div class="home_section3__svg1">
-            <img src="images/bg-pattern-home-4-about-3.svg" alt="home-4" />
-          </div>
-          <h1>
-            Delivering real results for top companies. Some of our
-            <span class="text_secondaryRB">success stories. </span>
-          </h1>
-          <div class="home_section3__cards">
-            <div class="home_section3__card">
-              <div class="container">
-                <p class="citation">
-                  “The team perfectly fit the specialized skill set required.
-                  They focused on the most essential features helping us launch
-                  the platform eight months faster than planned.”
-                </p>
-                <img
-                  class="img_quotes"
-                  src="images/icon-quotes.svg"
-                  alt="quotes"
-                />
-              </div>
-              <p class="name text_secondaryRB">Kady Baker</p>
-              <p class="job_title">Product Manager at Bookmark</p>
-              <img class="avatar" src="images/avatar-kady.jpg" alt="kady" />
-            </div>
-
-            <div class="home_section3__card">
-              <div class="container">
-                <p class="citation">
-                  “We needed to automate our entire onboarding process. The team
-                  came in and built out the whole journey. Since going live,
-                  user retention has gone through the roof!”
-                </p>
-                <img
-                  class="img_quotes"
-                  src="images/icon-quotes.svg"
-                  alt="quotes"
-                />
-              </div>
-              <p class="name text_secondaryRB">Aiysha Reese</p>
-              <p class="job_title">Founder of Manage</p>
-              <img class="avatar" src="images/avatar-aiysha.jpg" alt="aiysha" />
-            </div>
-
-            <div class="home_section3__card">
-              <div class="container">
-                <p class="citation">
-                  “Amazing. Our team helped us build an app that delivered a new
-                  experience for hiring a physio. The launch was an instant
-                  success with 100k downloads in the first month.”
-                </p>
-                <img
-                  class="img_quotes"
-                  src="images/icon-quotes.svg"
-                  alt="quotes"
-                />
-              </div>
-              <p class="name text_secondaryRB">Arthur Clarke</p>
-              <p class="job_title">Co-founder of MyPhysio</p>
-              <img class="avatar" src="images/avatar-arthur.jpg" alt="arthur" />
-            </div>
-          </div>
-
-          <div class="home_section3__svg2">
-            <img src="images/bg-pattern-home-5.svg" alt="home-5" />
-          </div>
-        </div>
-      </section>
-           
-            <!-- home_section3 pabaiga -->
-
-            <!-- banner pradžia -->
-            
-            <div class="banner">
-                <div class="banner_firstLine">Ready to get started? </div>
-                <div class="banner_btn banner_contactus">contact us</div>
-
-                <div class="banner_bg-pattern-home-6">
-                    <img src="images/bg-pattern-home-6-about-5.svg" alt="6-about-5">
-                </div>
-
-            </div>
-            <!-- banner pabaiga -->
-        </main>
-        
-        <!-- Footer pradžia -->
-    
-    <footer>
-      <div class="footeriui">
-        <div class="left">
-          <img class="logo" src="images/logo.svg" alt="logo" />
-          <div class="homeabout">
-            <a href="/index.html">Home</a> 
-            <a href="/about.html">About</a>
-          </div>
-        </div>
-        <div class="middle">
-          987 Hillcrest Lane <br />
-          Irvine, CA <br />
-          California 92714 <br />
-          Call Us : 949-833-7432 <br />
+    <section>
+      <div class="home_section1">
+        <div id="home-section1-title">
+          Find the <br />
+          best <span>talent</span>
         </div>
 
+        <div id="home-section1-figure-1">
+          <img src="images/bg-pattern-home-1.svg" alt="pattetn-home-1" />
+        </div>
+
+        <div id="home-section1-article">
+          Finding the right people and building high performing teams can be
+          hard. Most companies aren't tapping into the abundance of global
+          talent. We're about to change that.
+        </div>
+
+        <div class="colorbar"></div>
+
+        <div id="home-section1-figure-2">
+          <img src="images/bg-pattern-home-2.svg" alt="pattern-home-2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home_section1 pabaiga -->
+    <!-- home_section2 pradžia -->
+
+    <section>
+      <div class="home_section2">
+        <div class="content">
+          <div class="head">
+            <div class="head-info">
+              <div class="separator"></div>
+              <h1>Build & manage distributed teams like no one else.</h1>
+            </div>
+            <div class="bg-holder"></div>
+          </div>
+          <div class="items">
+            <div class="team-features">
+              <div class="item">
+                <img src="images/icon-person.svg" alt="experienced individuals" />
+                <div>
+                  <h4>Experienced Individuals</h4>
+                  <p>
+                    Our network is made up of highly experienced professionals
+                    who are passionate about what they do.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/icon-cog.svg" alt="easy to implement" />
+                <div>
+                  <h4>Easy to Implement</h4>
+                  <p>
+                    Our processes have been refined over years of
+                    implementation meaning our teams always deliver.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/icon-chart.svg" alt="enhanced productivity" />
+                <div>
+                  <h4>Enhanced Productivity</h4>
+                  <p>
+                    Our customized platform with in-built analytics helps you
+                    manage your distributed teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-holder"></div>
+
+    </section>
+
+    <!-- home_section2 pabaiga -->
+    <!-- home_section3 pradžia -->
+
+    <section>
+      <div class="home_section3">
+        <div class="home_section3__svg1">
+          <img src="images/bg-pattern-home-4-about-3.svg" alt="home-4" />
+        </div>
+        <h1>
+          Delivering real results for top companies. Some of our
+          <span class="text_secondaryRB">success stories. </span>
+        </h1>
+        <div class="home_section3__cards">
+          <div class="home_section3__card">
+            <div class="container">
+              <p class="citation">
+                “The team perfectly fit the specialized skill set required.
+                They focused on the most essential features helping us launch
+                the platform eight months faster than planned.”
+              </p>
+              <img class="img_quotes" src="images/icon-quotes.svg" alt="quotes" />
+            </div>
+            <p class="name text_secondaryRB">Kady Baker</p>
+            <p class="job_title">Product Manager at Bookmark</p>
+            <img class="avatar" src="images/avatar-kady.jpg" alt="kady" />
+          </div>
+
+          <div class="home_section3__card">
+            <div class="container">
+              <p class="citation">
+                “We needed to automate our entire onboarding process. The team
+                came in and built out the whole journey. Since going live,
+                user retention has gone through the roof!”
+              </p>
+              <img class="img_quotes" src="images/icon-quotes.svg" alt="quotes" />
+            </div>
+            <p class="name text_secondaryRB">Aiysha Reese</p>
+            <p class="job_title">Founder of Manage</p>
+            <img class="avatar" src="images/avatar-aiysha.jpg" alt="aiysha" />
+          </div>
+
+          <div class="home_section3__card">
+            <div class="container">
+              <p class="citation">
+                “Amazing. Our team helped us build an app that delivered a new
+                experience for hiring a physio. The launch was an instant
+                success with 100k downloads in the first month.”
+              </p>
+              <img class="img_quotes" src="images/icon-quotes.svg" alt="quotes" />
+            </div>
+            <p class="name text_secondaryRB">Arthur Clarke</p>
+            <p class="job_title">Co-founder of MyPhysio</p>
+            <img class="avatar" src="images/avatar-arthur.jpg" alt="arthur" />
+          </div>
+        </div>
+
+        <div class="home_section3__svg2">
+          <img src="images/bg-pattern-home-5.svg" alt="home-5" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home_section3 pabaiga -->
+
+    <!-- banner pradžia -->
+
+    <div class="banner">
+      <div class="banner_firstLine">Ready to get started? </div>
+      <div class="banner_btn banner_contactus">contact us</div>
+
+      <div class="banner_bg-pattern-home-6">
+        <img src="images/bg-pattern-home-6-about-5.svg" alt="6-about-5">
+      </div>
+
+    </div>
+    <!-- banner pabaiga -->
+  </main>
+
+  <!-- Footer pradžia -->
+
+  <footer>
+    <div class="footeriui">
+      <div class="left">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <div class="homeabout">
+          <a>home</a>
+          <a>about</a>
+        </div>
+      </div>
+      <div class="middle">
+        987 Hillcrest Lane <br />
+        Irvine, CA <br />
+        California 92714 <br />
+        Call Us : 949-833-7432 <br />
+      </div>
         <div class="right">
           <div class="links">
             <a href="#">
@@ -247,10 +262,16 @@
             </a>
           </div>
           <div class="copyright">Copyright 2022. All Rights Reserved</div>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  
+<!-- JavaScript Bundle with Popper -->
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    
     <!-- Footer pabaiga -->
-  </body>
+</body>
+
 </html>

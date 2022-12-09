@@ -1,191 +1,163 @@
 /* ================================================================ Home_header CSS  */
 /* for mobile (Default)*/
-
-.headerbtn:hover {
-  cursor: pointer;
-  color: rgb(246, 126, 126);
-}
-
-header {
+header{
+  background-color: var(--primaryMG);
   display: flex;
-  position: absolute;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
+  padding: 24px;
+  align-items:center;
 }
 
-header .logo {
-  position: absolute;
-  margin-left: 24px;
-  margin-top: 48px;
-  height: 32px;
-  width: 126px;
+.navbar{
+  --bs-navbar-toggler-focus-width: none;
+  position: relative;
 }
 
-.menu {
-  position: absolute;
-  margin-left: 331px;
-  margin-top: 80px;
-  height: 17px;
-  width: 20px;
-}
-
-#btn {
-  cursor: pointer;
-}
-
-header .container {
-  position: absolute;
-  left: 125px;
-  top: -8px;
-  width: 255px;
-  height: 667px;
+.nav{
   display: none;
-  background-color: #2c6269;
 }
 
-header .show-element {
-  display: block;
+.header-button{
+  display:none;
 }
 
-header nav {
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  padding-left: 45px;
-  padding-top: 100px;
+.navbar-toggler{
+  border: none;
 }
 
-header nav ul li {
-  list-style-type: none;
-  font-family: "Livvic", sans-serif;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 28px;
+.offcanvas{
+  background-color: var(--secondaryPB);
+  max-width: 65%;
 }
 
-header nav button {
-  position: absolute;
-  background-color: #2c6269;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  height: 48px;
-  width: 159px;
-  padding: 3px;
-  text-align: center;
-  border-radius: 24px;
-  font-family: "Livvic", sans-serif;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.btncontact button:hover {
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #002529;
-  border: 2px solid #012f34;
+.offcanvas-header .btn-close{
+  margin-left: 200px;
+  margin-top: 30px;
 }
 
 .pattern {
   position: absolute;
   width: 200px;
-  height: auto;
-  left: 145px;
-  top: 467px;
+  height: 200px;
+  top:467px;
+  left: 180px;
 }
 
-.close {
-  position: absolute;
-  margin-left: 150px;
-  margin-top: -60px;
+.nav-item a{
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primaryW);
+  text-decoration: none;
+  margin-left: 48px;
 }
 
+.contact {
+  background-color: transparent;
+  border: 2px solid var(--primaryW);
+  height: 48px;
+  width: 159px;
+  padding: 3px;
+  border-radius: 24px;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 48px;
+  margin-top: 40px;
+}
+.contact:hover{
+  background-color: var(--primaryW);
+}
+
+.contact a{
+  color: var(--primaryW);
+}
+.contact a:hover{
+  color: var(--secondaryPB);
+}
+
+.logo {
+  width: 126px;
+  height: 32px;
+  top: 48px;
+  left: 24px;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
-  header .logo {
-    position: absolute;
-    margin-left: 35px;
-    margin-top: 73px;
+  header{
+    padding: 64px 35px;
   }
 
-  .menu,
-  .pattern,
-  .close,
-  header .show-element {
-    display: none;
+  .navbar-toggler{
+    display:none;
   }
 
-  header .container {
+  .nav{
     display: flex;
-    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+  }
+
+  .navbar{
+    flex-grow: 2;
+    padding-left: 54px;
+  }
+
+  .nav a{
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primaryW);
+  }
+  
+  .nav a:hover{
+    color: var(--primaryLC);
+  }
+ 
+.header-button{
+    display:inline;
     background-color: transparent;
-    padding: 30px;
-    width: 768px;
-    height: 700px;
-    left: -8px;
-    top: -8px;
-  }
-
-  header nav ul li {
-    display: inline;
-    padding-left: 215px;
-  }
-
-  header nav ul li:last-child {
-    padding-left: 70px;
-  }
-
-  header nav button {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid var(--primaryW);
     height: 48px;
     width: 153px;
     padding: 3px;
+    text-align: center;
     border-radius: 24px;
-    font-family: "Livvic", sans-serif;
-    color: #ffffff;
+    margin-left: 48px;
+  }
+  
+  .header-button:hover{
+    background-color: var(--primaryW);
+  }
+  
+  .header-button a:hover{
+    color: var(--primaryMG);
+  }
+  
+  .header-button a{
+    font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
-    left: 575px;
+    color: var(--primaryW);
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-  header {
+  .logo {
+    width: 126px;
+    height: 34px;
+    top: 48px;
+    left: 24px;
+  }
+  
+  .nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1110px;
+    justify-content:flex-start;
+    width: 900px;
     height: 48px;
-    left: 165px;
-  }
-
-  header .container {
-    display: flex;
-    position: absolute;
-    background-color: transparent;
-    padding: 70px;
-    width: 768px;
-    height: 700px;
-  }
-
-  header nav button {
-    position: absolute;
-    font-weight: 600;
-    font-size: 18px;
-    left: 1000px;
-    top: 73px;
-  }
-
-  header .logo {
-    position: absolute;
-    margin-left: -1000px;
-    width: 17%;
-    height: 100vh;
   }
 }
 
@@ -347,15 +319,11 @@ header nav button {
 
 /* for mobile (Default)*/
 .home_section2 {
-  background-color: var(--secondaryDJG);
+  background-color: var(--secondarySSG);
   font-family: var(--primaryFont);
   padding-left: 24px;
   display: flex;
   flex-direction: column;
-
-  font-family: var(--primaryFont);
-
-  background-color: var(--primaryMG);
 }
 
 .home_section2 .content {
@@ -364,8 +332,8 @@ header nav button {
 }
 
 .home_section2 .separator {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 64px;
+  margin-bottom: 32px;
   width: 50px;
   height: 4px;
   background-color: var(--primaryLC);
@@ -393,11 +361,11 @@ header nav button {
   color: var(--primaryW);
   font-size: 32px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 32px;
 }
 
 .team-features {
-  margin: 24px 24px 24px 0;
+  margin: 36px 24px 64px 0;
 }
 
 .team-features .item {
@@ -406,12 +374,14 @@ header nav button {
 }
 
 .home_section2 img {
-  margin: 20px;
+  height: 72px;
+  width: 65px;
+  margin: 36px 20px 16px 20px;
 }
 
 .home_section2 h4 {
   color: var(--primaryLC);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -431,35 +401,61 @@ header nav button {
 /* for tablet */
 @media screen and (min-width: 768px) {
   .home_section2 {
-    background-color: var(--secondarySSG);
+    padding-left: 98px;
+  }
+
+  .home_section2 .separator {
+    margin-top: 100px;
   }
 
   .team-features .item {
     display: flex;
-  }
-
-  .team-features .item {
     text-align: left;
     width: 80%;
+    margin-top: 32px;
+  }
+
+  .home_section2 img {
+    height: 72px;
+    width: 65px;
+    margin: 0 20px 16px 0;
   }
 
   .home_section2 h4 {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .home_section2 {
+    padding-left: 165px;
+  }
+
+  .home_section2 .separator {
+    margin-top: 140px;
+  }
+
+  .home_section2 h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   .head .bg-holder {
     display: none;
   }
 
   .home_section2 .head {
-    width: auto;
+    width: 60%;
+  }
+
+  .home_section2 .head-info {
+    width: 90%;
   }
 
   .home_section2 .content {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .home_section2 .items {
@@ -467,7 +463,8 @@ header nav button {
   }
 
   .home_section2 .team-features {
-    padding: 50px 0;
+    margin-top: 145px;
+    margin-bottom: 140px;
   }
 
   .items .bg-holder {
@@ -485,7 +482,7 @@ header nav button {
   color: var(--primaryW);
 }
 
-.home_section3__svg1 {
+.home_section3__svg1 img{
   width: 147px;
   height: 100px;
 }
@@ -606,6 +603,7 @@ header nav button {
   .home_section3__card {
     margin-left: 0px;
     margin-right: 0px;
+    margin-top:92px;
   }
 
   .home_section3__card .citation {
@@ -615,11 +613,11 @@ header nav button {
   }
 
   .home_section3__card .job_title {
-    margin-bottom: 43px;
+    margin-bottom: 32px;
   }
 
   .home_section3__svg2 {
-    padding-top: 40px;
+    padding-top: 51px;
   }
 }
 
