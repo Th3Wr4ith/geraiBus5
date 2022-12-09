@@ -4,30 +4,19 @@
 header{
   background-color: var(--primaryMG);
   display: flex;
-    justify-content:space-between;
-    padding: 24px;
-    align-items:center;
+  justify-content:space-between;
+  padding: 24px;
+  align-items:center;
 }
-.container a{
-  font-family: var(--primaryFont);
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--primaryW);
+
+.navbar{
+  --bs-navbar-toggler-focus-width: none;
+  position: relative;
 }
 
 .nav{
   display: none;
 }
-.container .header-button{
-    background-color: transparent;
-    border: 2px solid var(--primaryW);
-    height: 48px;
-    width: 159px;
-    padding: 3px;
-    text-align: center;
-    border-radius: 24px;
-    margin-left: 48px;
-  }
 
 .navbar-toggler{
   border: none;
@@ -37,6 +26,7 @@ header{
   background-color: var(--secondaryPB);
   max-width: 65%;
 }
+
 .offcanvas-header .btn-close{
   margin-left: 200px;
   margin-top: 30px;
@@ -75,75 +65,54 @@ header{
   height: 32px;
   top: 48px;
   left: 24px;
-  cursor: pointer;
 }
 
-button span{
-  width: 20px;
-  height: 17px;
-  top: 56px;
-  left: 331px;
-}
-    
 /* for tablet */
 @media screen and (min-width: 768px) {
+  header{
+    padding: 64px 35px;
+  }
   .navbar-toggler{
     display:none;
   }
   .nav{
     display: flex;
-
-  }
-  .nav{
-    width: 513px;
+    align-items: center;
     height: 48px;
-    align-items: inherit;
-    flex-grow: ;
   }
-}
-/* header .logo {position: absolute;
-    margin-left: 35px;
-    margin-top: 73px;
-    }
-.menu, .pattern, .close, header .show-element{display: none;}
 
-header .container{
-    display:flex;
-    position:absolute;
-    background-color:transparent;
-    padding: 30px; 
-    width: 768px;
-    height: 700px;   
-    left: -8px;
-    top: -8px;    
-}
-header nav ul li{
-    display: inline;
-    padding-left: 215px;
-}
-
-header nav ul li:last-child{
-    padding-left: 70px;
-}
-
-
-header nav button{
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    height: 48px;
-    width: 153px;
-    padding: 3px;
-    border-radius: 24px;
-    font-family: 'Livvic', sans-serif;
-    color:#FFFFFF;
+  .nav a{
+    font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
-    left: 575px;
-} */
+    color: var(--primaryW);
+  }
+  .nav li:last-child{
+    padding-left: auto;
+  }
+  .nav .header-button{
+    background-color: transparent;
+    border: 2px solid var(--primaryW);
+    height: 48px;
+    width: 159px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 24px;
+    margin-left: 48px;
+  }
 }
+
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .nav{
+    display: flex;
+    width: 1110px;
+    height: 48px;
+    padding-left: ;
+  }
+  .nav li:last-child{
+    padding-left: 740px;
+  }
 /* header {
     display: flex;
     flex-direction: row;
