@@ -170,7 +170,6 @@ header {
     width: 900px;
     height: 48px;
   }
-
 }
 
 /* ================================================================ home_section1 CSS  */
@@ -804,7 +803,6 @@ footer .homeabout {
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
-
   font-size: 15px;
   line-height: 25px;
   gap: 24px;
@@ -819,8 +817,13 @@ footer .homeabout {
   margin-left: -4%;
 }
 
-.homeabout a:hover,
-.fb:hover {
+.fb:hover,
+.twitter:hover {
+  cursor: pointer;
+  fill: rgb(246, 126, 126);
+}
+
+.homeabout a:hover {
   cursor: pointer;
   color: rgb(246, 126, 126);
 }
@@ -849,16 +852,24 @@ footer .homeabout {
 .fb {
   width: 24px;
   height: 24px;
+  fill: white;
 }
 
 .twitter {
   height: 19.5px;
   width: 24px;
+  fill: #fff;
 }
 
 .right>.links {
   display: flex;
   gap: 16px;
+  align-items: center;
+}
+
+.links .twitter {
+  display: flex;
+  align-items: center;
 }
 
 .copyright {
@@ -931,6 +942,7 @@ footer .homeabout {
     font-size: 18px;
     line-height: 28px;
     gap: 40px;
+    margin-left: -8%;
   }
 
   .left {
