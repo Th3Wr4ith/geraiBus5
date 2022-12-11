@@ -1,38 +1,38 @@
 /* ================================================================ Home_header CSS  */
 /* for mobile (Default)*/
-header{
+header {
   background-color: var(--primaryMG);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding-left: 24px;
   padding-top: 48px;
   padding-right: 24px;
-  align-items:center;
+  align-items: center;
 }
 
-.navbar{
+.navbar {
   --bs-navbar-toggler-focus-width: none;
   position: relative;
 }
 
-.nav{
+.nav {
   display: none;
 }
 
-.header-button{
-  display:none;
+.header-button {
+  display: none;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
-.offcanvas{
+.offcanvas {
   background-color: var(--secondaryPB);
   max-width: 65%;
 }
 
-.offcanvas-header .btn-close{
+.offcanvas-header .btn-close {
   margin-left: 200px;
   margin-top: 30px;
 }
@@ -41,11 +41,11 @@ header{
   position: absolute;
   width: 200px;
   height: 200px;
-  top:467px;
+  top: 467px;
   left: 180px;
 }
 
-.nav-item a{
+.nav-item a {
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 18px;
@@ -68,19 +68,19 @@ header{
   margin-left: 48px;
   margin-top: 40px;
 }
-.contact:hover{
+.contact:hover {
   background-color: var(--primaryW);
 }
 
-.navbar{
+.navbar {
   --bs-navbar-padding-y: none;
-  }
-  
-.contact a{
+}
+
+.contact a {
   color: var(--primaryW);
 }
 
-.contact a:hover{
+.contact a:hover {
   color: var(--secondaryPB);
 }
 
@@ -92,41 +92,41 @@ header{
 }
 /* for tablet */
 @media screen and (min-width: 768px) {
-  header{
+  header {
     padding-left: 35px;
     padding-right: 40px;
     padding-top: 64px;
   }
 
-  .navbar-toggler{
-    display:none;
+  .navbar-toggler {
+    display: none;
   }
 
-  .nav{
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 48px;
   }
 
-  .navbar{
+  .navbar {
     flex-grow: 2;
     padding-left: 46px;
   }
 
-  .nav a{
+  .nav a {
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
     color: var(--primaryW);
   }
-  
-  .nav a:hover{
+
+  .nav a:hover {
     color: var(--primaryLC);
   }
- 
-.header-button{
-    display:inline;
+
+  .header-button {
+    display: inline;
     background-color: transparent;
     border: 2px solid var(--primaryW);
     height: 48px;
@@ -136,16 +136,16 @@ header{
     border-radius: 24px;
     margin-left: 48px;
   }
-  
-  .header-button:hover{
+
+  .header-button:hover {
     background-color: var(--primaryW);
   }
-  
-  .header-button a:hover{
+
+  .header-button a:hover {
     color: var(--primaryMG);
   }
-  
-  .header-button a{
+
+  .header-button a {
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
@@ -161,14 +161,13 @@ header{
     top: 48px;
     left: 24px;
   }
-  
-  .nav{
+
+  .nav {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     width: 900px;
     height: 48px;
   }
-
 }
 
 /* ================================================================ home_section1 CSS  */
@@ -492,7 +491,7 @@ header{
   color: var(--primaryW);
 }
 
-.home_section3__svg1 img{
+.home_section3__svg1 img {
   width: 147px;
   height: 100px;
 }
@@ -613,7 +612,7 @@ header{
   .home_section3__card {
     margin-left: 0px;
     margin-right: 0px;
-    margin-top:92px;
+    margin-top: 92px;
   }
 
   .home_section3__card .citation {
@@ -755,7 +754,6 @@ footer .homeabout {
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
-
   font-size: 15px;
   line-height: 25px;
   gap: 24px;
@@ -770,8 +768,13 @@ footer .homeabout {
   margin-left: -4%;
 }
 
-.homeabout a:hover,
-.fb:hover {
+.fb:hover,
+.twitter:hover {
+  cursor: pointer;
+  fill: rgb(246, 126, 126);
+}
+
+.homeabout a:hover {
   cursor: pointer;
   color: rgb(246, 126, 126);
 }
@@ -800,16 +803,24 @@ footer .homeabout {
 .fb {
   width: 24px;
   height: 24px;
+  fill: white;
 }
 
 .twitter {
   height: 19.5px;
   width: 24px;
+  fill: #fff;
 }
 
 .right > .links {
   display: flex;
   gap: 16px;
+  align-items: center;
+}
+
+.links .twitter {
+  display: flex;
+  align-items: center;
 }
 
 .copyright {
@@ -881,6 +892,7 @@ footer .homeabout {
     font-size: 18px;
     line-height: 28px;
     gap: 40px;
+    margin-left: -8%;
   }
 
   .left {
