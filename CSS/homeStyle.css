@@ -68,6 +68,7 @@ header {
   margin-left: 48px;
   margin-top: 40px;
 }
+
 .contact:hover {
   background-color: var(--primaryW);
 }
@@ -90,6 +91,7 @@ header {
   top: 48px;
   left: 24px;
 }
+
 /* for tablet */
 @media screen and (min-width: 768px) {
   header {
@@ -173,13 +175,40 @@ header {
 /* ================================================================ home_section1 CSS  */
 
 /* for mobile (Default)*/
-.home_section1 {
+.home_section1-container {
   background-color: var(--primaryMG);
 }
 
-#home-section1-title {
-  padding-top: 80.42px;
+.home_section1 {
+  display: flex;
+  flex-direction: column;
 
+  align-content: center;
+}
+
+.home_section1-div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#home_section1-figure-1 {
+  display: flex;
+
+  position: absolute;
+
+  visibility: hidden;
+
+}
+
+#home_section1-figure-1 img {
+  width: 200px;
+  height: 200px;
+}
+
+#home_section1-title {
+  order: 1;
+
+  margin-top: 80.42px;
   margin-left: 24px;
   margin-right: 24px;
 
@@ -193,11 +222,22 @@ header {
   color: var(--primaryW);
 }
 
-#home-section1-title span {
+#home_section1-title span {
   color: var(--primaryLC);
 }
 
-#home-section1-article {
+.home_section1-div2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#colorbar {
+  visibility: hidden;
+}
+
+#home_section1-article {
+  order: 2;
+
   margin-top: 18px;
   margin-left: 24px;
   margin-right: 24px;
@@ -212,44 +252,29 @@ header {
   color: var(--primaryW);
 }
 
-.colorbar {
-  visibility: hidden;
-}
-
-#home-section1-figure-1 img {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-
-  visibility: hidden;
-}
-
-#home-section1-figure-2 {
+#home_section1-figure-2 {
   display: flex;
-
-  margin-top: 97px;
 
   justify-content: center;
 }
 
-#home-section1-figure-2 img {
+#home_section1-figure-2 img {
+  margin-top: 97px;
   width: 358px;
   height: 100px;
 }
 
 /* for tablet */
 @media screen and (min-width: 768px) {
-  #home-section1-title {
-    padding-top: 119px;
-
+  #home_section1-title {
+    margin-top: 119px;
     margin-left: 45px;
-    margin-right: 40px;
 
     font-size: 64px;
     line-height: 56px;
   }
 
-  #home-section1-article {
+  #home_section1-article {
     margin-top: 24px;
     margin-left: 155px;
     margin-right: 156px;
@@ -257,21 +282,46 @@ header {
     line-height: 28px;
   }
 
-  .home-section1-figure-2 img {
-    width: 358px;
-    height: 100px;
-
+  #home_section1-figure-2 img {
     margin-top: 156px;
+
+
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-  #home-section1-title {
-    padding-top: 133px;
+  .home_section1 {
+    display: flex;
+    flex-direction: row;
 
-    margin-left: 165px;
-    margin-right: 640px;
+
+  }
+
+  .home_section1-div1 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 900px;
+
+    order: 1;
+  }
+
+  #home_section1-figure-1 {
+    position: relative;
+
+    order: 1;
+
+    margin-top: 133px;
+    margin-left: -100px;
+
+    visibility: visible;
+  }
+
+  #home_section1-title {
+    order: 2;
+
+    margin-top: 133px;
+    margin-left: 65px;
 
     font-size: 100px;
     line-height: 100px;
@@ -279,13 +329,29 @@ header {
     text-align: left;
   }
 
-  #home-section1-article {
-    position: absolute;
-    top: 216px;
-    bottom: 255px;
+  .home_section1-div2 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 5.6;
 
-    margin-left: 830px;
-    margin-right: 165px;
+    order: 2;
+  }
+
+  #colorbar {
+    width: 50px;
+    height: 4px;
+
+    margin-top: 133px;
+    margin-left: 30px;
+
+    background-color: var(--secondaryRB);
+
+    visibility: visible;
+  }
+
+  #home_section1-article {
+    margin-top: 79px;
+    margin-left: 30px;
 
     font-size: 18px;
     line-height: 28px;
@@ -293,34 +359,17 @@ header {
     text-align: left;
   }
 
-  #home-section1-figure-1 img {
-    width: 200px;
-    height: 200px;
-    top: 133px;
+  /* #home_section1-figure-2 {
+    margin-top: 0px;
 
-    margin-left: -100px;
 
-    visibility: visible;
-  }
+  } */
 
-  .colorbar {
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    top: 133px;
-
-    margin-left: 830px;
-    margin-right: 560px;
-
-    background-color: var(--secondaryRB);
-
-    visibility: visible;
-  }
-
-  #home-section1-figure-2 img {
+  #home_section1-figure-2 img {
     margin-top: 155px;
     margin-left: 917px;
     margin-right: 165px;
+
   }
 }
 
@@ -812,7 +861,7 @@ footer .homeabout {
   fill: #fff;
 }
 
-.right > .links {
+.right>.links {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -849,6 +898,7 @@ footer .homeabout {
   .homeabout {
     z-index: 3;
   }
+
   .homeabout:first-child {
     margin-left: 0;
   }
