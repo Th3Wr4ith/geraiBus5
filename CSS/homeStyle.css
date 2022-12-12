@@ -158,8 +158,8 @@ header {
 /* for desktop */
 @media screen and (min-width: 1440px) {
   .logo {
-    width: 126px;
-    height: 34px;
+    width: 157.5px;
+    height: 40px;
     top: 48px;
     left: 24px;
   }
