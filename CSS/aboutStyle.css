@@ -64,9 +64,19 @@
 
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_section1--heading {
+    padding: 112px 40px 34px 45px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+
+  .about_section1--text {
+    padding: 0px 158px 0px 153px;
+  }
+
   .about_section1--text p {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-bottom: 102px;
   }
 
   .about_section1--figure {
@@ -76,11 +86,12 @@
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-  .container {
+  .about_section1 .container1 {
     display: flex;
     justify-content: space-between;
-    padding: 100px 140px 20px 140px;
-    gap: 90px;
+    padding: 120px 165px 0px 165px;
+    gap: 30px;
+    margin: 0px;
   }
 
   .container2 {
@@ -92,26 +103,27 @@
     visibility: visible;
     position: static;
     width: 50px;
-    height: 20px;
+    height: 4px;
     background-color: #f67e7e;
   }
 
   .about_section1--text {
     text-align: left;
-    padding: 0px;
-    padding-bottom: 100px;
+    padding: 40px 0px 120px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
   }
-
   .about_section1--text p {
-    padding: 50px 0px 0px 0px;
-    font-size: 48px;
+    padding: 0px;
   }
 
   .about_section1--heading {
-    padding: 80px 20px 0px 20px;
-    text-align: center;
+    padding: 0px;
+    text-align: left;
     font-size: 64px;
-    font-weight: 700px;
+    flex: 0 0 350px;
+    line-height: 100px;
   }
 }
 
