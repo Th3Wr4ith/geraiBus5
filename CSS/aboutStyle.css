@@ -3,134 +3,236 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_section1 CSS  */
 
 /* for mobile (Default)*/
+.about_section1 {
+  background-color: var(--primaryMG);
+  color: var(--primaryW);
+  font-family: var(--primaryFont);
+}
+
+.about_section1--heading {
+  padding: 80px 0px 16px 0px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.figure_above_text {
+  visibility: hidden;
+  position: absolute;
+}
+
+.about_section1--text {
+  text-align: center;
+  padding: 0px 24px 8px 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about_section1--text p {
+  font-size: 20px;
+  font-weight: 600px;
+  padding-bottom: 150px;
+}
+
+.about_section1--figure {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.about_section1--figure .absolute {
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  .about_section1--text p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about_section1--figure {
+    height: 200px;
+  }
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 140px 20px 140px;
+    gap: 90px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figure_above_text {
+    visibility: visible;
+    position: static;
+    width: 50px;
+    height: 20px;
+    background-color: #f67e7e;
+  }
+
+  .about_section1--text {
+    text-align: left;
+    padding: 0px;
+    padding-bottom: 100px;
+  }
+
+  .about_section1--text p {
+    padding: 50px 0px 0px 0px;
+    font-size: 48px;
+  }
+
+  .about_section1--heading {
+    padding: 80px 20px 0px 20px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700px;
+  }
+}
 
 /* ================================================================ about_section2 CSS  */
 
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_section3 CSS  */
 
 /* for mobile (Default)*/
 
-
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_banner CSS  */
 
 /* for mobile (Default)*/
 .banner {
-    position: relative;
-    width: 100%;
-    height: 302px;
-    background: #F67E7E;
+  position: relative;
+  width: 100%;
+  height: 302px;
+  background: #f67e7e;
 }
 
 .banner_firstLine {
-    position: relative;
-    margin-left: 24px;
-    margin-right: 24px;
-    height: 64px;
-    top: 83px;
-    font-family: 'Livvic';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
-    text-align: center;
-    color: #012F34;
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 64px;
+  top: 83px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #012f34;
 }
 
 .banner_btn {
-    position: absolute;
-    color: black;
-    width: 153px;
-    height: 48px;
-    text-align: center;
-    padding: 7px 11px;
-    cursor: pointer;
-    border: 2px solid #012F34;
-    border-radius: 24px;
-    top: 174px;
-    left: 29.6%;
+  position: absolute;
+  color: black;
+  width: 153px;
+  height: 48px;
+  text-align: center;
+  padding: 7px 11px;
+  cursor: pointer;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  top: 174px;
+  left: 29.6%;
 }
 
 .banner_contactus {
-    font-family: 'Livvic';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    color: #012F34;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012f34;
 }
 
 .banner_bg-pattern-home-6 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 180px;
-    mix-blend-mode: normal;
-    opacity: 1;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 180px;
+  mix-blend-mode: normal;
+  opacity: 1;
 }
 
 /* for tablet */
 @media screen and (min-width: 768px) {
-    .banner {
-        height: 200px;
-    }
+  .banner {
+    height: 200px;
+  }
 
-    .banner_firstLine {
-        height: 32px;
-        margin-left: 97px;
-        margin-right: 335px;
-    }
+  .banner_firstLine {
+    height: 32px;
+    margin-left: 97px;
+    margin-right: 335px;
+  }
 
-    .banner_btn {
-        top: 76px;
-        left: 67.32%;
-    }
+  .banner_btn {
+    top: 76px;
+    left: 67.32%;
+  }
 
-    .banner_bg-pattern-home-6 {
-        top: 78px;
-    }
+  .banner_bg-pattern-home-6 {
+    top: 78px;
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-    .banner_firstLine {
-        margin-left: 263px;
-        margin-right: 673px;
-        font-size: 48px;
-        line-height: 48px;
-    }
+  .banner_firstLine {
+    margin-left: 263px;
+    margin-right: 673px;
+    font-size: 48px;
+    line-height: 48px;
+  }
 
-    .banner_btn {
-        top: 76px;
-        left: 71.32%;
-    }
+  .banner_btn {
+    top: 76px;
+    left: 71.32%;
+  }
 }
 
 /* ================================================================ about_footer CSS  */
@@ -138,7 +240,9 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
