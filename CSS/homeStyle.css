@@ -410,7 +410,7 @@ header {
 .home_section2 .bg-holder {
   width: 100px;
   height: 220px;
-  background-image: url("/images/bg-pattern-home-3.svg");
+  background-image: url("../images/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
   background-size: 200% 100%;
 }
@@ -433,7 +433,7 @@ header {
 
 .home_section2 img {
   height: 72px;
-  width: 65px;
+  width: 72px;
   margin: 36px 20px 16px 20px;
 }
 
@@ -471,6 +471,11 @@ header {
     text-align: left;
     width: 80%;
     margin-top: 32px;
+  }
+
+  .team-features {
+    margin-top: 41px;
+    margin-bottom: 100px;
   }
 
   .home_section2 img {
