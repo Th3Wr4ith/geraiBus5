@@ -71,6 +71,7 @@ header {
 
 .contact:hover {
   background-color: var(--primaryW);
+  color: var(--secondaryPB);
 }
 
 .navbar {
@@ -81,9 +82,9 @@ header {
   color: var(--primaryW);
 }
 
-.contact a:hover {
+/* .contact a:hover {
   color: var(--secondaryPB);
-}
+} */
 
 .logo {
   width: 126px;
@@ -141,9 +142,6 @@ header {
 
   .header-button:hover {
     background-color: var(--primaryW);
-  }
-
-  .header-button a:hover {
     color: var(--primaryMG);
   }
 
