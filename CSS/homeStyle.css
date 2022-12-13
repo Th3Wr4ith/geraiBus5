@@ -139,12 +139,11 @@ header {
     margin-left: 48px;
   }
 
-  .header-button:hover {
+  button .header-button:hover {
     background-color: var(--primaryW);
-  }
-
-  .header-button a:hover {
+    transition-duration: 0.4s;
     color: var(--primaryMG);
+
   }
 
   .header-button a {
