@@ -3,41 +3,153 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_section1 CSS  */
 
 /* for mobile (Default)*/
+.about_section1 {
+  background-color: var(--primaryMG);
+  color: var(--primaryW);
+  font-family: var(--primaryFont);
+}
+
+.about_section1--heading {
+  padding: 80px 0px 16px 0px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.about_section1 .container1 {
+  position: relative;
+}
+
+.figure_above_text {
+  visibility: hidden;
+  position: absolute;
+}
+
+.about_section1--text {
+  text-align: center;
+  padding: 0px 24px 0px 24px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.about_section1--text p {
+  padding-bottom: 108px;
+}
+
+.about_section1--figure {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.about_section1--figure img {
+  position: relative;
+}
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  .about_section1--heading {
+    padding: 112px 40px 34px 45px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+
+  .about_section1--text {
+    padding: 0px 158px 0px 153px;
+  }
+
+  .about_section1--text p {
+    padding-bottom: 102px;
+  }
+
+  .about_section1--figure {
+    height: 200px;
+  }
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .about_section1 .container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 165px 0px 165px;
+    gap: 30px;
+    margin: 0px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figure_above_text {
+    visibility: visible;
+    position: static;
+    width: 50px;
+    height: 4px;
+    background-color: #f67e7e;
+  }
+
+  .about_section1--text {
+    text-align: left;
+    padding: 40px 0px 120px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .about_section1--text p {
+    padding: 0px;
+  }
+
+  .about_section1--heading {
+    padding: 0px;
+    text-align: left;
+    font-size: 64px;
+    flex: 0 0 350px;
+    line-height: 100px;
+  }
+}
 
 /* ================================================================ about_section2 CSS  */
 
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_section3 CSS  */
 
 /* for mobile (Default)*/
 
-
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_banner CSS  */
 
@@ -54,7 +166,9 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
