@@ -72,7 +72,7 @@
   }
 
   .about_section1--text {
-    padding: 0px 158px 0px 153px;
+    padding: 0px 153px 0px 158px;
   }
 
   .about_section1--text p {
@@ -156,10 +156,12 @@
 /* for mobile (Default)*/
 
 /* for tablet */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 /* for desktop */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}
 
 /* ================================================================ about_footer CSS  */
 
