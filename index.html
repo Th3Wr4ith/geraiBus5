@@ -47,30 +47,75 @@
         </ul>
         <div class="header-button" href="contact.html">contact us</div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <span><img src="images/icon-hamburger.svg" alt="menu" /></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            >
-              <img src="images/icon-close.svg" alt="close" />
-            </button>
+<body>
+  <!-- home_Header pradžia -->
+  <header>
+    <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+    <nav class="navbar">
+      <ul class="nav">
+        <li>
+          <a class="nav-link" href="index.html">home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+      </ul>
+      <button class="header-button">
+        <a class="nav-link" href="contact.html">contact us</a>
+      </button>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span><img src="images/icon-hamburger.svg" alt="menu"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img
+              src="images/icon-close.svg" alt="close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li>
+              <button class="contact">
+                <a class="nav-link" href="contact.html">contact us</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="pattern">
+          <img src="images/bg-pattern-about-1-mobile-nav-1.svg" alt="pattern">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- home_Header pabaiga -->
+
+  <main>
+
+    <!-- home_section1 pradžia -->
+
+    <section>
+
+      <div class="home_section1-container">
+
+
+        <div class="home_section1">
+          <div class="home_section1-div1">
+            <div id="home_section1-title">
+              Find the <br />
+              best <span>talent</span>
+            </div>
+
+            <div id="home_section1-figure-1">
+              <img src="images/bg-pattern-home-1.svg" alt="pattern-home-1">
+            </div>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
