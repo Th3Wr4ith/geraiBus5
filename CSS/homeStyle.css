@@ -134,22 +134,20 @@ header {
     border: 2px solid var(--primaryW);
     height: 48px;
     width: 153px;
-    padding: 3px;
-    text-align: center;
     border-radius: 24px;
-    margin-left: 48px;
-  }
-
-  .header-button:hover {
-    background-color: var(--primaryW);
-    color: var(--primaryMG);
-  }
-
-  .header-button a {
+    padding-top: 8px;
+    padding-left: 32px;
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
     color: var(--primaryW);
+    cursor: pointer;
+    line-height: 28px;
+  }
+
+  .header-button:hover{
+    background-color: var(--primaryW);
+    color: var(--secondaryDG);
   }
 }
 
