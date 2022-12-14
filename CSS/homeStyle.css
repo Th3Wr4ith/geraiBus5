@@ -153,11 +153,12 @@ header {
     margin-left: 48px;
   }
 
-  button .header-button:hover {
+  .header-button:hover {
     background-color: var(--primaryW);
-    transition-duration: 0.4s;
-    color: var(--primaryMG);
+  }
 
+  .header-button a:hover {
+    color: var(--primaryMG);
   }
 
   .header-button a {
@@ -422,7 +423,7 @@ header {
 
 .home_section2 .bg-holder {
   width: 100px;
-  height: 220px;
+  height: 244px;
   background-image: url("../images/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
   background-size: 200% 100%;
@@ -492,8 +493,6 @@ header {
   }
 
   .home_section2 img {
-    height: 72px;
-    width: 65px;
     margin: 0 20px 16px 0;
   }
 
@@ -510,6 +509,7 @@ header {
 
   .home_section2 .separator {
     margin-top: 140px;
+    margin-bottom: 54px;
   }
 
   .home_section2 h1 {
@@ -522,7 +522,7 @@ header {
   }
 
   .home_section2 .head {
-    width: 60%;
+    width: 58%;
   }
 
   .home_section2 .head-info {
@@ -536,11 +536,17 @@ header {
 
   .home_section2 .items {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .team-features .item {
+    width: 100%;
   }
 
   .home_section2 .team-features {
     margin-top: 145px;
     margin-bottom: 140px;
+    width: 80%;
   }
 
   .items .bg-holder {
