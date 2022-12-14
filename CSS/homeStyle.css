@@ -730,7 +730,7 @@ header {
   font-size: 18px;
   line-height: 28px;
   transition-duration: 0.4s;
-  cursor: hand;
+  cursor: pointer;
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
