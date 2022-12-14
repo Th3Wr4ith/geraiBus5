@@ -37,6 +37,20 @@ header {
   margin-top: 30px;
 }
 
+.btn-close {
+  box-sizing: border-box;
+  color: var(--primaryW);
+  width: 18px;
+  height: 17px;
+
+  
+}
+
+.btn-close:hover{
+  color: var(--primaryW);
+  opacity: none;
+  text-decoration: none;
+}
 .pattern {
   position: absolute;
   width: 200px;
