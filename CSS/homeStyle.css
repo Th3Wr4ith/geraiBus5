@@ -71,6 +71,7 @@ header {
 
 .contact:hover {
   background-color: var(--primaryW);
+  color: var(--secondaryPB);
 }
 
 .navbar {
@@ -81,9 +82,9 @@ header {
   color: var(--primaryW);
 }
 
-.contact a:hover {
+/* .contact a:hover {
   color: var(--secondaryPB);
-}
+} */
 
 .logo {
   width: 126px;
@@ -133,25 +134,34 @@ header {
     border: 2px solid var(--primaryW);
     height: 48px;
     width: 153px;
-    padding: 3px;
-    text-align: center;
     border-radius: 24px;
+<<<<<<< HEAD
+    padding-top: 8px;
+    padding-left: 32px;
+=======
     margin-left: 48px;
   }
 
-  .header-button:hover {
+  button .header-button:hover {
     background-color: var(--primaryW);
-  }
-
-  .header-button a:hover {
+    transition-duration: 0.4s;
     color: var(--primaryMG);
+
   }
 
   .header-button a {
+>>>>>>> master
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
     color: var(--primaryW);
+    cursor: pointer;
+    line-height: 28px;
+  }
+
+  .header-button:hover{
+    background-color: var(--primaryW);
+    color: var(--secondaryDG);
   }
 }
 
