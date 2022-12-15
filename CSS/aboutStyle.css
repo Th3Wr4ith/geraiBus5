@@ -276,15 +276,186 @@
 /* ================================================================ about_section3 CSS  */
 
 /* for mobile (Default)*/
+.about_container3 {
+  background-color: var(--secondarySSG);
+  color: var(--primaryW);
+  font-family: var(--primaryFont);
+  height: 632px;
+  width: 100%;
+  padding: 88px 24px;
+  text-align: center;
+}
+.about_clients {
+  margin: 64px auto 0px auto;
+  height: 360px;
+  width: 162px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
 
+.client_box-1 img {
+  width: 146.56px;
+  height: 24.19px;
+}
+
+.client_box-2 img {
+  width: 162.21px;
+  height: 19.92px;
+}
+
+.client_box-3 img {
+  width: 159.37px;
+  height: 24.19px;
+}
+
+.client_box-4 img {
+  width: 146.56px;
+  height: 24.19px;
+}
+
+.client_box-5 img {
+  width: 86.8px;
+  height: 39.84px;
+}
+
+.about_first_line {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.about_pattern-4 {
+  display: flex;
+  order: 1;
+  position: absolute;
+  overflow: hidden;
+}
+
+.about_pattern-4 img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -100px;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_container3 {
+    height: 308px;
+    width: 100%;
+    padding: 100px 40px;
+    text-align: center;
+  }
+
+  .about_clients {
+    margin: 48px auto 100px auto;
+    height: 28px;
+    width: 689px;
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+    align-items: center;
+  }
+
+  .client_box-1 img {
+    width: 103px;
+    height: 17px;
+  }
+
+  .client_box-2 img {
+    width: 114px;
+    height: 14px;
+  }
+
+  .client_box-3 img {
+    width: 112px;
+    height: 17px;
+  }
+
+  .client_box-4 img {
+    width: 103px;
+    height: 17px;
+  }
+
+  .client_box-5 img {
+    width: 61px;
+    height: 28px;
+  }
+
+  .about_pattern-4 {
+    display: flex;
+    order: 1;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .about_pattern-4 img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: 0px;
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-}
+  .about_container3 {
+    height: 437px;
+    width: 100%;
+    padding: 140px 165px;
+    text-align: center;
+  }
 
+  .about_clients {
+    margin: 64px auto 164px auto;
+    height: 45px;
+    width: 1110px;
+    gap: 80px;
+  }
+
+  .client_box-1 img {
+    width: 165px;
+    height: 28px;
+  }
+
+  .client_box-2 img {
+    width: 184px;
+    height: 23px;
+  }
+
+  .client_box-3 img {
+    width: 180px;
+    height: 28px;
+  }
+
+  .client_box-4 img {
+    width: 165px;
+    height: 28px;
+  }
+
+  .client_box-5 img {
+    width: 98px;
+    height: 45px;
+  }
+
+  .about_first_line {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .about_pattern-4 img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+  }
+}
 /* ================================================================ about_banner CSS  */
 
 /* for mobile (Default)*/
