@@ -43,7 +43,7 @@ header {
   cursor: pointer;
 }
 
-.btn-close:hover{
+.btn-close:hover {
   opacity: 0.7;
 }
 
@@ -65,7 +65,7 @@ header {
   margin-left: 48px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--primaryLC);
 }
 
@@ -122,7 +122,9 @@ header {
     padding-top: 64px;
   }
 
-  .navbar-toggler, .offcanvas, .offcanvas-backdrop.fade.show {
+  .navbar-toggler,
+  .offcanvas,
+  .offcanvas-backdrop.fade.show {
     display: none;
   }
 
@@ -149,7 +151,7 @@ header {
     color: var(--primaryLC);
   }
 
-  .nav-link{
+  .nav-link {
     padding-top: 9px;
   }
 
@@ -175,7 +177,6 @@ header {
     background-color: var(--primaryW);
     color: var(--primaryMG);
   }
-
 }
 
 /* for desktop */
@@ -276,7 +277,7 @@ header {
 
 #home_section1-figure-2 {
   display: flex;
- 
+
   margin-top: 97px;
   margin-left: 9px;
   margin-right: 8px;
@@ -285,8 +286,6 @@ header {
 #home_section1-figure-2 img {
   width: 358px;
   height: 100px;
-
- 
 }
 
 /* for tablet */
@@ -389,7 +388,6 @@ header {
     margin-left: 917px;
     margin-right: 165px;
   }
-
 }
 
 /* ================================================================ home_section2 CSS  */
@@ -784,7 +782,6 @@ header {
 
 /* for tablet */
 @media screen and (min-width: 768px) {
-
   .banner {
     height: 200px;
   }
@@ -807,14 +804,13 @@ header {
     margin-right: 98px;
     position: relative;
   }
-  
+
   .banner_bg-pattern-home-6 {
     margin-top: -53px;
   }
 }
 /* for desktop */
 @media screen and (min-width: 1440px) {
-
   .banner_line {
     padding-top: 61px;
   }
@@ -925,7 +921,7 @@ footer .homeabout {
   fill: #fff;
 }
 
-.right>.links {
+.right > .links {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -959,7 +955,8 @@ footer .homeabout {
     padding: 56px 40px 56px 39px;
   }
 
-  .homeabout {
+  .homeabout,
+  .left > a {
     z-index: 3;
   }
 
