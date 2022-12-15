@@ -436,7 +436,7 @@ header {
 
 .team-features .item {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 
 .home_section2 img {
@@ -481,8 +481,12 @@ header {
     margin-top: 32px;
   }
 
+  .team-features .item:first-child {
+    margin-top: 20px;
+  }
+
   .team-features {
-    margin-top: 41px;
+    margin-top: 20px;
     margin-bottom: 100px;
   }
 
@@ -535,6 +539,10 @@ header {
 
   .team-features .item {
     width: 100%;
+  }
+
+  .team-features .item:first-child {
+    margin-top: 33px;
   }
 
   .home_section2 .team-features {

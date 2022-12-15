@@ -459,13 +459,129 @@
 /* ================================================================ about_banner CSS  */
 
 /* for mobile (Default)*/
+.banner {
+  position: relative;
+  width: 100%;
+  background: #f67e7e;
+  height: 302px;
+}
 
+.banner_line {
+  display: flex;
+  padding-top: 83px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.banner_firstLine {
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 64px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #012f34;
+}
+
+.banner_btn {
+  border: none;
+  color: #012f34;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.banner_text {
+  font-size: 18px;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  padding: 7px 31px 9px 30px;
+}
+
+.banner_contact_us {
+  width: 153px;
+  height: 48px;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+}
+
+.banner_contact_us:hover {
+  background: #012f34;
+  color: #ffffff;
+}
+
+.banner_link {
+  margin: auto;
+}
+
+.banner_bg-pattern-home-6 {
+  position: relative;
+  margin-top: -39px;
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  z-index: 0;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .banner {
+    height: 200px;
+  }
+
+  .banner_line {
+    padding-top: 69px;
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .banner_firstLine {
+    position: relative;
+    width: 336px;
+    margin: 15px 41px 15px 97px;
+    text-align: left;
+    height: 32px;
+  }
+
+  .banner_link {
+    margin-right: 98px;
+    position: relative;
+  }
+
+  .banner_bg-pattern-home-6 {
+    margin-top: -53px;
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .banner_line {
+    padding-top: 61px;
+  }
+
+  .banner_firstLine {
+    width: 504px;
+    margin: 15px 130px 15px 263px;
+    float: left;
+    height: 48px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .banner_link {
+    margin-right: 260px;
+  }
+
+  .banner_bg-pattern-home-6 {
+    margin-top: -83px;
+  }
 }
 
 /* ================================================================ about_section3 CSS  */
