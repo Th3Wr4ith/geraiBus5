@@ -1,50 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
 
-    <link rel="icon" type="image/icon" href="images/favicon.ico">
+    <link rel="icon" type="image/icon" href="images/favicon.ico" />
 
-    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/reset.css" />
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- javaScript įsidėkite ten kur jo reikia -->
     <script src="javascript/javaScript.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div>
-        <!-- Contact Header pradžia -->
-        <header>
-            <div class="container">
-            </div>
-        </header>
-        <!-- Contact Header pabaiga -->
-        <!-- Contact_section pradžia -->
-        <main>
-            <section>
-                <div class="contact_section"></div>
-            </section>
-            <!-- Contact_section pabaiga -->
-        </main>
-        <!-- Footer pradžia -->
-        <footer>
-            <div class="container"></div>
-        </footer>
-        <!-- Footer pabaiga -->
-    </div>
-</body>
+      <!-- Contact Header pradžia -->
+      <header>
+        <div></div>
+      </header>
+      <!-- Contact Header pabaiga -->
+      <!-- Contact_section pradžia -->
+      <main>
+        <section>
+          <div class="contact_section-container">
+            <div class="contact_section">
+              <div class="contact_section-div1">
+                <div id="contact_section-figure-1">
+                  <img
+                    src="images/bg-pattern-about-2-contact-1.svg"
+                    alt="pattern-contact-1"
+                  />
+                </div>
 
+                <div class="contact_section-miniDiv">
+                  <div class="contact_section-heading">
+                    <div id="contact_section-title">Contact</div>
+                    <div id="contact_section-text">Ask us about</div>
+                  </div>
+
+                  <div class="contact_section-info">
+                    <div id="personIcon">
+                      <div id="face">
+                        <img src="images/icon-person.svg" alt="icon-person" />
+                      </div>
+                      <div id="face_text">
+                        The quality of our talent network
+                      </div>
+                    </div>
+                    <div id="gearIcon">
+                      <div id="gear">
+                        <img src="images/icon-cog.svg" alt="icon-cog" />
+                      </div>
+                      <div id="gear_text">
+                        Usage & implementation of our software
+                      </div>
+                    </div>
+                    <div id="graphIcon">
+                      <div id="graph">
+                        <img src="images/icon-chart.svg" alt="icon-chart" />
+                      </div>
+                      <div id="graph_text">How we help drive innovation</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact_section-div2">
+                <div id="contact_section-form">
+                  <form>
+                    <label id="form_name">Name</label>
+                    <input type="text" id="name" name="name" />
+                    <div id="formBar"></div>
+                    <label id="form_email">Email Address</label>
+                    <input type="email" id="email" name="email" />
+                    <div id="formBar"></div>
+                    <label id="form_companyName">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" />
+                    <div id="formBar"></div>
+                    <label id="form_title">Title</label>
+                    <input type="text" id="title" name="title" />
+                    <div id="formBar"></div>
+                    <label id="form_message">Message</label>
+                    <input type="text" id="message" name="message" />
+                    <div id="formBar"></div>
+                  </form>
+                </div>
+
+                <div id="contact_section-button">
+                  <input type="submit" value="submit" />
+                </div>
+              </div>
+            </div>
+
+            <div id="contact_section-figure-2">
+              <img
+                src="images/bg-pattern-contact-2.svg"
+                alt="bg-pattern-contact-2"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Contact_section pabaiga -->
+      </main>
+      <!-- Footer pradžia -->
+      <footer>
+        <div></div>
+      </footer>
+      <!-- Footer pabaiga -->
+    </div>
+  </body>
 </html>

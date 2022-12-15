@@ -197,7 +197,6 @@ header {
   position: absolute;
 
   visibility: hidden;
-
 }
 
 #home_section1-figure-1 img {
@@ -254,14 +253,17 @@ header {
 
 #home_section1-figure-2 {
   display: flex;
-
-  justify-content: center;
+ 
+  margin-top: 97px;
+  margin-left: 9px;
+  margin-right: 8px;
 }
 
 #home_section1-figure-2 img {
-  margin-top: 97px;
   width: 358px;
   height: 100px;
+
+ 
 }
 
 /* for tablet */
@@ -269,6 +271,7 @@ header {
   #home_section1-title {
     margin-top: 119px;
     margin-left: 45px;
+    margin-right: 40px;
 
     font-size: 64px;
     line-height: 56px;
@@ -282,10 +285,10 @@ header {
     line-height: 28px;
   }
 
-  #home_section1-figure-2 img {
+  #home_section1-figure-2 {
     margin-top: 156px;
-
-
+    margin-left: 206px;
+    margin-right: 204px;
   }
 }
 
@@ -294,8 +297,6 @@ header {
   .home_section1 {
     display: flex;
     flex-direction: row;
-
-
   }
 
   .home_section1-div1 {
@@ -311,7 +312,7 @@ header {
 
     order: 1;
 
-    margin-top: 133px;
+    margin-top: 129px;
     margin-left: -100px;
 
     visibility: visible;
@@ -320,7 +321,7 @@ header {
   #home_section1-title {
     order: 2;
 
-    margin-top: 133px;
+    margin-top: 129px;
     margin-left: 65px;
 
     font-size: 100px;
@@ -341,7 +342,7 @@ header {
     width: 50px;
     height: 4px;
 
-    margin-top: 133px;
+    margin-top: 129px;
     margin-left: 30px;
 
     background-color: var(--secondaryRB);
@@ -352,6 +353,7 @@ header {
   #home_section1-article {
     margin-top: 79px;
     margin-left: 30px;
+    margin-right: 165px;
 
     font-size: 18px;
     line-height: 28px;
@@ -359,18 +361,12 @@ header {
     text-align: left;
   }
 
-  /* #home_section1-figure-2 {
-    margin-top: 0px;
-
-
-  } */
-
-  #home_section1-figure-2 img {
-    margin-top: 155px;
+  #home_section1-figure-2 {
+    margin-top: 150px;
     margin-left: 917px;
     margin-right: 165px;
-
   }
+
 }
 
 /* ================================================================ home_section2 CSS  */
