@@ -234,19 +234,25 @@
 
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_section2 h1 {
+    padding-top: 100px;
+  }
+
   .cards-position {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 11px;
+    column-gap: 11px;
+
     justify-content: center;
   }
 
   .card {
     margin-bottom: 76px;
+    width: 281px;
   }
 
-  .about_section2_svg {
-    top: 65px;
+  .last {
+    margin-bottom: 28px;
   }
 }
 
@@ -286,11 +292,10 @@
 /* for tablet */
 @media screen and (min-width: 768px) {
 }
-  
+
 /* for desktop */
 @media screen and (min-width: 1440px) {
 }
-
 
 /* ================================================================ about_section3 CSS  */
 
