@@ -456,8 +456,8 @@ header {
 .home_section2 img {
   height: 72px;
   width: 72px;
+  margin: 20px 20px 16px 20px;
   margin: 56px 20px 16px 20px;
-}
 
 .home_section2 h4 {
   color: var(--primaryLC);
