@@ -25,6 +25,7 @@ header {
 
 .navbar-toggler {
   border: none;
+  cursor: pointer;
 }
 
 .offcanvas {
@@ -33,8 +34,17 @@ header {
 }
 
 .offcanvas-header .btn-close {
-  margin-left: 200px;
-  margin-top: 30px;
+  width: 18px;
+  height: 17px;
+  padding-left: 212px;
+  padding-top: 56px;
+  opacity: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-close:hover{
+  opacity: 0.7;
 }
 
 .pattern {
@@ -42,10 +52,10 @@ header {
   width: 200px;
   height: 200px;
   top: 467px;
-  left: 180px;
+  left: 155px;
 }
 
-.nav-item a {
+.nav-link {
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 18px;
@@ -55,22 +65,34 @@ header {
   margin-left: 48px;
 }
 
+.nav-link:hover{
+  color: var(--primaryLC);
+}
+
+.nav-link2 {
+  color: var(--primaryW);
+  text-decoration: none;
+  line-height: 28px;
+}
+
 .contact {
   background-color: transparent;
   border: 2px solid var(--primaryW);
   height: 48px;
   width: 159px;
-  padding: 3px;
+  padding: 8px 33px;
   border-radius: 24px;
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 18px;
   margin-left: 48px;
-  margin-top: 40px;
+  margin-top: 36px;
+  cursor: pointer;
 }
 
 .contact:hover {
   background-color: var(--primaryW);
+  color: var(--secondaryPB);
 }
 
 .navbar {
@@ -100,7 +122,7 @@ header {
     padding-top: 64px;
   }
 
-  .navbar-toggler {
+  .navbar-toggler, .offcanvas, .offcanvas-backdrop.fade.show {
     display: none;
   }
 
@@ -127,39 +149,39 @@ header {
     color: var(--primaryLC);
   }
 
+  .nav-link{
+    padding-top: 9px;
+  }
+
   .header-button {
     display: inline;
     background-color: transparent;
     border: 2px solid var(--primaryW);
     height: 48px;
     width: 153px;
-    padding: 3px;
     text-align: center;
     border-radius: 24px;
-    margin-left: 48px;
-  }
-
-  .header-button:hover {
-    background-color: var(--primaryW);
-  }
-
-  .header-button a:hover {
-    color: var(--primaryMG);
-  }
-
-  .header-button a {
     font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 18px;
     color: var(--primaryW);
+    padding-top: 9px;
+    line-height: 28px;
+    cursor: pointer;
   }
+
+  .header-button:hover {
+    background-color: var(--primaryW);
+    color: var(--primaryMG);
+  }
+
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
   .logo {
-    width: 126px;
-    height: 34px;
+    width: 157.5px;
+    height: 40px;
     top: 48px;
     left: 24px;
   }
@@ -405,8 +427,8 @@ header {
 
 .home_section2 .bg-holder {
   width: 100px;
-  height: 220px;
-  background-image: url("/images/bg-pattern-home-3.svg");
+  height: 244px;
+  background-image: url("../images/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
   background-size: 200% 100%;
 }
@@ -429,8 +451,9 @@ header {
 
 .home_section2 img {
   height: 72px;
-  width: 65px;
-  margin: 36px 20px 16px 20px;
+  width: 72px;
+  margin: 20px 20px 16px 20px;
+  margin: 56px 20px 16px 20px;
 }
 
 .home_section2 h4 {
@@ -469,9 +492,12 @@ header {
     margin-top: 32px;
   }
 
+  .team-features {
+    margin-top: 41px;
+    margin-bottom: 100px;
+  }
+
   .home_section2 img {
-    height: 72px;
-    width: 65px;
     margin: 0 20px 16px 0;
   }
 
@@ -488,6 +514,7 @@ header {
 
   .home_section2 .separator {
     margin-top: 140px;
+    margin-bottom: 54px;
   }
 
   .home_section2 h1 {
@@ -500,7 +527,7 @@ header {
   }
 
   .home_section2 .head {
-    width: 60%;
+    width: 58%;
   }
 
   .home_section2 .head-info {
@@ -514,11 +541,17 @@ header {
 
   .home_section2 .items {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .team-features .item {
+    width: 100%;
   }
 
   .home_section2 .team-features {
     margin-top: 145px;
     margin-bottom: 140px;
+    width: 80%;
   }
 
   .items .bg-holder {
@@ -680,8 +713,15 @@ header {
 .banner {
   position: relative;
   width: 100%;
-  height: 302px;
   background: #f67e7e;
+  height: 302px;
+}
+
+.banner_line {
+  display: flex;
+  padding-top: 83px;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .banner_firstLine {
@@ -689,7 +729,6 @@ header {
   margin-left: 24px;
   margin-right: 24px;
   height: 64px;
-  top: 83px;
   font-family: "Livvic";
   font-style: normal;
   font-weight: 700;
@@ -700,74 +739,103 @@ header {
 }
 
 .banner_btn {
-  position: absolute;
-  color: black;
-  width: 153px;
-  height: 48px;
-  text-align: center;
-  padding: 7px 11px;
-  cursor: pointer;
-  border: 2px solid #012f34;
-  border-radius: 24px;
-  top: 174px;
-  left: 29.6%;
+  border: none;
+  color: #012f34;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.banner_contactus {
+.banner_text {
+  font-size: 18px;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  cursor: pointer;
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  color: #012f34;
+  padding: 7px 31px 9px 30px;
+}
+
+.banner_contact_us {
+  width: 153px;
+  height: 48px;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+}
+
+.banner_contact_us:hover {
+  background: #012f34;
+  color: #ffffff;
+}
+
+.banner_link {
+  margin: auto;
 }
 
 .banner_bg-pattern-home-6 {
-  position: absolute;
+  position: relative;
+  margin-top: -39px;
   width: 200px;
   height: 200px;
-  top: 180px;
   mix-blend-mode: normal;
   opacity: 1;
+  z-index: 0;
 }
 
 /* for tablet */
 @media screen and (min-width: 768px) {
+
   .banner {
     height: 200px;
   }
 
+  .banner_line {
+    padding-top: 69px;
+    flex-direction: row;
+    gap: 0px;
+  }
+
   .banner_firstLine {
+    position: relative;
+    width: 336px;
+    margin: 15px 41px 15px 97px;
+    text-align: left;
     height: 32px;
-    margin-left: 97px;
-    margin-right: 335px;
   }
 
-  .banner_btn {
-    top: 76px;
-    left: 67.32%;
+  .banner_link {
+    margin-right: 98px;
+    position: relative;
   }
-
+  
   .banner_bg-pattern-home-6 {
-    top: 78px;
+    margin-top: -53px;
   }
 }
-
 /* for desktop */
 @media screen and (min-width: 1440px) {
+
+  .banner_line {
+    padding-top: 61px;
+  }
+
   .banner_firstLine {
-    margin-left: 263px;
-    margin-right: 673px;
+    width: 504px;
+    margin: 15px 130px 15px 263px;
+    float: left;
+    height: 48px;
     font-size: 48px;
     line-height: 48px;
   }
 
-  .banner_btn {
-    top: 76px;
-    left: 71.32%;
+  .banner_link {
+    margin-right: 260px;
+  }
+
+  .banner_bg-pattern-home-6 {
+    margin-top: -83px;
   }
 }
-
 /* ================================================================ home_footer CSS  */
 /* for mobile (Default)*/
 
