@@ -273,6 +273,8 @@ header {
   margin-top: 97px;
   margin-left: 9px;
   margin-right: 8px;
+
+  justify-content: center;
 }
 
 #home_section1-figure-2 img {
@@ -283,7 +285,7 @@ header {
 /* for tablet */
 @media screen and (min-width: 768px) {
   #home_section1-title {
-    margin-top: 119px;
+    margin-top: 112px;
     margin-left: 45px;
     margin-right: 40px;
 
@@ -379,6 +381,8 @@ header {
     margin-top: 150px;
     margin-left: 917px;
     margin-right: 165px;
+
+    justify-content: end;
   }
 }
 
