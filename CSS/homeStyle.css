@@ -30,21 +30,23 @@ header {
 
 .offcanvas {
   background-color: var(--secondaryPB);
-  max-width: 65%;
+  max-width: 255px;
 }
 
-.offcanvas-header .btn-close {
+.offcanvas-header {
+  margin: 0;
   width: 18px;
   height: 17px;
   padding-left: 212px;
   padding-top: 56px;
+  padding-right: 25px;
+  padding-bottom: 39px;
+}
+
+.btn-close {
   opacity: 1;
   background: transparent;
   cursor: pointer;
-}
-
-.btn-close:hover {
-  opacity: 0.7;
 }
 
 .pattern {
@@ -62,49 +64,39 @@ header {
   line-height: 28px;
   color: var(--primaryW);
   text-decoration: none;
-  margin-left: 48px;
+  margin-left: 31px;
 }
 
 .nav-link:hover {
   color: var(--primaryLC);
 }
 
-.nav-link2 {
-  color: var(--primaryW);
-  text-decoration: none;
-  line-height: 28px;
-}
-
-.contact {
+.contact-button {
+  display: inline-block;
   background-color: transparent;
   border: 2px solid var(--primaryW);
   height: 48px;
   width: 159px;
   padding: 8px 33px;
   border-radius: 24px;
+  margin-left: 31px;
+  margin-top: 36px;
+  cursor: pointer;
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 18px;
-  margin-left: 48px;
-  margin-top: 36px;
-  cursor: pointer;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--primaryW);
 }
 
-.contact:hover {
+.contact-button:hover {
   background-color: var(--primaryW);
-  color: var(--secondaryPB);
+  color: var(--secondaryDG);
 }
 
 .navbar {
   --bs-navbar-padding-y: none;
-}
-
-.contact a {
-  color: var(--primaryW);
-}
-
-.contact a:hover {
-  color: var(--secondaryPB);
 }
 
 .logo {
@@ -175,7 +167,7 @@ header {
 
   .header-button:hover {
     background-color: var(--primaryW);
-    color: var(--primaryMG);
+    color: var(--primaryDG);
   }
 }
 
@@ -449,7 +441,7 @@ header {
 
 .team-features .item {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 
 .home_section2 img {
@@ -494,8 +486,12 @@ header {
     margin-top: 32px;
   }
 
+  .team-features .item:first-child {
+    margin-top: 20px;
+  }
+
   .team-features {
-    margin-top: 41px;
+    margin-top: 20px;
     margin-bottom: 100px;
   }
 
@@ -550,6 +546,10 @@ header {
     width: 100%;
   }
 
+  .team-features .item:first-child {
+    margin-top: 33px;
+  }
+
   .home_section2 .team-features {
     margin-top: 165px;
     margin-bottom: 140px;
@@ -571,7 +571,8 @@ header {
   color: var(--primaryW);
 }
 
-.home_section3__svg1 img {
+.home_section3__svg1 {
+  background-image: url(../images/bg-pattern-home-4-about-3.svg);
   width: 147px;
   height: 100px;
 }
@@ -590,14 +591,18 @@ header {
   color: var(--secondaryRB);
 }
 
-.home_section3__card {
+#home_first_card {
   margin-top: 84px;
+}
+
+.home_section3__card {
+  margin-top: 82px;
   margin-left: 24px;
   margin-right: 24px;
   text-align: center;
 }
 
-.home_section3 .container {
+.home_section3 .card--element {
   position: relative;
 }
 
@@ -633,20 +638,21 @@ header {
   font-style: italic;
   font-size: 13px;
   line-height: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .home_section3__card .avatar {
   border-radius: 50%;
-  width: 62px;
-  height: 62px;
+  width: 66px;
+  height: 66px;
   border: 2px solid #c4fffe;
 }
 
 .home_section3__svg2 {
   display: flex;
-  padding-top: 64px;
+  padding-top: 62px;
   justify-content: right;
+  position: relative;
 }
 
 .home_section3__svg2 img {
@@ -670,7 +676,11 @@ header {
   .home_section3__svg2 {
     padding-top: 0px;
   }
-}
+  .home_section3 .text_secondaryRB {
+    display: inline-block;
+  }
+
+  }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
@@ -681,6 +691,11 @@ header {
     font-size: 48px;
     line-height: 48px;
   }
+
+  #home_first_card {
+    margin-top: 92px;
+  }
+  
 
   .home_section3__cards {
     display: flex;
@@ -706,7 +721,7 @@ header {
   }
 
   .home_section3__svg2 {
-    padding-top: 51px;
+    padding-top: 49px;
   }
 }
 

@@ -234,19 +234,25 @@
 
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_section2 h1 {
+    padding-top: 100px;
+  }
+
   .cards-position {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 11px;
+    column-gap: 11px;
+
     justify-content: center;
   }
 
   .card {
     margin-bottom: 76px;
+    width: 281px;
   }
 
-  .about_section2_svg {
-    top: 65px;
+  .last {
+    margin-bottom: 28px;
   }
 }
 
@@ -270,27 +276,313 @@
 /* ================================================================ about_section3 CSS  */
 
 /* for mobile (Default)*/
+.about_container3 {
+  background-color: var(--secondarySSG);
+  color: var(--primaryW);
+  font-family: var(--primaryFont);
+  height: 632px;
+  width: 100%;
+  padding: 88px 24px;
+  text-align: center;
+}
+.about_clients {
+  margin: 64px auto 0px auto;
+  height: 360px;
+  width: 162px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
 
+.client_box-1 img {
+  width: 146.56px;
+  height: 24.19px;
+}
+
+.client_box-2 img {
+  width: 162.21px;
+  height: 19.92px;
+}
+
+.client_box-3 img {
+  width: 159.37px;
+  height: 24.19px;
+}
+
+.client_box-4 img {
+  width: 146.56px;
+  height: 24.19px;
+}
+
+.client_box-5 img {
+  width: 86.8px;
+  height: 39.84px;
+}
+
+.about_first_line {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.about_pattern-4 {
+  display: flex;
+  order: 1;
+  position: absolute;
+  overflow: hidden;
+}
+
+.about_pattern-4 img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -100px;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_container3 {
+    height: 308px;
+    width: 100%;
+    padding: 100px 40px;
+    text-align: center;
+  }
+
+  .about_clients {
+    margin: 48px auto 100px auto;
+    height: 28px;
+    width: 689px;
+    display: flex;
+    flex-direction: row;
+    gap: 48.5px;
+    align-items: center;
+  }
+
+  .client_box-1 img {
+    width: 103px;
+    height: 17px;
+  }
+
+  .client_box-2 img {
+    width: 114px;
+    height: 14px;
+  }
+
+  .client_box-3 img {
+    width: 112px;
+    height: 17px;
+  }
+
+  .client_box-4 img {
+    width: 103px;
+    height: 17px;
+  }
+
+  .client_box-5 img {
+    width: 61px;
+    height: 28px;
+  }
+
+  .about_pattern-4 {
+    display: flex;
+    order: 1;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .about_pattern-4 img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: 0px;
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-}
+  .about_container3 {
+    height: 437px;
+    width: 100%;
+    padding: 140px 165px;
+    text-align: center;
+  }
 
+  .about_clients {
+    margin: 64px auto 140px auto;
+    height: 45px;
+    width: 1110px;
+    gap: 79.8px;
+  }
+
+  .client_box-1 img {
+    width: 165px;
+    height: 28px;
+  }
+
+  .client_box-2 img {
+    width: 184px;
+    height: 23px;
+  }
+
+  .client_box-3 img {
+    width: 180px;
+    height: 28px;
+  }
+
+  .client_box-4 img {
+    width: 165px;
+    height: 28px;
+  }
+
+  .client_box-5 img {
+    width: 98px;
+    height: 45px;
+  }
+
+  .about_first_line {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .about_pattern-4 img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+  }
+}
 /* ================================================================ about_banner CSS  */
 
 /* for mobile (Default)*/
+.banner {
+  position: relative;
+  width: 100%;
+  background: #f67e7e;
+  height: 302px;
+}
 
+.banner_line {
+  display: flex;
+  padding-top: 83px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.banner_firstLine {
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 64px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #012f34;
+}
+
+.banner_btn {
+  border: none;
+  color: #012f34;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.banner_text {
+  font-size: 18px;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  padding: 7px 31px 9px 30px;
+}
+
+.banner_contact_us {
+  width: 153px;
+  height: 48px;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+}
+
+.banner_contact_us:hover {
+  background: #012f34;
+  color: #ffffff;
+}
+
+.banner_link {
+  margin: auto;
+}
+
+.banner_bg-pattern-home-6 {
+  position: relative;
+  margin-top: -39px;
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  z-index: 0;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
-}
-  
-/* for desktop */
-@media screen and (min-width: 1440px) {
+  .banner {
+    height: 200px;
+  }
+
+  .banner_line {
+    padding-top: 69px;
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .banner_firstLine {
+    position: relative;
+    width: 336px;
+    margin: 15px 41px 15px 97px;
+    text-align: left;
+    height: 32px;
+  }
+
+  .banner_link {
+    margin-right: 98px;
+    position: relative;
+  }
+
+  .banner_bg-pattern-home-6 {
+    margin-top: -53px;
+  }
 }
 
+/* for desktop */
+@media screen and (min-width: 1440px) {
+  .banner_line {
+    padding-top: 61px;
+  }
+
+  .banner_firstLine {
+    width: 504px;
+    margin: 15px 130px 15px 263px;
+    float: left;
+    height: 48px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .banner_link {
+    margin-right: 260px;
+  }
+
+  .banner_bg-pattern-home-6 {
+    margin-top: -83px;
+  }
+}
 
 /* ================================================================ about_section3 CSS  */
 
