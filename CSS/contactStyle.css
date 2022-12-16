@@ -18,6 +18,8 @@
   flex-direction: column;
 
   background-color: var(--primaryMG);
+
+  overflow: hidden;
 }
 
 #contact_section-figure-1 {
@@ -38,6 +40,8 @@
   flex-direction: column;
 
   order: 1;
+
+  overflow: hidden;
 }
 
 .contact_section-div1 {
@@ -312,8 +316,6 @@
   margin-right: -100px;
 
   justify-content: end;
-
-  overflow: hidden;
 }
 
 #contact_section-figure-2 img {
@@ -330,8 +332,6 @@
     margin-left: -100px;
 
     visibility: visible;
-
-    overflow: hidden;
   }
 
   #contact_section-title {
