@@ -30,22 +30,23 @@ header {
 
 .offcanvas {
   background-color: var(--secondaryPB);
-  max-width: 65%;
+  max-width: 255px;
 }
 
-.offcanvas-header .btn-close {
+.offcanvas-header {
+  margin: 0;
   width: 18px;
   height: 17px;
   padding-left: 212px;
   padding-top: 56px;
-  opacity: 1;
-  background: transparent;
-  cursor: pointer;
+  padding-right: 25px;
+  padding-bottom: 39px;
 }
 
-.btn-close:hover {
-  opacity: 0.7;
-}
+.btn-close {  
+  opacity: 1;
+  background: transparent;
+  cursor: pointer;}
 
 .pattern {
   position: absolute;
@@ -62,49 +63,39 @@ header {
   line-height: 28px;
   color: var(--primaryW);
   text-decoration: none;
-  margin-left: 48px;
+  margin-left: 31px;
 }
 
 .nav-link:hover {
   color: var(--primaryLC);
 }
 
-.nav-link2 {
-  color: var(--primaryW);
-  text-decoration: none;
-  line-height: 28px;
-}
-
-.contact {
+.contact-button {
+  display: inline-block;
   background-color: transparent;
   border: 2px solid var(--primaryW);
   height: 48px;
   width: 159px;
   padding: 8px 33px;
   border-radius: 24px;
+  margin-left: 31px;
+  margin-top: 36px;
+  cursor: pointer;
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 18px;
-  margin-left: 48px;
-  margin-top: 36px;
-  cursor: pointer;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--primaryW);
 }
 
-.contact:hover {
+.contact-button:hover{
   background-color: var(--primaryW);
-  color: var(--secondaryPB);
+  color: var(--secondaryDG);
 }
 
 .navbar {
   --bs-navbar-padding-y: none;
-}
-
-.contact a {
-  color: var(--primaryW);
-}
-
-.contact a:hover {
-  color: var(--secondaryPB);
 }
 
 .logo {
@@ -175,7 +166,7 @@ header {
 
   .header-button:hover {
     background-color: var(--primaryW);
-    color: var(--primaryMG);
+    color: var(--primaryDG);
   }
 }
 
@@ -445,7 +436,7 @@ header {
 
 .team-features .item {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 
 .home_section2 img {
@@ -490,8 +481,12 @@ header {
     margin-top: 32px;
   }
 
+  .team-features .item:first-child {
+    margin-top: 20px;
+  }
+
   .team-features {
-    margin-top: 41px;
+    margin-top: 20px;
     margin-bottom: 100px;
   }
 
@@ -544,6 +539,10 @@ header {
 
   .team-features .item {
     width: 100%;
+  }
+
+  .team-features .item:first-child {
+    margin-top: 33px;
   }
 
   .home_section2 .team-features {
