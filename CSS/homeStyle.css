@@ -43,18 +43,24 @@ header {
 
 .offcanvas-header {
   margin: 0;
-  width: 18px;
-  height: 17px;
-  padding-left: 212px;
+  padding-left: 203px;
   padding-top: 56px;
   padding-right: 25px;
-  padding-bottom: 39px;
+  padding-bottom: 0px;
+}
+
+.offcanvas-body {
+  padding-top: 0px;
 }
 
 .btn-close {
   opacity: 1;
   background: transparent;
   cursor: pointer;
+  width: 18px;
+  height: 17px;
+  padding-top: 5px;
+
 }
 
 .pattern {
@@ -73,6 +79,12 @@ header {
   color: var(--primaryW);
   text-decoration: none;
   margin-left: 31px;
+  padding-top: 39px;
+  padding-bottom: 0px;
+}
+
+.nav-link-second{
+  padding-top: 24px;
 }
 
 .nav-link:hover {
