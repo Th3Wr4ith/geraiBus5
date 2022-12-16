@@ -371,6 +371,11 @@
     height: 14px;
   }
 
+  .client_box-2 {
+    align-self: flex-start;
+    padding-top: 4px;
+  }
+
   .client_box-3 img {
     width: 112px;
     height: 17px;
@@ -426,6 +431,11 @@
   .client_box-2 img {
     width: 184px;
     height: 23px;
+  }
+
+  .client_box-2 {
+    align-self: flex-start;
+    padding-top: 7px;
   }
 
   .client_box-3 img {
@@ -519,16 +529,19 @@
 
 .banner_link {
   margin: auto;
+  z-index: 1;
 }
 
 .banner_bg-pattern-home-6 {
   position: relative;
   margin-top: -39px;
-  width: 200px;
-  height: 200px;
   mix-blend-mode: normal;
   opacity: 1;
   z-index: 0;
+}
+.banner_bg-pattern-home-6 img {
+  width: 200px;
+  height: 144px;
 }
 /* for tablet */
 @media screen and (min-width: 768px) {
