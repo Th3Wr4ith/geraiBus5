@@ -566,7 +566,8 @@ header {
   color: var(--primaryW);
 }
 
-.home_section3__svg1 img {
+.home_section3__svg1 {
+  background-image: url(../images/bg-pattern-home-4-about-3.svg);
   width: 147px;
   height: 100px;
 }
@@ -592,7 +593,7 @@ header {
   text-align: center;
 }
 
-.home_section3 .container {
+.home_section3 .card--element {
   position: relative;
 }
 
