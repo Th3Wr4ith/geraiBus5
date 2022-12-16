@@ -260,7 +260,7 @@
   opacity: 0.6;
 }
 
-#formBar {
+.formBar {
   display: flex;
 
   width: 325px;
@@ -412,7 +412,7 @@
     margin-right: 113px;
   }
 
-  #formBar {
+  .formBar {
     width: 540px;
 
     margin-left: 127px;
@@ -510,7 +510,7 @@
     margin-right: 63.5px;
   }
 
-  #formBar {
+  .formBar {
     margin-left: 83px;
     margin-right: 63.5px;
   }
