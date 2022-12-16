@@ -357,7 +357,7 @@
     width: 689px;
     display: flex;
     flex-direction: row;
-    gap: 49px;
+    gap: 48.5px;
     align-items: center;
   }
 
@@ -412,10 +412,10 @@
   }
 
   .about_clients {
-    margin: 64px auto 164px auto;
+    margin: 64px auto 140px auto;
     height: 45px;
     width: 1110px;
-    gap: 80px;
+    gap: 79.8px;
   }
 
   .client_box-1 img {
