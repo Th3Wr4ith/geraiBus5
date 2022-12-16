@@ -767,6 +767,7 @@ header {
 
 .banner_link {
   margin: auto;
+  z-index: 1;
 }
 
 .banner_bg-pattern-home-6 {
@@ -779,6 +780,10 @@ header {
   z-index: 0;
 }
 
+.banner_bg-pattern-home-6 img{
+  width: 200px;
+  height: 144px;
+}
 /* for tablet */
 @media screen and (min-width: 768px) {
   .banner {
