@@ -17,6 +17,9 @@
   background-color: var(--primaryMG);
   color: var(--primaryW);
   font-family: var(--primaryFont);
+  background-image: url(../images/bg-pattern-about-1-mobile-nav-1.svg);
+  background-repeat: no-repeat;
+  background-position: right -100px bottom -100px;
 }
 
 .about_section1--heading {
@@ -44,26 +47,16 @@
   line-height: 28px;
   font-weight: 600;
 }
-
 .about_section1--text p {
   padding-bottom: 108px;
 }
 
-.about_section1--figure {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-.about_section1--figure img {
-  position: relative;
-}
-
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_section1 {
+    background-position: right -100px bottom -0px;
+  }
+
   .about_section1--heading {
     padding: 112px 40px 34px 45px;
     font-size: 64px;
