@@ -166,7 +166,7 @@ header {
 
   .header-button:hover {
     background-color: var(--primaryW);
-    color: var(--primaryMG);
+    color: var(--primaryDG);
   }
 }
 
