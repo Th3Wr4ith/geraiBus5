@@ -145,11 +145,13 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 48px;
+    padding-bottom: 10px;
+
   }
 
   .navbar {
     flex-grow: 2;
-    padding-left: 46px;
+    padding-left: 6px;
   }
 
   .nav a {
@@ -164,7 +166,11 @@ header {
   }
 
   .nav-link {
-    padding-top: 9px;
+    padding-top: 10px;
+  }
+  .nav-link-second{
+    margin-left: 26px;
+    padding-left:0px;
   }
 
   .header-button {
@@ -180,7 +186,7 @@ header {
     font-weight: 600;
     font-size: 18px;
     color: var(--primaryW);
-    padding-top: 9px;
+    padding-top: 7px;
     line-height: 28px;
     cursor: pointer;
   }
