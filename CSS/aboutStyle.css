@@ -125,10 +125,15 @@
 /* for mobile (Default)*/
 
 .about_section2_svg {
-  width: 200px;
-  height: 200px;
+  overflow: hidden;
   position: absolute;
-  top: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.about_section2_svg svg {
+  position: relative;
+  top: -100px;
   left: -100px;
 }
 
@@ -160,7 +165,10 @@
   height: 253px;
   margin: 0 0 52px 0;
   padding: 32px 24px 56px;
-  flex: 0 1 calc(50% -1em);
+}
+
+.card:last-child {
+  margin-bottom: 16px;
 }
 
 .profile_img img {
@@ -176,8 +184,9 @@
 }
 
 .profile_name {
+  padding-top: 16px;
   font-weight: 700;
-  size: 18px;
+  font-size: 18px;
   line-height: 28px;
   text-align: center;
   font-family: var(--primaryFont);
@@ -200,7 +209,7 @@
   justify-content: center;
   position: relative;
   margin: auto;
-  top: 25%;
+  top: 27%;
   width: 56px;
   height: 56px;
   border-radius: 360px;
@@ -227,6 +236,14 @@
 
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .about_section2_svg {
+    height: 200px;
+  }
+
+  .about_section2_svg svg {
+    top: 0px;
+  }
+
   .about_section2 h1 {
     padding-top: 100px;
   }
@@ -244,25 +261,36 @@
     width: 281px;
   }
 
-  .last {
+  .last,
+  .card:last-child {
     margin-bottom: 28px;
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  .about_section2 h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
   .cards-position {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 30px;
+    column-gap: 30px;
     justify-content: center;
   }
 
   .card {
     margin-bottom: 76px;
+    width: 350px;
   }
-  .about_section2_svg {
-    top: 65px;
+
+  .last,
+  .card:last-child {
+    margin-bottom: 68px;
   }
 }
 
