@@ -144,12 +144,13 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 48px;
+    padding-left: 14px;
     padding-bottom: 10px;
-
   }
 
   .navbar {
     flex-grow: 2;
+    padding-left: 0px;
     padding-left: 6px;
   }
 
@@ -165,8 +166,13 @@ header {
   }
 
   .nav-link {
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 40px;
     padding-top: 10px;
   }
+  
   .nav-link-second{
     margin-left: 26px;
     padding-left:0px;
@@ -192,12 +198,17 @@ header {
 
   .header-button:hover {
     background-color: var(--primaryW);
-    color: var(--primaryDG);
+    color: var(--secondDG);
   }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  header{
+padding-left: 165px;
+padding-top: 73px;
+padding-right: 0px;
+  }
   .logo {
     width: 157.5px;
     height: 40px;
@@ -205,11 +216,18 @@ header {
     left: 24px;
   }
 
+  .navbar{
+    padding-top: 2px;
+  }
+
   .nav {
     display: flex;
     justify-content: flex-start;
-    width: 900px;
-    height: 48px;
+    padding-left: 42.5px;
+  }
+
+  .header-button{
+    margin-right: 165px;
   }
 }
 
@@ -809,7 +827,6 @@ header {
 
 .banner_link {
   margin: auto;
-  z-index: 1;
 }
 
 .banner_bg-pattern-home-6 {
