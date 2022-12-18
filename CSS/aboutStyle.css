@@ -326,8 +326,10 @@
   .about_section2 h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 48px;
+    line-height: 48px;
+    padding-top: 140px;
+    padding-bottom: 64px;
   }
 
   .cards-position {
@@ -340,6 +342,7 @@
   .card {
     margin-bottom: 76px;
     width: 350px;
+    padding-top: 32px;
   }
 
   .last,
