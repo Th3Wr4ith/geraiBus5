@@ -204,12 +204,15 @@
 }
 
 .quote {
+  font-family: var(--primaryFont);
   margin-top: 8px;
   color: var(--primaryW);
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .card .b-side .icons svg:first-child {
@@ -317,7 +320,12 @@
   }
 
   .card .button.active {
-    top: 10px;
+    top: 35px;
+  }
+
+  .quote {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
