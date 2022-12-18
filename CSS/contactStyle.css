@@ -131,6 +131,10 @@
   width: 72px;
   height: 72px;
 }
+#face img {
+  width: 72px;
+  height: 72px;
+}
 
 #gear {
   margin-left: 24px;
