@@ -164,7 +164,7 @@
   width: 327px;
   height: 253px;
   margin: 0 0 52px 0;
-  padding: 32px 24px 56px;
+  padding: 35px 24px 56px;
 }
 
 .card:last-child {
@@ -183,8 +183,8 @@
   justify-content: center;
 }
 
-.profile_name {
-  padding-top: 16px;
+.card .a-side .profile_name,
+.card .b-side .profile_name {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -193,7 +193,7 @@
   color: var(--secondaryRB);
 }
 
-.position {
+.card .a-side .position {
   font-family: var(--primaryFont);
   color: var(--primaryW);
   font-style: italic;
@@ -203,26 +203,57 @@
   text-align: center;
 }
 
+.quote {
+  margin-top: 8px;
+  color: var(--primaryW);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.card .b-side .icons svg:first-child {
+  width: 24px;
+  height: 19.5px;
+}
+
+.card .b-side .icons svg:last-child {
+  width: 24px;
+  height: 20px;
+}
+
+.card .b-side .icons {
+  padding: 24px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.card .b-side .icons path {
+  fill: white;
+  transition: all 0.3s;
+}
+
+.card .b-side .icons svg:hover path {
+  fill: #f67e7e;
+  cursor: pointer;
+}
+
 .cross {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin: auto;
-  top: 27%;
+  top: 25%;
   width: 56px;
   height: 56px;
   border-radius: 360px;
   background-color: #f67e7e;
-  transition: 1s;
-}
 
-/* .cross:hover {
-  cursor: pointer;
-  background-color: var(--secondaryRB);
-  transform: rotate(45deg);
-  transition: 1s;
-} */
+  border: none;
+}
 
 .about_section2_svgb {
   display: flex;
@@ -234,8 +265,28 @@
   height: 100px;
 }
 
+.card .button:hover,
+.card .button.active {
+  background-color: var(--secondaryRB);
+  cursor: pointer;
+}
+
+.card .button.active svg {
+  transform: rotate(45deg);
+}
+
+.hidden {
+  display: none;
+}
+
 /* for tablet */
 @media screen and (min-width: 768px) {
+  .profile_name,
+  .quote,
+  .icons {
+    width: auto;
+  }
+
   .about_section2_svg {
     height: 200px;
   }
@@ -252,7 +303,6 @@
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 11px;
-
     justify-content: center;
   }
 
@@ -264,6 +314,10 @@
   .last,
   .card:last-child {
     margin-bottom: 28px;
+  }
+
+  .card .button.active {
+    top: 10px;
   }
 }
 
@@ -291,6 +345,10 @@
   .last,
   .card:last-child {
     margin-bottom: 68px;
+  }
+
+  .card .button.active {
+    top: 35px;
   }
 }
 
