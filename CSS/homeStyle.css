@@ -493,7 +493,7 @@ header {
   margin: 20px 20px 16px 20px;
 }
 
-.home_section2 h4 {
+.home_section2 h2 {
   color: var(--primaryLC);
   margin-bottom: 8px;
   font-size: 18px;
@@ -540,10 +540,19 @@ header {
 
   .home_section2 img {
     margin: 0px 23px 0px 0px;
+    margin: 0px 20px 0px 0px;
   }
 
-  .home_section2 h4 {
+  .first-img {
+    padding-left: 5px;
+  }
+
+  .home_section2 h2 {
     margin-bottom: 16px;
+  }
+  
+  div p {
+    width: 478px;
   }
 }
 
