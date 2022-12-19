@@ -550,10 +550,10 @@ header {
   .home_section2 h2 {
     margin-bottom: 16px;
   }
-  
-  div p {
+
+  /* div p {     šios klasės selektorius turėtų būti tikslesnis, arba iš viso reikia ištrinti
     width: 478px;
-  }
+  } */
 }
 
 /* for desktop */
@@ -758,12 +758,15 @@ header {
   }
 
   .home_section3__card .job_title {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .home_section3__card .last_avatar {
-    margin-bottom: 149px;
+    margin-bottom: 0px;
   }
+  .home_section3__card .avatar {
+    margin-bottom: 149px;
+  } 
 }
 /* ================================================================ home_banner CSS  */
 /* for mobile (Default)*/
