@@ -552,21 +552,17 @@ header {
   }
 
   .home_section2 img {
-    margin: 0px 23px 0px 0px;
     margin: 0px 20px 0px 0px;
   }
 
-  .first-img {
+  .home_section2 .first-img {
     padding-left: 5px;
+    margin-left: 5px;
   }
 
   .home_section2 h2 {
     margin-bottom: 16px;
   }
-
-  /* div p {     šios klasės selektorius turėtų būti tikslesnis, arba iš viso reikia ištrinti
-    width: 478px;
-  } */
 }
 
 /* for desktop */
@@ -590,7 +586,7 @@ header {
   }
 
   .home_section2 .head {
-    width: 58%;
+    width: 61%;
   }
 
   .home_section2 .head-info {
@@ -600,10 +596,6 @@ header {
   .home_section2 .content {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .home_section2 p {
-    width: 445px;
   }
 
   .home_section2 .items {
@@ -623,7 +615,7 @@ header {
     margin-top: 165px;
     margin-bottom: 140px;
     width: 80%;
-    padding-right: 40px;
+    margin-right: 63px;
   }
 
   .items .bg-holder {
