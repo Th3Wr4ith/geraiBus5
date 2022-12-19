@@ -169,12 +169,12 @@ header {
     padding-top: 0px;
     margin-left: 0px;
     padding-right: 0px;
-    padding-left: 40px;
+    padding-left: 34px;
     padding-top: 10px;
   }
 
   .nav-link-second {
-    margin-left: 26px;
+    margin-left: 40px;
     padding-left: 0px;
   }
 
@@ -206,13 +206,13 @@ header {
 @media screen and (min-width: 1440px) {
   header {
     padding-left: 165px;
-    padding-top: 73px;
+    padding-top: 75px;
     padding-right: 0px;
   }
   .logo {
     width: 157.5px;
     height: 40px;
-    top: 48px;
+    top: 50px;
     left: 24px;
   }
 
@@ -225,9 +225,22 @@ header {
     justify-content: flex-start;
     padding-left: 42.5px;
   }
+  .nav-link {
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+
+  .nav-link-second {
+    margin-left: 40px;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
 
   .header-button {
-    margin-right: 165px;
+    margin-right: 166px;
   }
 }
 
