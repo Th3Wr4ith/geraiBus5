@@ -20,7 +20,8 @@
     />
 
     <!-- javaScript įsidėkite ten kur jo reikia -->
-    <script src="javascript/javaScript.js"></script>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   </head>
 
   <body>
@@ -42,7 +43,6 @@
             </div>
             <div class="contact_section">
               <div class="contact_section-div1">
-
                 <div class="contact_section-miniDiv">
                   <div class="contact_section-heading">
                     <div id="contact_section-title">Contact</div>
@@ -78,22 +78,56 @@
 
               <div class="contact_section-div2">
                 <div id="contact_section-form">
-                  <form>
-                    <input type="text" id="name" name="name" placeholder="Name" />
+                  <form
+                    action="#"
+                    id="submitForm"
+                    onkeyup="disableSubmit()"
+                    autocomplete="off"
+                  >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                    />
                     <div class="formBar"></div>
-                    <input type="email" id="email" name="email" placeholder="Email Address"/>
+                    <div id="name-errors"></div>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email Address"
+                    />
                     <div class="formBar"></div>
-                    <input type="text" id="companyName" name="companyName"  placeholder="Company Name"/>
+                    <div id="email-errors"></div>
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      placeholder="Company Name"
+                    />
                     <div class="formBar"></div>
-                    <input type="text" id="title" name="title" placeholder="Title"/>
+                    <input
+                      type="text"
+                      id="title"
+                      name="title"
+                      placeholder="Title"
+                    />
                     <div class="formBar"></div>
-                    <textarea id="message" name="message" rows="3" cols="31"  placeholder="Message"></textarea>
+                    <div id="title-errors"></div>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="3"
+                      cols="31"
+                      placeholder="Message"
+                    ></textarea>
                     <div class="formBar"></div>
+                    <div id="message-errors"></div>
+                    <input type="submit" id="submit" value="submit" disabled />
                   </form>
-                </div>
 
-                <div id="contact_section-button">
-                  <input type="submit" value="submit" />
+                  <script src="javascript/javaScript.js"></script>
                 </div>
               </div>
             </div>
