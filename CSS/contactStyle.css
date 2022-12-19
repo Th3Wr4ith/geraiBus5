@@ -269,7 +269,7 @@
 }
 
 #message {
-  margin-top: 0px;
+  margin-top: 18px;
   margin-left: 39px;
   margin-right: 24px;
   margin-bottom: 8px;
@@ -348,28 +348,6 @@
   color: var(--primaryLC);
 }
 
-#title-errors {
-  height: 13px;
-
-  margin-bottom: 5px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
-}
-
 #message-errors {
   height: 13px;
 
@@ -408,16 +386,6 @@
 }
 
 .email-error-label {
-  padding: 0px;
-
-  color: var(--primaryLC) !important;
-}
-
-.title-error-field::placeholder {
-  color: var(--primaryLC);
-}
-
-.title-error-label {
   padding: 0px;
 
   color: var(--primaryLC) !important;
@@ -574,7 +542,7 @@
   #message {
     width: 540px;
 
-    margin-top: 0px;
+    margin-top: 19px;
     margin-left: 142px;
     margin-right: 113px;
   }
@@ -588,7 +556,6 @@
 
   #name-errors,
   #email-errors,
-  #title-errors,
   #message-errors {
     margin-left: 135px;
     margin-right: 125px;
@@ -695,7 +662,6 @@
 
   #name-errors,
   #email-errors,
-  #title-errors,
   #message-errors {
     margin-left: 126px;
     margin-right: 113px;

@@ -49,7 +49,7 @@ validate
     [
       {
         rule: "required",
-        errorMessage: "Please enter your name",
+        errorMessage: "This field is required",
       },
       {
         rule: "minLength",
@@ -68,7 +68,7 @@ validate
     [
       {
         rule: "required",
-        errorMessage: "Please fill email field",
+        errorMessage: "This field is required",
       },
       {
         rule: "email",
@@ -79,20 +79,6 @@ validate
       errorFieldCssClass: "email-error-field",
       errorLabelCssClass: "email-error-label",
       errorsContainer: "#email-errors",
-    }
-  )
-  .addField(
-    "#title",
-    [
-      {
-        rule: "required",
-        errorMessage: "This field is required",
-      },
-    ],
-    {
-      errorFieldCssClass: "title-error-field",
-      errorLabelCssClass: "title-error-label",
-      errorsContainer: "#title-errors",
     }
   )
   .addField(
