@@ -24,3 +24,93 @@ if (buttons.length) {
     });
   });
 }
+
+/* ================================================================ contact_section JS  */
+
+function disableSubmit() {
+  if (
+    document.getElementById("name").value == "" &&
+    document.getElementById("email").value == "" &&
+    document.getElementById("companyName").value == "" &&
+    document.getElementById("title").value == "" &&
+    document.getElementById("message").value == ""
+  ) {
+    document.getElementById("submit").disabled = true;
+  } else {
+    document.getElementById("submit").disabled = false;
+  }
+}
+
+const validate = new window.JustValidate("#submitForm");
+validate
+
+  .addField(
+    "#name",
+    [
+      {
+        rule: "required",
+        errorMessage: "Please enter your name",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Name is too short",
+      },
+    ],
+    {
+      errorFieldCssClass: "name-error-field",
+      errorLabelCssClass: "name-error-label",
+      errorsContainer: "#name-errors",
+    }
+  )
+  .addField(
+    "#email",
+    [
+      {
+        rule: "required",
+        errorMessage: "Please fill email field",
+      },
+      {
+        rule: "email",
+        errorMessage: "Please use a valid email address",
+      },
+    ],
+    {
+      errorFieldCssClass: "email-error-field",
+      errorLabelCssClass: "email-error-label",
+      errorsContainer: "#email-errors",
+    }
+  )
+  .addField(
+    "#title",
+    [
+      {
+        rule: "required",
+        errorMessage: "This field is required",
+      },
+    ],
+    {
+      errorFieldCssClass: "title-error-field",
+      errorLabelCssClass: "title-error-label",
+      errorsContainer: "#title-errors",
+    }
+  )
+  .addField(
+    "#message",
+    [
+      {
+        rule: "required",
+        errorMessage: "This field is required",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Message is to short",
+      },
+    ],
+    {
+      errorFieldCssClass: "message-error-field",
+      errorLabelCssClass: "message-error-label",
+      errorsContainer: "#message-errors",
+    }
+  );
