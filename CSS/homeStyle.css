@@ -172,10 +172,10 @@ header {
     padding-left: 40px;
     padding-top: 10px;
   }
-  
-  .nav-link-second{
+
+  .nav-link-second {
     margin-left: 26px;
-    padding-left:0px;
+    padding-left: 0px;
   }
 
   .header-button {
@@ -204,10 +204,10 @@ header {
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
-  header{
-padding-left: 165px;
-padding-top: 73px;
-padding-right: 0px;
+  header {
+    padding-left: 165px;
+    padding-top: 73px;
+    padding-right: 0px;
   }
   .logo {
     width: 157.5px;
@@ -216,7 +216,7 @@ padding-right: 0px;
     left: 24px;
   }
 
-  .navbar{
+  .navbar {
     padding-top: 2px;
   }
 
@@ -226,7 +226,7 @@ padding-right: 0px;
     padding-left: 42.5px;
   }
 
-  .header-button{
+  .header-button {
     margin-right: 165px;
   }
 }
@@ -493,7 +493,7 @@ padding-right: 0px;
   margin: 20px 20px 16px 20px;
 }
 
-.home_section2 h4 {
+.home_section2 h2 {
   color: var(--primaryLC);
   margin-bottom: 8px;
   font-size: 18px;
@@ -525,7 +525,6 @@ padding-right: 0px;
   .team-features .item {
     display: flex;
     text-align: left;
-    width: 80%;
     margin-top: 33px;
   }
 
@@ -536,22 +535,23 @@ padding-right: 0px;
   .team-features {
     margin-top: 20px;
     margin-bottom: 100px;
+    margin-right: 98px;
   }
 
   .home_section2 img {
+    margin: 0px 23px 0px 0px;
     margin: 0px 20px 0px 0px;
   }
 
-  .first-img{
+  .first-img {
     padding-left: 5px;
-
   }
 
-  .home_section2 h4 {
+  .home_section2 h2 {
     margin-bottom: 16px;
   }
-
-  div p{
+  
+  div p {
     width: 478px;
   }
 }
@@ -589,7 +589,7 @@ padding-right: 0px;
     justify-content: space-between;
   }
 
-  .home_section2 p{
+  .home_section2 p {
     width: 445px;
   }
 
@@ -763,7 +763,7 @@ padding-right: 0px;
 
   .home_section3__card .last_avatar {
     margin-bottom: 149px;
-}
+  }
 }
 /* ================================================================ home_banner CSS  */
 /* for mobile (Default)*/
