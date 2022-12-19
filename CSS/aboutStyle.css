@@ -150,7 +150,6 @@
   line-height: 32px;
   text-align: center;
   padding-top: 88px;
-  margin-bottom: 48px;
 }
 
 .cards-position {
@@ -164,7 +163,7 @@
   width: 327px;
   height: 253px;
   margin: 0 0 52px 0;
-  padding: 35px 24px 56px;
+  padding: 35px 46px 56px;
 }
 
 .card:last-child {
@@ -176,6 +175,7 @@
   height: 96px;
   border: 2px solid #c4fffe;
   border-radius: 360px;
+  margin-bottom: 16px;
 }
 
 .profile_img {
@@ -249,7 +249,7 @@
   justify-content: center;
   position: relative;
   margin: auto;
-  top: 25%;
+  top: 15%;
   width: 56px;
   height: 56px;
   border-radius: 360px;
@@ -282,6 +282,10 @@
   display: none;
 }
 
+.card .button.active {
+  top: 21%;
+}
+
 /* for tablet */
 @media screen and (min-width: 768px) {
   .profile_name,
@@ -309,6 +313,10 @@
     justify-content: center;
   }
 
+  .card .button {
+    top: 15%;
+  }
+
   .card {
     margin-bottom: 76px;
     width: 281px;
@@ -320,7 +328,7 @@
   }
 
   .card .button.active {
-    top: 35px;
+    top: 21%;
   }
 
   .quote {
@@ -358,8 +366,12 @@
     margin-bottom: 68px;
   }
 
+  .card .button {
+    top: 16%;
+  }
+
   .card .button.active {
-    top: 35px;
+    top: 22%;
   }
 }
 
