@@ -16,7 +16,6 @@ if (buttons.length) {
 
       let aSide = button.parentNode.firstElementChild;
       let bSide = aSide.nextElementSibling;
-      console.log(aSide);
       if (aSide && bSide) {
         aSide.classList.toggle("hidden");
         bSide.classList.toggle("hidden");
@@ -38,12 +37,13 @@ function disableSubmit() {
     document.getElementById("submit").disabled = true;
   } else {
     document.getElementById("submit").disabled = false;
+    document.getElementById("submit");
   }
 }
 
 const validate = new window.JustValidate("#submitForm");
-validate
 
+validate
   .addField(
     "#name",
     [
