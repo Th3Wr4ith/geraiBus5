@@ -28,7 +28,67 @@
     <div>
       <!-- Contact Header pradžia -->
       <header>
-        <div></div>
+        <a class="link" href="index.html">
+          <img class="logo" src="images/logo.svg" alt="logo" />
+        </a>
+        <nav class="navbar">
+          <ul class="nav">
+            <li>
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li>
+              <a class="nav-link nav-link-second" href="about.html">about</a>
+            </li>
+          </ul>
+          <a class="header-button" href="contact.html">contact us</a>
+  
+          <div
+            class="navbar-toggler"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span
+              ><img
+                style="width: 20px; height: 17px"
+                src="images/icon-hamburger.svg"
+                alt="menu"
+            /></span>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+          >
+            <div class="offcanvas-header">
+              <span class="btn-close" data-bs-dismiss="offcanvas">
+                <img
+                  style="width: 18px; height: 17px"
+                  src="images/icon-close.svg"
+                  alt="close"
+                />
+              </span>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-second" href="about.html">about</a>
+                </li>
+              </ul>
+              <a class="contact-button" href="contact.html">contact us</a>
+              <div class="pattern">
+                <img
+                  style="width: 200px; height: 200px"
+                  src="images/bg-pattern-about-1-mobile-nav-1.svg"
+                  alt="pattern"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
       <!-- Contact Header pabaiga -->
       <!-- Contact_section pradžia -->
@@ -98,7 +158,7 @@
                       name="email"
                       placeholder="Email Address"
                     />
-                    <div class="formBar"></div>
+                    <div *ngIf="isSubmitted && formControls.actualQuestion.errors?.required" class="formBar"></div>
                     <div id="email-errors"></div>
                     <input
                       type="text"
