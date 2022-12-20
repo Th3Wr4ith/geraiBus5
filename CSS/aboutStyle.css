@@ -287,6 +287,10 @@
   top: 21%;
 }
 
+.card .button.active:hover {
+  background-color: #f67e7e;
+}
+
 /* for tablet */
 @media screen and (min-width: 768px) {
   .profile_name,
