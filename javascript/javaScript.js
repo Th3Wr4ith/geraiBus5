@@ -100,3 +100,14 @@ validate
       errorsContainer: "#message-errors",
     }
   );
+
+  $('#submitForm').validate({
+    rules: {
+    isNameEmpty: true;
+    }
+});
+
+$.validator.addMethod('isNameEmpty', function (value, element) {        
+  var loc = $('#name').text();
+  return (loc != "")
+}, 'REQUIRED.');
