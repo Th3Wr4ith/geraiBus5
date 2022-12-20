@@ -103,7 +103,7 @@ validate
 
   $('#submitForm').validate({
     rules: {
-    isNameEmpty: true;
+    isNameEmpty: true,
     }
 });
 
