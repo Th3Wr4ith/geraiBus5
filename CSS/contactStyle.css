@@ -1,13 +1,248 @@
 /* ================================================================ contact_header CSS  */
 
 /* for mobile (Default)*/
+header {
+  background-color: var(--primaryMG);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-top: 48px;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.link {
+  height: 32px;
+}
+
+.navbar {
+  --bs-navbar-toggler-focus-width: none;
+  position: relative;
+}
+
+.nav {
+  display: none;
+}
+
+.header-button {
+  display: none;
+}
+
+.navbar-toggler {
+  border: none;
+  cursor: pointer;
+  height: 17px;
+  width: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.offcanvas {
+  background-color: var(--secondaryPB);
+  max-width: 255px;
+}
+
+.offcanvas-header {
+  margin: 0;
+  padding-left: 203px;
+  padding-top: 56px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+}
+
+.offcanvas-body {
+  padding-top: 0px;
+}
+
+.btn-close {
+  opacity: 1;
+  background: transparent;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  padding-top: 5px;
+}
+
+.pattern {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 467px;
+  left: 155px;
+}
+
+.nav-link {
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primaryW);
+  text-decoration: none;
+  margin-left: 31px;
+  padding-top: 39px;
+  padding-bottom: 0px;
+}
+
+.nav-link-second {
+  padding-top: 24px;
+}
+
+.nav-link:hover {
+  color: var(--primaryLC);
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid var(--primaryW);
+  height: 48px;
+  width: 159px;
+  padding: 8px 33px;
+  border-radius: 24px;
+  margin-left: 31px;
+  margin-top: 36px;
+  cursor: pointer;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--primaryW);
+}
+
+.contact-button:hover {
+  background-color: var(--primaryW);
+  color: var(--secondaryDG);
+}
+
+.navbar {
+  --bs-navbar-padding-y: none;
+}
+
+.logo {
+  width: 126px;
+  height: 32px;
+  top: 48px;
+  left: 24px;
+}
 
 /* for tablet */
 @media screen and (min-width: 768px) {
+  header {
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-top: 64px;
+  }
+
+  .navbar-toggler,
+  .offcanvas,
+  .offcanvas-backdrop.fade.show {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+  }
+
+  .navbar {
+    flex-grow: 2;
+    padding-left: 0px;
+    padding-left: 6px;
+  }
+
+  .nav a {
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primaryW);
+  }
+
+  .nav a:hover {
+    color: var(--primaryLC);
+  }
+
+  .nav-link {
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+
+  .nav-link-second {
+    margin-left: 40px;
+    padding-left: 0px;
+  }
+
+  .header-button {
+    display: inline;
+    background-color: transparent;
+    border: 2px solid var(--primaryW);
+    height: 48px;
+    width: 153px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primaryW);
+    padding-top: 7px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+
+  .header-button:hover {
+    background-color: var(--primaryW);
+    color: var(--secondaryDG);
+  }
 }
 
 /* for desktop */
 @media screen and (min-width: 1440px) {
+  header {
+    padding-left: 165px;
+    padding-top: 75px;
+    padding-right: 0px;
+  }
+  .logo {
+    width: 157.5px;
+    height: 40px;
+    top: 50px;
+    left: 24px;
+  }
+
+  .navbar {
+    padding-top: 2px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 42.5px;
+  }
+  .nav-link {
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+
+  .nav-link-second {
+    margin-left: 40px;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+
+  .header-button {
+    margin-right: 166px;
+  }
 }
 
 /* ================================================================ contact_section CSS  */
@@ -249,36 +484,6 @@
   background: transparent;
 }
 
-#email,
-#companyName {
-  width: 325px;
-  height: 25px;
-
-  margin-top: 11px;
-  margin-bottom: 6px;
-  margin-left: 26px;
-  margin-right: 24px;
-
-  padding-top: 7px;
-  padding-bottom: 27px;
-  padding-left: 13px;
-  padding-right: 0px;
-
-  font-family: var(--primaryFont);
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 25px;
-
-  text-align: left;
-
-  border: none;
-  border-bottom: solid 1px var(--primaryW);
-  outline: none;
-
-  color: var(--primaryW);
-  background: transparent;
-}
-
 #title {
   width: 325px;
   height: 25px;
@@ -310,12 +515,13 @@
 
 #message {
   margin-top: 18px;
+  margin-bottom: 8px;
   margin-left: 26px;
   margin-right: 24px;
-  margin-bottom: 8px;
 
   padding: 0;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 29px;
   padding-left: 14px;
   padding-right: 1px;
 
@@ -333,6 +539,26 @@
 
   color: var(--primaryW);
   background: transparent;
+}
+
+#name:focus,
+#email:focus,
+#companyName:focus,
+#title:focus,
+#message:focus {
+  border-bottom: solid 1px var(--secondaryRB);
+
+  cursor:pointer;
+}
+
+#name::placeholder,
+#email::placeholder,
+#companyName::placeholder,
+#title::placeholder,
+#message::placeholder {
+  opacity: 0.6;
+
+  color: var(--primaryW);
 }
 
 #name:focus,
