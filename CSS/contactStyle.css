@@ -210,24 +210,29 @@
 #contact_section-form {
   display: flex;
 
-  margin-top: 54px;
-
   order: 1;
+
+  margin-top: 58px;
+
+  padding-top: 0.5px;
+  
+  text-align: center;
 
   justify-content: center;
 }
 
-#name,
-#email,
-#companyName {
-  width: 292px;
+#name {
+  width: 325px;
   height: 25px;
 
-  margin-left: 39px;
+  margin-bottom: 6px;
+  margin-left: 26px;
   margin-right: 24px;
-  margin-bottom: 16px;
 
-  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 29px;
+  padding-left: 14px;
+  padding-right: 0px;
 
   font-family: var(--primaryFont);
   font-weight: 600;
@@ -237,6 +242,37 @@
   text-align: left;
 
   border: none;
+  border-bottom: solid 1px var(--primaryW);
+  outline: none;
+
+  color: var(--primaryW);
+  background: transparent;
+}
+
+#email,
+#companyName {
+  width: 325px;
+  height: 25px;
+
+  margin-top: 11px;
+  margin-bottom: 6px;
+  margin-left: 26px;
+  margin-right: 24px;
+
+  padding-top: 7px;
+  padding-bottom: 27px;
+  padding-left: 13px;
+  padding-right: 0px;
+
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+
+  text-align: left;
+
+  border: none;
+  border-bottom: solid 1px var(--primaryW);
   outline: none;
 
   color: var(--primaryW);
@@ -244,15 +280,18 @@
 }
 
 #title {
-  width: 292px;
+  width: 325px;
   height: 25px;
 
-  margin-top: 18px;
-  margin-left: 39px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+  margin-left: 26px;
   margin-right: 24px;
-  margin-bottom: 16px;
 
-  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 29px;
+  padding-left: 14px;
+  padding-right: 0px;
 
   font-family: var(--primaryFont);
   font-weight: 600;
@@ -262,6 +301,7 @@
   text-align: left;
 
   border: none;
+  border-bottom: solid 1px var(--primaryW);
   outline: none;
 
   color: var(--primaryW);
@@ -270,11 +310,14 @@
 
 #message {
   margin-top: 18px;
-  margin-left: 39px;
+  margin-left: 26px;
   margin-right: 24px;
   margin-bottom: 8px;
 
   padding: 0;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 1px;
 
   font-family: var(--primaryFont);
   font-weight: 600;
@@ -282,131 +325,88 @@
   line-height: 25px;
 
   text-align: left;
+  resize: none;
 
   border: none;
+  border-bottom: solid 1px var(--primaryW);
   outline: none;
-  resize: none;
 
   color: var(--primaryW);
   background: transparent;
 }
 
-.formBar {
-  display: flex;
-
-  width: 325px;
-  height: 1px;
-
-  margin-bottom: 6px;
-  margin-left: 26px;
-  margin-right: 24px;
-
-  background-color: var(--primaryW);
+#name:focus,
+#email:focus,
+#companyName:focus,
+#title:focus,
+#message:focus {
+  border-bottom: solid 1px var(--secondaryRB);
 }
 
-#name-errors {
-  height: 13px;
+#name::placeholder,
+#email::placeholder,
+#companyName::placeholder,
+#title::placeholder,
+#message::placeholder {
+  opacity: 0.6;
 
-  margin-bottom: 5px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
+  color: var(--primaryW);
 }
 
-#email-errors {
-  height: 13px;
-
-  margin-bottom: 5px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
+.name-error-field,
+.email-error-field,
+.message-error-field {
+  border-bottom: solid 1px var(--primaryLC) !important;
 }
 
-#message-errors {
-  height: 13px;
-
-  margin-top: 2px;
-  margin-bottom: 4px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
-}
-
-.name-error-field::placeholder {
-  color: var(--primaryLC);
-}
-
-.name-error-label {
-  padding: 0px;
-
-  color: var(--primaryLC) !important;
-}
-
-.email-error-field::placeholder {
-  color: var(--primaryLC);
-}
-
-.email-error-label {
-  padding: 0px;
-
-  color: var(--primaryLC) !important;
-}
-
+.name-error-field::placeholder,
+.email-error-field::placeholder,
 .message-error-field::placeholder {
-  color: var(--primaryLC);
+  opacity: 0.6;
+
+  color: var(--primaryLC) !important;
 }
 
+.name-error-label,
+.email-error-label,
 .message-error-label {
   padding: 0px;
 
   color: var(--primaryLC) !important;
 }
 
+#name-errors,
+#email-errors,
+#message-errors {
+  height: 13px;
+
+  margin-left: 34px;
+  margin-right: 24px;
+
+  padding: 0;
+
+  font-family: var(--primaryFont);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12.55px;
+
+  text-align: left;
+
+  border: none;
+
+  color: var(--primaryLC);
+}
+
 #submit {
   width: 123px;
   height: 48px;
 
+  margin-top: 3px;
   margin-left: 24px;
-  margin-right: 228px;
+  margin-right: 230px;
+
+  padding: 0px;
 
   border: 2px solid var(--primaryW);
   border-radius: 24px;
@@ -443,7 +443,7 @@
 
   order: 2;
 
-  margin-top: -25px;
+  margin-top: -24px;
   margin-bottom: -111px;
   margin-left: 275.5px;
   margin-right: -100px;
@@ -524,56 +524,50 @@
   }
 
   #contact_section-form {
-    margin-top: 62px;
+    margin-top: 66px;
+
+    padding: 0;
   }
 
   #name,
   #email,
-  #companyName {
-    width: 540px;
-
-    margin-left: 142px;
-    margin-right: 113px;
-  }
-
+  #companyName,
   #title {
     width: 540px;
 
-    margin-left: 142px;
+    margin-left: 115px;
     margin-right: 113px;
+
+    padding-bottom: 28px;
+    padding-left: 15px;
   }
 
   #message {
     width: 540px;
 
-    margin-top: 19px;
-    margin-left: 142px;
+    margin-left: 115px;
     margin-right: 113px;
-  }
 
-  .formBar {
-    width: 540px;
-
-    margin-left: 127px;
-    margin-right: 113px;
+    padding-bottom: 8px;
+    padding-left: 15px;
   }
 
   #name-errors,
   #email-errors,
   #message-errors {
-    margin-left: 135px;
+    margin-left: 123px;
     margin-right: 125px;
   }
 
   #submit {
-    margin-left: 126px;
-    margin-right: 532px;
+    margin-left: 115px;
+    margin-right: 534px;
 
     padding: 0px;
   }
 
   #contact_section-figure-2 {
-    margin-top: -109px;
+    margin-top: -110px;
     margin-bottom: -3px;
     margin-left: 668.5px;
     margin-right: -100px;
@@ -618,28 +612,31 @@
     margin-left: 172.03px;
   }
 
-  #gear {
-    margin-left: 165px;
-  }
-
+  #gear,
   #graph {
     margin-left: 165px;
   }
 
   #face_text {
+    width: 445px;
+
+    margin-top: 23px;
     margin-right: 32px;
   }
 
-  #gear_text {
-    margin-right: 0px;
-  }
-
+  #gear_text,
   #graph_text {
-    margin-right: 0px;
+    width: 445px;
+
+    margin-top: 24px;
+    margin-right: 32px;
   }
 
   #contact_section-form {
-    margin-top: 120px;
+    margin-top: 125px;
+    margin-left: -135px;
+
+    text-align: left;
   }
 
   #name,
@@ -659,21 +656,15 @@
     margin-right: 63.5px;
   }
 
-  .formBar {
-    margin-left: 118px;
-    margin-right: 63.5px;
-  }
-
   #name-errors,
   #email-errors,
   #message-errors {
-    margin-left: 126px;
+    margin-left: 141px;
     margin-right: 113px;
   }
 
   #submit {
-    margin-left: 117px;
-    margin-right: 532px;
+    margin-left: 133px;
 
     padding: 0;
   }
@@ -684,16 +675,4 @@
     margin-left: 1340.5px;
     margin-right: -101px;
   }
-}
-
-/* ================================================================ contact_footer CSS  */
-
-/* for mobile (Default)*/
-
-/* for tablet */
-@media screen and (min-width: 768px) {
-}
-
-/* for desktop */
-@media screen and (min-width: 1440px) {
 }
