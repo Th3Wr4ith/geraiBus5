@@ -157,7 +157,6 @@
                       name="name"
                       placeholder="Name"
                     />
-                    <div class="formBar"></div>
                     <div id="name-errors"></div>
                     <input
                       type="email"
@@ -165,7 +164,6 @@
                       name="email"
                       placeholder="Email Address"
                     />
-                    <div *ngIf="isSubmitted && formControls.actualQuestion.errors?.required" class="formBar"></div>
                     <div id="email-errors"></div>
                     <input
                       type="text"
@@ -173,22 +171,19 @@
                       name="companyName"
                       placeholder="Company Name"
                     />
-                    <div class="formBar"></div>
                     <input
                       type="text"
                       id="title"
                       name="title"
                       placeholder="Title"
                     />
-                    <div class="formBar"></div>
                     <textarea
                       id="message"
                       name="message"
                       rows="3"
-                      cols="31"
+                      cols="34"
                       placeholder="Message"
                     ></textarea>
-                    <div class="formBar"></div>
                     <div id="message-errors"></div>
                     <input type="submit" id="submit" value="submit" disabled />
                   </form>

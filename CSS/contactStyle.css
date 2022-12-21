@@ -1,253 +1,6 @@
 /* ================================================================ contact_header CSS  */
 
 /* for mobile (Default)*/
-header {
-  background-color: var(--primaryMG);
-  display: flex;
-  justify-content: space-between;
-  padding-left: 24px;
-  padding-top: 48px;
-  padding-right: 24px;
-  align-items: center;
-}
-
-.link {
-  height: 32px;
-}
-
-.navbar {
-  --bs-navbar-toggler-focus-width: none;
-  position: relative;
-}
-
-.nav {
-  display: none;
-}
-
-.header-button {
-  display: none;
-}
-
-.navbar-toggler {
-  border: none;
-  cursor: pointer;
-  height: 17px;
-  width: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.offcanvas {
-  background-color: var(--secondaryPB);
-  max-width: 255px;
-}
-
-.offcanvas-header {
-  margin: 0;
-  padding-left: 203px;
-  padding-top: 56px;
-  padding-right: 25px;
-  padding-bottom: 0px;
-}
-
-.offcanvas-body {
-  padding-top: 0px;
-}
-
-.btn-close {
-  opacity: 1;
-  background: transparent;
-  cursor: pointer;
-  width: 18px;
-  height: 17px;
-  padding-top: 5px;
-}
-
-.pattern {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 467px;
-  left: 155px;
-}
-
-.nav-link {
-  font-family: var(--primaryFont);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--primaryW);
-  text-decoration: none;
-  margin-left: 31px;
-  padding-top: 39px;
-  padding-bottom: 0px;
-}
-
-.nav-link-second {
-  padding-top: 24px;
-}
-
-.nav-link:hover {
-  color: var(--primaryLC);
-}
-
-.contact-button {
-  display: inline-block;
-  background-color: transparent;
-  border: 2px solid var(--primaryW);
-  height: 48px;
-  width: 159px;
-  padding: 8px 33px;
-  border-radius: 24px;
-  margin-left: 31px;
-  margin-top: 36px;
-  cursor: pointer;
-  font-family: var(--primaryFont);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  text-decoration: none;
-  color: var(--primaryW);
-}
-
-.contact-button:hover {
-  background-color: var(--primaryW);
-  color: var(--secondaryDG);
-}
-
-.navbar {
-  --bs-navbar-padding-y: none;
-}
-
-.logo {
-  width: 126px;
-  height: 32px;
-  top: 48px;
-  left: 24px;
-}
-
-/* for tablet */
-@media screen and (min-width: 768px) {
-  header {
-    padding-left: 35px;
-    padding-right: 40px;
-    padding-top: 64px;
-  }
-
-  .navbar-toggler,
-  .offcanvas,
-  .offcanvas-backdrop.fade.show {
-    display: none;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    padding-left: 14px;
-    padding-bottom: 10px;
-  }
-
-  .navbar {
-    flex-grow: 2;
-    padding-left: 0px;
-    padding-left: 6px;
-  }
-
-  .nav a {
-    font-family: var(--primaryFont);
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--primaryW);
-  }
-
-  .nav a:hover {
-    color: var(--primaryLC);
-  }
-
-  .nav-link {
-    padding-top: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 34px;
-    padding-top: 10px;
-  }
-
-  .nav-link-second {
-    margin-left: 40px;
-    padding-left: 0px;
-  }
-
-  .header-button {
-    display: inline;
-    background-color: transparent;
-    border: 2px solid var(--primaryW);
-    height: 48px;
-    width: 153px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 24px;
-    font-family: var(--primaryFont);
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--primaryW);
-    padding-top: 7px;
-    line-height: 28px;
-    cursor: pointer;
-  }
-
-  .header-button:hover {
-    background-color: var(--primaryW);
-    color: var(--secondaryDG);
-  }
-}
-
-/* for desktop */
-@media screen and (min-width: 1440px) {
-  header {
-    padding-left: 165px;
-    padding-top: 75px;
-    padding-right: 0px;
-  }
-  .logo {
-    width: 157.5px;
-    height: 40px;
-    top: 50px;
-    left: 24px;
-  }
-
-  .navbar {
-    padding-top: 2px;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 42.5px;
-  }
-  .nav-link {
-    padding-top: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 34px;
-    padding-top: 10px;
-  }
-
-  .nav-link-second {
-    margin-left: 40px;
-    padding-left: 0px;
-    padding-top: 10px;
-  }
-
-  .header-button {
-    margin-right: 166px;
-  }
-}
-
-/* ================================================================ contact_section CSS  */
-
-/* for mobile (Default)*/
 .contact_section-container {
   display: flex;
   flex-direction: column;
@@ -445,33 +198,73 @@ header {
 #contact_section-form {
   display: flex;
 
-  margin-top: 54px;
-
   order: 1;
+
+  margin-top: 58px;
+
+  padding-top: 0.5px;
+  
+  text-align: center;
 
   justify-content: center;
 }
 
-#name,
-#email,
-#companyName {
-  width: 292px;
+#name {
+  width: 325px;
   height: 25px;
 
-  margin-left: 39px;
+  margin-bottom: 6px;
+  margin-left: 26px;
   margin-right: 24px;
-  margin-bottom: 16px;
 
-  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 29px;
+  padding-left: 14px;
+  padding-right: 0px;
 
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
 
+  cursor: pointer;
+
   text-align: left;
 
   border: none;
+  border-bottom: solid 1px var(--primaryW);
+  outline: none;
+
+  color: var(--primaryW);
+  background: transparent;
+}
+
+#email,
+#companyName {
+  width: 325px;
+  height: 25px;
+
+  margin-top: 11px;
+  margin-bottom: 6px;
+  margin-left: 26px;
+  margin-right: 24px;
+
+  padding-top: 7px;
+  padding-bottom: 27px;
+  padding-left: 13px;
+  padding-right: 0px;
+
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  border: none;
+  border-bottom: solid 1px var(--primaryW);
   outline: none;
 
   color: var(--primaryW);
@@ -479,24 +272,30 @@ header {
 }
 
 #title {
-  width: 292px;
+  width: 325px;
   height: 25px;
 
-  margin-top: 18px;
-  margin-left: 39px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+  margin-left: 26px;
   margin-right: 24px;
-  margin-bottom: 16px;
 
-  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 29px;
+  padding-left: 14px;
+  padding-right: 0px;
 
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
 
+  cursor: pointer;
+
   text-align: left;
 
   border: none;
+  border-bottom: solid 1px var(--primaryW);
   outline: none;
 
   color: var(--primaryW);
@@ -505,147 +304,105 @@ header {
 
 #message {
   margin-top: 18px;
-  margin-left: 39px;
+  margin-left: 26px;
   margin-right: 24px;
   margin-bottom: 8px;
 
   padding: 0;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 1px;
 
   font-family: var(--primaryFont);
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
 
+  cursor: pointer;
+
   text-align: left;
+  resize: none;
 
   border: none;
+  border-bottom: solid 1px var(--primaryW);
   outline: none;
-  resize: none;
 
   color: var(--primaryW);
   background: transparent;
 }
 
-.formBar {
-  display: flex;
-
-  width: 325px;
-  height: 1px;
-
-  margin-bottom: 6px;
-  margin-left: 26px;
-  margin-right: 24px;
-
-  background-color: var(--primaryW);
+#name:focus,
+#email:focus,
+#companyName:focus,
+#title:focus,
+#message:focus {
+  border-bottom: solid 1px var(--secondaryRB);
 }
 
-input.ng-invalid.ng-touched {
-  background-color: rgb(225, 8, 8);
+#name::placeholder,
+#email::placeholder,
+#companyName::placeholder,
+#title::placeholder,
+#message::placeholder {
+  opacity: 0.6;
+
+  color: var(--primaryW);
 }
 
-#name-errors {
-  height: 13px;
-
-  margin-bottom: 5px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
+.name-error-field,
+.email-error-field,
+.message-error-field {
+  border-bottom: solid 1px var(--primaryLC) !important;
 }
 
-#email-errors {
-  height: 13px;
-
-  margin-bottom: 5px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
-}
-
-#message-errors {
-  height: 13px;
-
-  margin-top: 2px;
-  margin-bottom: 4px;
-  margin-left: 34px;
-  margin-right: 24px;
-
-  padding: 0;
-
-  font-family: var(--primaryFont);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12.55px;
-
-  text-align: left;
-
-  border: none;
-
-  color: var(--primaryLC);
-}
-
-.name-error-field::placeholder {
-  color: var(--primaryLC);
-}
-
-.name-error-label {
-  padding: 0px;
-
-  color: var(--primaryLC) !important;
-}
-
-.email-error-field::placeholder {
-  color: var(--primaryLC);
-}
-
-.email-error-label {
-  padding: 0px;
-
-  color: var(--primaryLC) !important;
-}
-
+.name-error-field::placeholder,
+.email-error-field::placeholder,
 .message-error-field::placeholder {
-  color: var(--primaryLC);
+  opacity: 0.6;
+
+  color: var(--primaryLC) !important;
 }
 
+.name-error-label,
+.email-error-label,
 .message-error-label {
   padding: 0px;
 
   color: var(--primaryLC) !important;
 }
 
+#name-errors,
+#email-errors,
+#message-errors {
+  height: 13px;
+
+  margin-left: 34px;
+  margin-right: 24px;
+
+  padding: 0;
+
+  font-family: var(--primaryFont);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12.55px;
+
+  text-align: left;
+
+  border: none;
+
+  color: var(--primaryLC);
+}
+
 #submit {
   width: 123px;
   height: 48px;
 
+  margin-top: 3px;
   margin-left: 24px;
-  margin-right: 228px;
+  margin-right: 230px;
+
+  padding: 0px;
 
   border: 2px solid var(--primaryW);
   border-radius: 24px;
@@ -682,7 +439,7 @@ input.ng-invalid.ng-touched {
 
   order: 2;
 
-  margin-top: -25px;
+  margin-top: -24px;
   margin-bottom: -111px;
   margin-left: 275.5px;
   margin-right: -100px;
@@ -763,56 +520,50 @@ input.ng-invalid.ng-touched {
   }
 
   #contact_section-form {
-    margin-top: 62px;
+    margin-top: 66px;
+
+    padding: 0;
   }
 
   #name,
   #email,
-  #companyName {
-    width: 540px;
-
-    margin-left: 142px;
-    margin-right: 113px;
-  }
-
+  #companyName,
   #title {
     width: 540px;
 
-    margin-left: 142px;
+    margin-left: 115px;
     margin-right: 113px;
+
+    padding-bottom: 28px;
+    padding-left: 15px;
   }
 
   #message {
     width: 540px;
 
-    margin-top: 19px;
-    margin-left: 142px;
+    margin-left: 115px;
     margin-right: 113px;
-  }
 
-  .formBar {
-    width: 540px;
-
-    margin-left: 127px;
-    margin-right: 113px;
+    padding-bottom: 8px;
+    padding-left: 15px;
   }
 
   #name-errors,
   #email-errors,
   #message-errors {
-    margin-left: 135px;
+    margin-left: 123px;
     margin-right: 125px;
   }
 
   #submit {
-    margin-left: 126px;
-    margin-right: 532px;
+    margin-left: 115px;
+    margin-right: 534px;
 
     padding: 0px;
   }
 
   #contact_section-figure-2 {
-    margin-top: -109px;
+    margin-top: -110px;
     margin-bottom: -3px;
     margin-left: 668.5px;
     margin-right: -100px;
@@ -857,28 +608,31 @@ input.ng-invalid.ng-touched {
     margin-left: 172.03px;
   }
 
-  #gear {
-    margin-left: 165px;
-  }
-
+  #gear,
   #graph {
     margin-left: 165px;
   }
 
   #face_text {
+    width: 445px;
+
+    margin-top: 23px;
     margin-right: 32px;
   }
 
-  #gear_text {
-    margin-right: 0px;
-  }
-
+  #gear_text,
   #graph_text {
-    margin-right: 0px;
+    width: 445px;
+
+    margin-top: 24px;
+    margin-right: 32px;
   }
 
   #contact_section-form {
-    margin-top: 120px;
+    margin-top: 125px;
+    margin-left: -135px;
+
+    text-align: left;
   }
 
   #name,
@@ -898,21 +652,15 @@ input.ng-invalid.ng-touched {
     margin-right: 63.5px;
   }
 
-  .formBar {
-    margin-left: 118px;
-    margin-right: 63.5px;
-  }
-
   #name-errors,
   #email-errors,
   #message-errors {
-    margin-left: 126px;
+    margin-left: 141px;
     margin-right: 113px;
   }
 
   #submit {
-    margin-left: 117px;
-    margin-right: 532px;
+    margin-left: 133px;
 
     padding: 0;
   }
@@ -923,16 +671,4 @@ input.ng-invalid.ng-touched {
     margin-left: 1340.5px;
     margin-right: -101px;
   }
-}
-
-/* ================================================================ contact_footer CSS  */
-
-/* for mobile (Default)*/
-
-/* for tablet */
-@media screen and (min-width: 768px) {
-}
-
-/* for desktop */
-@media screen and (min-width: 1440px) {
 }
