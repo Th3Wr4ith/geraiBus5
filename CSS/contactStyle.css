@@ -218,7 +218,7 @@
   margin-right: 24px;
 
   padding-top: 7px;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
   padding-left: 14px;
   padding-right: 0px;
 
@@ -303,6 +303,8 @@
 }
 
 #message {
+  width: 325px;
+  
   margin-top: 18px;
   margin-left: 26px;
   margin-right: 24px;
@@ -319,6 +321,7 @@
   line-height: 25px;
 
   cursor: pointer;
+  
 
   text-align: left;
   resize: none;
@@ -534,7 +537,7 @@
     margin-left: 115px;
     margin-right: 113px;
 
-    padding-bottom: 28px;
+    padding-bottom: 28.5px;
     padding-left: 15px;
   }
 
@@ -645,6 +648,8 @@
   #title {
     margin-left: 133px;
     margin-right: 63.5px;
+
+    padding-bottom: 27px;
   }
 
   #message {
